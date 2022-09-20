@@ -1,5 +1,7 @@
 import {View, Text} from 'react-native';
 
+import {Intro} from './screen/Intro/Intro';
+
 const App = () => {
   return (
     <View>
@@ -8,4 +10,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default Intro;
