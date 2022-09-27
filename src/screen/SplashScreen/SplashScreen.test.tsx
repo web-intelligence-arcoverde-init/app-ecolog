@@ -1,9 +1,9 @@
 import 'react-native';
 import React from 'react';
-import {Intro} from './Intro';
+import {SplashScreen} from './SplashScreen';
 
 import renderer from 'react-test-renderer';
 
 it('renders correctly', () => {
-  renderer.create(<Intro />);
+  renderer.create(<SplashScreen />);
 });

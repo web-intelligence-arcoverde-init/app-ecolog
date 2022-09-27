@@ -3,7 +3,7 @@ import Lottie from 'lottie-react-native';
 
 import RecycleAnimation from '../../assets/animations/recycle.json';
 
-export const Intro = () => {
+export const SplashScreen = () => {
   return (
     <SafeAreaView style={styles.container}>
       <Lottie source={RecycleAnimation} speed={0.09} autoPlay />

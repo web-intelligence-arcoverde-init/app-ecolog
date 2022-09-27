@@ -7,10 +7,21 @@
 
 - Quando for criar screen seguir o padrao da Intro
 
+## Auxiliares
+
+- https://makeappicon.com/download/c916fd004c39448a934cf7732cbd811e
+
 ## Realease 0.1
 
 [x] - ajustar tela intro
 [x] - adicionar image do logo
+[] - adicionar react router dom
+[] - criar rotas
+[] - adicionar 2 rotas para testes
+[] - gerar apk
+
+## Realease 0.2
+
 [] - adicionar image do logo no app
 [] - ajustar nome do app
 [] - adicionar rotas
