@@ -15,8 +15,10 @@
 
 [x] - ajustar tela intro
 [x] - adicionar image do logo
-[] - adicionar react router dom
-[] - criar rotas
+[x] - adicionar react navigation
+[x] - remover header das rotas
+[x] - definir rota principar
+[x] - criar arquivo de rotas
 [] - adicionar 2 rotas para testes
 [] - gerar apk
 
