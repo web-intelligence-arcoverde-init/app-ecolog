@@ -1,13 +1,24 @@
-import {SafeAreaView, StyleSheet} from 'react-native';
+import {StyleSheet, View} from 'react-native';
 import Lottie from 'lottie-react-native';
 
 import RecycleAnimation from '../../assets/animations/recycle.json';
+import {useEffect, useRef, useState} from 'react';
 
-export const SplashScreen = () => {
+export const SplashScreen = ({navigation}) => {
+  const redirect = () => {
+    setTimeout(function () {
+      navigation.navigate('IntroScreen');
+    }, 4000);
+  };
+
+  {
+    redirect();
+  }
+
   return (
-    <SafeAreaView style={styles.container}>
+    <View style={styles.container}>
       <Lottie source={RecycleAnimation} speed={0.09} autoPlay />
-    </SafeAreaView>
+    </View>
   );
 };
 

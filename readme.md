@@ -19,8 +19,11 @@
 [x] - remover header das rotas
 [x] - definir rota principar
 [x] - criar arquivo de rotas
-[] - adicionar 2 rotas para testes
+[x] - quando finalizar a animacao do lottie mudar de rota
+[x] - adicionar 2 rotas para testes
+[] - fazer testes
 [] - gerar apk
+[] - subir na playstory
 
 ## Realease 0.2
 
