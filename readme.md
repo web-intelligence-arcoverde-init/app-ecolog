@@ -10,6 +10,7 @@
 ## Auxiliares
 
 - https://makeappicon.com/download/c916fd004c39448a934cf7732cbd811e
+- https://www.youtube.com/watch?v=HuPK62LHCms&t=264s
 
 ## Referencias
 
