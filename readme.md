@@ -11,6 +11,7 @@
 
 - https://makeappicon.com/download/c916fd004c39448a934cf7732cbd811e
 - https://www.youtube.com/watch?v=HuPK62LHCms&t=264s
+- https://www.npmjs.com/package/react-native-rename
 
 ## Referencias
 
@@ -49,7 +50,7 @@ https://www.behance.net/gallery/153524985/Waste-Recycling-Sustainability-APP-Web
 [x] - quando finalizar a animacao do lottie mudar de rota
 [x] - adicionar 2 rotas para testes
 [x] - mudar icon do app
-[] - mudar nome do app
+[x] - mudar nome do app
 [] - fazer testes
 [] - gerar apk
 [] - subir na playstory
