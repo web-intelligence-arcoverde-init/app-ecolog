@@ -8,7 +8,7 @@
     "start": "react-native start",
     "test": "jest",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
-    "devices": "xcrun xctrace list devices",
+    "devices:ios": "xcrun xctrace list devices",
     "clean": "rm -rf node_modules && rm -rf ios/Pods && rm -rf ios/Podfile.lock && rm -rf .temp && rm -rf yarn.lock && rm -rf package-lock.json && watchman watch-del-all",
     "build:android:dev:releade": "cd ./android && ./gradlew assembleRelease",
     "build:android:dev:aab": "cd ./android && ./gradlew bundleRelease",

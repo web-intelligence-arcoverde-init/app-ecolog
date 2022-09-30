@@ -51,17 +51,14 @@ https://www.behance.net/gallery/153524985/Waste-Recycling-Sustainability-APP-Web
 [x] - adicionar 2 rotas para testes
 [x] - mudar icon do app
 [x] - mudar nome do app
-[] - fazer testes
-[] - gerar apk
+[] - gerar apk/aab
 [] - subir na playstory
 
 ## Realease 0.2
 
-[] - adicionar image do logo no app
-[] - ajustar nome do app
-[] - adicionar rotas
+[] - pegar autorizações do usuario para pegar localização
 [] - configurar redux
 [] - ajustar variaveis de ambiente android
 [] - gerar coverage dos testes
-[] - gerar primeira apk
+[] - gerar apk
 [] - subir na playstore
