@@ -48,6 +48,8 @@ https://www.behance.net/gallery/153524985/Waste-Recycling-Sustainability-APP-Web
 [x] - criar arquivo de rotas
 [x] - quando finalizar a animacao do lottie mudar de rota
 [x] - adicionar 2 rotas para testes
+[x] - mudar icon do app
+[] - mudar nome do app
 [] - fazer testes
 [] - gerar apk
 [] - subir na playstory
