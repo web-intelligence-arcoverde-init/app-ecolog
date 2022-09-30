@@ -60,7 +60,8 @@ https://www.behance.net/gallery/153524985/Waste-Recycling-Sustainability-APP-Web
 
 ## Realease 0.2
 
-[] - configurar constants [testeId, colors, fonts]J
+[] - fazer uma busca por aplicativo similares para obter referencias para o desenvolvimento
+[] - configurar constants [testeId, colors, fonts]
 [] - configurar redux
 [] - pegar autorizações do usuario para pegar localização
 [] - criar um action para salvar a localizacao do usuario
