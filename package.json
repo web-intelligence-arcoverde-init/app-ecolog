@@ -10,7 +10,7 @@
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
     "devices:ios": "xcrun xctrace list devices",
     "clean": "rm -rf node_modules && rm -rf ios/Pods && rm -rf ios/Podfile.lock && rm -rf .temp && rm -rf yarn.lock && rm -rf package-lock.json && watchman watch-del-all",
-    "build:android:dev:releade": "cd ./android && ./gradlew assembleRelease",
+    "build:android:dev:release": "cd ./android && ./gradlew assembleRelease",
     "build:android:dev:aab": "cd ./android && ./gradlew bundleRelease",
     "build:ios:prod:release": "cd ./ios && /usr/bin/xcodebuild -sdk iphoneos -configuration Prod -workspace smiles_app.xcworkspace -scheme smiles_app_prod build && /usr/bin/xcodebuild -exportArchive -archivePath output/iphoneos/Prod/archive/smiles_app.xcarchive -exportPath output/iphoneos/Prod/export -exportOptionsPlist ios/ExportOptions.plist",
     "build:ios:hml:release": "cd ./ios && /usr/bin/xcodebuild -sdk iphoneos -configuration Hml -workspace smiles_app.xcworkspace -scheme smiles_app_hml build && /usr/bin/xcodebuild -exportArchive -archivePath output/iphoneos/Hml/archive/smiles_app.xcarchive -exportPath output/iphoneos/Hml/export -exportOptionsPlist ios/ExportOptionsHom.plist"

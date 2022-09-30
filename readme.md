@@ -12,6 +12,8 @@
 - https://makeappicon.com/download/c916fd004c39448a934cf7732cbd811e
 - https://www.youtube.com/watch?v=HuPK62LHCms&t=264s
 - https://www.npmjs.com/package/react-native-rename
+- https://derivv.com/
+- https://stackoverflow.com/questions/31489567/manually-installing-an-updated-apk-fails-with-signatures-do-not-match-the-previ
 
 ## Referencias
 
@@ -51,13 +53,13 @@ https://www.behance.net/gallery/153524985/Waste-Recycling-Sustainability-APP-Web
 [x] - adicionar 2 rotas para testes
 [x] - mudar icon do app
 [x] - mudar nome do app
-[] - gerar apk/aab
-[] - subir na playstory
+[x] - gerar apk/aab
+[x] - subir na playstory
 
 ## Realease 0.2
 
-[] - pegar autorizações do usuario para pegar localização
 [] - configurar redux
+[] - pegar autorizações do usuario para pegar localização
 [] - ajustar variaveis de ambiente android
 [] - gerar coverage dos testes
 [] - gerar apk
