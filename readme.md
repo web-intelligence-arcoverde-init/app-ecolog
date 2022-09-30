@@ -55,12 +55,26 @@ https://www.behance.net/gallery/153524985/Waste-Recycling-Sustainability-APP-Web
 [x] - mudar nome do app
 [x] - gerar apk/aab
 [x] - subir na playstory
+[x] - ajustar variaveis de ambiente android
+[x] - gerar coverage dos testes
 
 ## Realease 0.2
 
+[] - configurar constants [testeId, colors, fonts]J
 [] - configurar redux
 [] - pegar autorizações do usuario para pegar localização
-[] - ajustar variaveis de ambiente android
+[] - criar um action para salvar a localizacao do usuario
+[] - 1.0 fazer analise para refatorar pagina de intro anterior (app changer)
+[] - 1.1 criar paginas de intro
+[] - gerar coverage dos testes
+[] - gerar apk
+[] - subir na playstore
+
+## Realease 0.3
+
+[] - login
+[] - criar conta
+[] - recuperar conta
 [] - gerar coverage dos testes
 [] - gerar apk
 [] - subir na playstore
