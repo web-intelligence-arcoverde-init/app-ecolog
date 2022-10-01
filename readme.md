@@ -17,29 +17,86 @@
 
 ## Referencias
 
-https://www.behance.net/gallery/121581603/Urban-Impact?tracking_source=search_projects%7Crecycle%20website
-https://www.behance.net/gallery/149769377/Recycling-app-UXUI-Case-Study?tracking_source=search_projects%7Crecycle%20website
-https://www.behance.net/gallery/151236785/RecyclePal-Waste-Management-App-%28Case-Study%29?tracking_source=search_projects%7Cwaste%20collector
-https://www.behance.net/gallery/125283249/Web-Design?tracking_source=search_projects%7Crecycle%20website
+## UIKIt
+
 https://www.behance.net/gallery/128557045/Arbostar?tracking_source=search_projects%7Crecycle%20website
-https://www.behance.net/gallery/112211385/Waste-Recycling-App?tracking_source=search_projects%7Crecycle%20website
-https://www.behance.net/gallery/148540445/UXUI-Design-Reciclo?tracking_source=search_projects%7Crecycle%20website
-https://www.behance.net/gallery/109006729/VECHAI?tracking_source=search_projects%7Cwaste%20collector
 https://www.behance.net/gallery/76685945/Urban-Solid-Waste-Management-Waste-Collector-App?tracking_source=search_projects%7Cwaste%20collector
-https://www.behance.net/gallery/110650779/Recycling-Mobile-App?tracking_source=search_projects%7Cwaste%20collector
-https://www.behance.net/gallery/150509511/Waste-Recycling-Infographic?tracking_source=search_projects%7Cwaste%20collector
-https://www.behance.net/gallery/151398167/GrabTrash-Waste-Sorting-At-Home-by-AI-Mobile-App?tracking_source=search_projects%7Cwaste%20collector
+https://www.behance.net/gallery/149769377/Recycling-app-UXUI-Case-Study?tracking_source=search_projects%7Crecycle%20website
+https://dribbble.com/shots/6623273-Public-Transport-Application
+https://www.behance.net/gallery/91435697/Recyclio-The-recycle-app
+
+## ScreenHome
+
+https://farhan-fadilahtomi.medium.com/case-study-product-recycle-plastic-ui-ux-11687043cde1
+https://www.figma.com/community/file/1132052918591928695
+https://www.behance.net/gallery/149769377/Recycling-app-UXUI-Case-Study?tracking_source=search_projects%7Crecycle%20website
+
+## ConfirmationScrens
+
+https://dribbble.com/shots/14177139-Ecoloop-Recycling-App
+https://www.behance.net/gallery/112211385/Waste-Recycling-App?tracking_source=search_projects%7Crecycle%20website
+
+## ScreenHome
+
+https://www.behance.net/gallery/82245975/I-Recycle-App-Design
+https://www.behance.net/gallery/114956995/Econvivo-UXUI
+https://dribbble.com/shots/15258169-Lebacre-Mobile-App
+
+## IntroStepsScrenn
+
+https://dribbble.com/shots/11369320-Recycling-app-onboarding
+https://dribbble.com/shots/15961513-Recycle
+https://dribbble.com/shots/13942499-Onboarding-screens
+https://dribbble.com/shots/6597252-Recycle-app
+https://dribbble.com/shots/14031309-RecyclePoint-App
+https://www.behance.net/gallery/151236785/RecyclePal-Waste-Management-App-%28Case-Study%29?tracking_source=search_projects%7Cwaste%20collector
 https://www.behance.net/gallery/150931989/A-brief-Case-study-about-E-waste%28Reduce-Reuse-Donate%29?tracking_source=search_projects%7Cwaste%20collector
-https://www.behance.net/gallery/150926935/Infographics-of-Zero-Waste?tracking_source=search_projects%7Cwaste%20collector
-https://www.behance.net/gallery/139635185/Garbage-collector-case-study?tracking_source=search_projects%7Cwaste%20collector
-https://www.behance.net/gallery/135628055/PlantaGo-App-Design-Study-Case?tracking_source=search_projects%7Cwaste%20collector
-https://www.behance.net/gallery/144905799/infographic-waste-recycling?tracking_source=search_projects%7Cwaste%20collector
-https://www.behance.net/gallery/152190459/Poster-with-garbage-sorting-infographic?tracking_source=search_projects%7Cwaste%20collector
-https://www.behance.net/gallery/151885093/Waste-Collector-UIUX-Design-Website-Development?tracking_source=search_projects%7Cwaste%20website
-https://www.behance.net/gallery/111430041/Zero-Waste-Wonderland-Website?tracking_source=search_projects%7Cwaste%20website
-https://www.behance.net/gallery/117929723/Scrapless-Website-and-Mobile-App-UIUX?tracking_source=search_projects%7Cwaste%20website
+https://dribbble.com/shots/13942499-Onboarding-screens
+
+## ScreenVerificationCode
+
+https://www.behance.net/gallery/150931989/A-brief-Case-study-about-E-waste%28Reduce-Reuse-Donate%29?tracking_source=search_projects%7Cwaste%20collector
+
+## Poins
+
+https://dribbble.com/shots/18437365-Carbon-App-Team
+https://www.behance.net/gallery/151398167/GrabTrash-Waste-Sorting-At-Home-by-AI-Mobile-App?tracking_source=search_projects%7Cwaste%20collector
+https://www.behance.net/gallery/149769377/Recycling-app-UXUI-Case-Study?tracking_source=search_projects%7Crecycle%20website
+
+## Landing Page
+
+https://www.figma.com/community/file/1119412219747795262
 https://www.behance.net/gallery/138373887/Waste-Management-UIUX-Case-study?tracking_source=search_projects%7Cwaste%20website
-https://www.behance.net/gallery/153524985/Waste-Recycling-Sustainability-APP-Website?tracking_source=search_projects%7Cwaste%20website
+
+## Modal quando clicar em cima de um ponto de coleta
+
+https://www.behance.net/gallery/135628055/PlantaGo-App-Design-Study-Case?tracking_source=search_projects%7Cwaste%20collector
+
+## ScreenCreateCollect
+
+https://dribbble.com/shots/15961561-Recycle
+https://www.behance.net/gallery/138373887/Waste-Management-UIUX-Case-study?tracking_source=search_projects%7Cwaste%20website
+
+## ScreenMap
+
+https://dribbble.com/shots/11289483-Recycling-app
+
+## CreatePointCollect
+
+https://dribbble.com/shots/13662776-The-environmental-movement-Sobirator/attachments/5267936?mode=media
+
+## ScreenNotification
+
+https://dribbble.com/shots/14031309-RecyclePoint-App
+
+## Ideias
+
+https://dribbble.com/shots/7361685-Recycle-Race-Mobile-Game
+https://dribbble.com/shots/14002509-ReGo-Ecological-App-Concept
+
+## Projeto Web
+
+https://littlemissrobot.com/cases/an-informative-digital-solution
 
 ## Realease 0.1
 
