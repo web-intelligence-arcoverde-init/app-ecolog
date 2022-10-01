@@ -119,9 +119,12 @@ https://littlemissrobot.com/cases/an-informative-digital-solution
 
 [x] - adicionar e criar pagina com react-native-swiper
 [x] - fazer uma busca por aplicativo similares para obter referencias para o desenvolvimento
-[] - configurar redux
+[x] - configurar redux
+[x] - configurar testes do redux
+[] - definir fonte que irá ser usada no projeto
 [] - configurar constants [testeId, colors, fonts]
 [] - pegar autorizações do usuario para pegar localização
+[] - criar reducer e actions para salvar a localização do usuario
 [] - criar um action para salvar a localizacao do usuario
 [] - 1.0 fazer analise para refatorar pagina de intro anterior (app changer)
 [] - 1.1 criar paginas de intro
