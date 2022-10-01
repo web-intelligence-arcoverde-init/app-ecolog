@@ -117,9 +117,10 @@ https://littlemissrobot.com/cases/an-informative-digital-solution
 
 ## Realease 0.2
 
-[] - fazer uma busca por aplicativo similares para obter referencias para o desenvolvimento
-[] - configurar constants [testeId, colors, fonts]
+[x] - adicionar e criar pagina com react-native-swiper
+[x] - fazer uma busca por aplicativo similares para obter referencias para o desenvolvimento
 [] - configurar redux
+[] - configurar constants [testeId, colors, fonts]
 [] - pegar autorizações do usuario para pegar localização
 [] - criar um action para salvar a localizacao do usuario
 [] - 1.0 fazer analise para refatorar pagina de intro anterior (app changer)
