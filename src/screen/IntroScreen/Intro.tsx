@@ -1,6 +1,7 @@
 import {StyleSheet, Text, View} from 'react-native';
 import React, {Component} from 'react';
 import Swiper from 'react-native-swiper';
+import {useSelector} from 'react-redux';
 
 const styles = StyleSheet.create({
   wrapper: {},
@@ -30,6 +31,10 @@ const styles = StyleSheet.create({
 });
 
 export const IntroScreen = () => {
+  const example = useSelector(state => state);
+
+  console.log(example);
+
   return (
     <Swiper style={styles.wrapper} showsButtons={true}>
       <View style={styles.slide1}>
