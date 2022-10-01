@@ -117,11 +117,15 @@ https://littlemissrobot.com/cases/an-informative-digital-solution
 
 ## Realease 0.2
 
+<h1>REDUX ESTRUTURA URGENTE<h1>
+https://redux.js.org/usage/structuring-reducers/refactoring-reducer-example
+
 [x] - adicionar e criar pagina com react-native-swiper
 [x] - fazer uma busca por aplicativo similares para obter referencias para o desenvolvimento
 [x] - configurar redux
 [x] - configurar testes do redux
 [] - definir fonte que irá ser usada no projeto
+[] - criar footer de copyright
 [] - configurar constants [testeId, colors, fonts]
 [] - pegar autorizações do usuario para pegar localização
 [] - criar reducer e actions para salvar a localização do usuario
@@ -134,9 +138,18 @@ https://littlemissrobot.com/cases/an-informative-digital-solution
 
 ## Realease 0.3
 
+[] - criar input
+[] - criar validacoes dos input
+[] - adicionar biblioteca de icons
+[] - login social
+[] - ajustar logo para screen de login
 [] - login
-[] - criar conta
-[] - recuperar conta
 [] - gerar coverage dos testes
 [] - gerar apk
 [] - subir na playstore
+
+## Release 0.4
+
+[] - criar conta
+[] - recuperar conta
+[] - gerar coverage dos testes
