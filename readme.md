@@ -124,8 +124,9 @@ https://redux.js.org/usage/structuring-reducers/refactoring-reducer-example
 [x] - fazer uma busca por aplicativo similares para obter referencias para o desenvolvimento
 [x] - configurar redux
 [x] - configurar testes do redux
-[] - definir fonte que irá ser usada no projeto - ROBOTO
+[x] - definir fonte que irá ser usada no projeto - ROBOTO - (https://mehrankhandev.medium.com/ultimate-guide-to-use-custom-fonts-in-react-native-77fcdf859cf4)
 [] - usar svg (https://stackoverflow.com/questions/57306163/react-native-is-it-recommended-to-use-png-or-svg-images)
+[] - adicionar biblioteca de icons
 [] - criar footer de copyright
 [] - configurar constants [testeId, colors, fonts]
 [] - pegar autorizações do usuario para pegar localização
