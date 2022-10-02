@@ -14,6 +14,7 @@
 - https://www.npmjs.com/package/react-native-rename
 - https://derivv.com/
 - https://stackoverflow.com/questions/31489567/manually-installing-an-updated-apk-fails-with-signatures-do-not-match-the-previ
+- https://stackoverflow.com/questions/44717164/unable-to-import-svg-files-in-typescript
 
 ## Referencias
 
@@ -125,7 +126,8 @@ https://redux.js.org/usage/structuring-reducers/refactoring-reducer-example
 [x] - configurar redux
 [x] - configurar testes do redux
 [x] - definir fonte que irá ser usada no projeto - ROBOTO - (https://mehrankhandev.medium.com/ultimate-guide-to-use-custom-fonts-in-react-native-77fcdf859cf4)
-[] - usar svg (https://stackoverflow.com/questions/57306163/react-native-is-it-recommended-to-use-png-or-svg-images)
+[x] - usar svg (https://stackoverflow.com/questions/57306163/react-native-is-it-recommended-to-use-png-or-svg-images)
+[x] - ajustado types do svg
 [] - adicionar biblioteca de icons
 [] - criar footer de copyright
 [] - configurar constants [testeId, colors, fonts]
