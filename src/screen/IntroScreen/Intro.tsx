@@ -30,16 +30,16 @@ const styles = StyleSheet.create({
   },
 });
 
-export const IntroScreen = () => {
-  const example = useSelector(state => state);
+import Example from './Example';
 
-  console.log(example);
+export const IntroScreen = () => {
+  const exampleHook = useSelector(state => state);
+
+  console.log(exampleHook);
 
   return (
     <Swiper style={styles.wrapper} showsButtons={true}>
-      <View style={styles.slide1}>
-        <Text style={styles.text}>Hello Swiper</Text>
-      </View>
+      <Example />
       <View style={styles.slide2}>
         <Text style={styles.text}>Beautiful</Text>
       </View>
