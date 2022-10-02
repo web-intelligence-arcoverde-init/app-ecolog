@@ -31,6 +31,7 @@ const styles = StyleSheet.create({
 });
 
 import Example from './Example';
+import ExampleImportSvg from './ExampleImportSvg';
 
 export const IntroScreen = () => {
   const exampleHook = useSelector(state => state);
@@ -46,6 +47,7 @@ export const IntroScreen = () => {
       <View style={styles.slide3}>
         <Text style={styles.text}>And simple</Text>
       </View>
+      <ExampleImportSvg />
     </Swiper>
   );
 };
