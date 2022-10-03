@@ -16,6 +16,7 @@
 - https://stackoverflow.com/questions/31489567/manually-installing-an-updated-apk-fails-with-signatures-do-not-match-the-previ
 - https://stackoverflow.com/questions/44717164/unable-to-import-svg-files-in-typescript
 - https://stackoverflow.com/questions/69291196/unrecognized-font-family-anticon
+- https://github.com/facebook/react-native/issues/21767
 
 ## Referencias
 
