@@ -2,6 +2,8 @@ import React from 'react';
 import {View, StyleSheet} from 'react-native';
 import ExampleSvg from '../../assets/images/example.svg';
 
+import {scale} from '../../utils/';
+
 export default class SvgExample extends React.Component {
   render() {
     return (
@@ -10,7 +12,7 @@ export default class SvgExample extends React.Component {
           StyleSheet.absoluteFill,
           {alignItems: 'center', justifyContent: 'center'},
         ]}>
-        <ExampleSvg width={120} height={40} />
+        <ExampleSvg width={scale(290)} height={scale(253)} />
       </View>
     );
   }
