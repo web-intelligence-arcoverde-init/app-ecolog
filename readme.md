@@ -130,8 +130,7 @@ https://redux.js.org/usage/structuring-reducers/refactoring-reducer-example
 [x] - definir fonte que irá ser usada no projeto - ROBOTO - (https://mehrankhandev.medium.com/ultimate-guide-to-use-custom-fonts-in-react-native-77fcdf859cf4)
 [x] - usar svg (https://stackoverflow.com/questions/57306163/react-native-is-it-recommended-to-use-png-or-svg-images)
 [x] - ajustado types do svg
-[] - adicionar biblioteca de icons
-[] - criar footer de copyright
+[x] - adicionar biblioteca de icons (OBS: configurações diferentes para android/ios)
 [] - configurar constants [testeId, colors, fonts]
 [] - pegar autorizações do usuario para pegar localização
 [] - criar reducer e actions para salvar a localização do usuario
@@ -150,6 +149,7 @@ https://redux.js.org/usage/structuring-reducers/refactoring-reducer-example
 [] - login social
 [] - ajustar logo para screen de login
 [] - login
+[] - criar footer de copyright
 [] - gerar coverage dos testes
 [] - gerar apk
 [] - subir na playstore
