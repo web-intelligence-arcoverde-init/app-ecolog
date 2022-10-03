@@ -16,6 +16,7 @@
     "build:ios:hml:release": "cd ./ios && /usr/bin/xcodebuild -sdk iphoneos -configuration Hml -workspace smiles_app.xcworkspace -scheme smiles_app_hml build && /usr/bin/xcodebuild -exportArchive -archivePath output/iphoneos/Hml/archive/smiles_app.xcarchive -exportPath output/iphoneos/Hml/export -exportOptionsPlist ios/ExportOptionsHom.plist"
   },
   "dependencies": {
+    "@react-native-community/geolocation": "^3.0.1",
     "@react-navigation/native": "^6.0.13",
     "@react-navigation/native-stack": "^6.9.0",
     "@reduxjs/toolkit": "^1.8.5",

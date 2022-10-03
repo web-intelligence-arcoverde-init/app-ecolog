@@ -24,6 +24,7 @@ import Svg, {
 
 import React from 'react';
 import {View, StyleSheet} from 'react-native';
+import Geolocation from '@react-native-community/geolocation';
 
 export default class SvgExample extends React.Component {
   render() {

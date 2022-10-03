@@ -33,6 +33,7 @@ const styles = StyleSheet.create({
 import Example from './Example';
 import ExampleImportSvg from './ExampleImportSvg';
 import ExampleIcon from './ExampleIcon';
+import ExamapleLoca from './ExampleGetLocation';
 
 export const IntroScreen = () => {
   const exampleHook = useSelector(state => state);
@@ -41,6 +42,7 @@ export const IntroScreen = () => {
 
   return (
     <Swiper style={styles.wrapper} showsButtons={true}>
+      <ExamapleLoca />
       <Example />
       <View style={styles.slide2}>
         <Text style={styles.text}>Beautiful</Text>
