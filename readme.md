@@ -135,9 +135,8 @@ https://redux.js.org/usage/structuring-reducers/refactoring-reducer-example
 [x] - usar svg (https://stackoverflow.com/questions/57306163/react-native-is-it-recommended-to-use-png-or-svg-images)
 [x] - ajustado types do svg
 [x] - adicionar biblioteca de icons (OBS: configurações diferentes para android/ios)
-[] - pegar autorizações do usuario para pegar localização(https://www.youtube.com/watch?v=EZJT3aN_38g)
-[] - criar reducer e actions para salvar a localização do usuario(https://redux.js.org/usage/structuring-reducers/refactoring-reducer-example)
-[] - criar um action para salvar a localizacao do usuario(https://redux.js.org/usage/structuring-reducers/refactoring-reducer-example)
+[x] - pegar autorizações do usuario para pegar localização(https://www.youtube.com/watch?v=EZJT3aN_38g)
+[x] - criar hook para a permissão do usuario
 [] - configurar constants [uikit,testeId, colors, fonts]
 [] - 1.0 fazer analise para refatorar pagina de intro anterior (app changer)
 [] - 1.1 criar paginas de intro
