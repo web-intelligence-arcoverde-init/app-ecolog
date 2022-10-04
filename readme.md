@@ -59,6 +59,8 @@ https://dribbble.com/shots/14031309-RecyclePoint-App
 https://www.behance.net/gallery/151236785/RecyclePal-Waste-Management-App-%28Case-Study%29?tracking_source=search_projects%7Cwaste%20collector
 https://www.behance.net/gallery/150931989/A-brief-Case-study-about-E-waste%28Reduce-Reuse-Donate%29?tracking_source=search_projects%7Cwaste%20collector
 https://dribbble.com/shots/13942499-Onboarding-screens
+https://www.behance.net/gallery/54097863/Design-mobile-app-for-the-network-of-gas-stations?tracking_source=search_projects_recommended%7CRecycle%20App
+https://www.behance.net/gallery/117650901/Irpiniambiente-APP?tracking_source=search_projects_recommended%7CRecycle%20App
 
 ## ScreenVerificationCode
 
@@ -137,8 +139,8 @@ https://redux.js.org/usage/structuring-reducers/refactoring-reducer-example
 [x] - adicionar biblioteca de icons (OBS: configurações diferentes para android/ios)
 [x] - pegar autorizações do usuario para pegar localização(https://www.youtube.com/watch?v=EZJT3aN_38g)
 [x] - criar hook para a permissão do usuario
-[] - configurar constants [uikit,testeId, colors, fonts]
-[] - 1.0 fazer analise para refatorar pagina de intro anterior (app changer)
+[x] - configurar constants [uikit,testeId, colors, fonts]
+[x] - 1.0 fazer analise para refatorar pagina de intro anterior (app changer)
 [] - 1.1 criar paginas de intro
 [] - gerar coverage dos testes
 [] - gerar apk
@@ -182,3 +184,46 @@ https://redux.js.org/usage/structuring-reducers/refactoring-reducer-example
 - https://www.figma.com/community/file/1155234151969526559
 - https://www.figma.com/community/file/1149918004869805548
 - https://www.figma.com/community/file/953654976053215565
+
+## Referencias
+
+- https://www.hayleymccallumdesign.com/projects/recycle-key-mobile-app
+- https://dribbble.com/shots/17314683-Recycling-App
+- https://dribbble.com/shots/15442450-Waste-sorting-app
+- https://dribbble.com/shots/10594227-Cycleceive
+- https://www.behance.net/gallery/142123159/UX-Recycle-app?tracking_source=search_projects_recommended%7CRecycle%20App
+- https://www.behance.net/gallery/133968903/Daur-Recycle-Mobile-App-Login-Screen-UI-Design?tracking_source=search_projects_recommended%7CRecycle%20App
+- https://www.behance.net/gallery/83612449/Recicla-App?tracking_source=search_projects_recommended%7CRecycle%20App
+- https://www.behance.net/gallery/113282731/Design-UI-UX-AppGreen-Life-Recycle?tracking_source=search_projects_recommended%7CRecycle%20App
+- https://www.behance.net/gallery/119987137/GreenPal-Recycling-App-UIUX?tracking_source=search_projects_recommended%7CRecycle%20App
+- https://www.behance.net/gallery/76893391/Trash-Tracker?tracking_source=search_projects_recommended%7CRecycle%20App
+- https://www.behance.net/gallery/128042959/Green-LifeRecycle-Full-App-Mobile?tracking_source=search_projects_recommended%7CRecycle%20App
+- https://www.behance.net/gallery/125169779/weRecycle?tracking_source=search_projects_recommended%7CRecycle%20App
+- https://www.behance.net/gallery/103217319/Recicam-UX-UI-Mobile-App?tracking_source=search_projects_recommended%7CRecycle%20App
+- https://www.behance.net/gallery/117836301/SimplySort-UIUX-Case-Study-App?tracking_source=search_projects_recommended%7CRecycle%20App
+- https://www.behance.net/gallery/110916109/Reciclapp-UXUI-Design?tracking_source=search_projects_recommended%7CRecycle%20App
+- https://www.behance.net/gallery/131211685/ReCiclAR-Proyecto-Final-UXUI?tracking_source=search_projects_recommended%7CRecycle%20App
+- https://www.behance.net/gallery/150809297/mobilnoe-prilozhenie-B2B-dostavki?tracking_source=search_projects_recommended%7CRecycle%20App
+- https://www.behance.net/gallery/142656539/Plasticycle?tracking_source=search_projects_recommended%7CRecycle%20App
+- https://www.behance.net/gallery/131520647/App-Branding-Recircle?tracking_source=search_projects_recommended%7CRecycle%20App
+- https://www.figma.com/file/MhAn1RaHWXI34gnfCGHI9g/Landing-page-Beland?node-id=89%3A564
+- https://www.behance.net/gallery/101374017/Waste-recycling-App?tracking_source=search_projects_recommended%7CRecycle%20App
+- https://www.behance.net/gallery/107236171/Waste-Management-App?tracking_source=search_projects_recommended%7CRecycle%20App
+- https://www.behance.net/gallery/97571537/Recyclin?tracking_source=search_projects_recommended%7CRecycle%20App
+- https://www.behance.net/gallery/114172279/Binify-Recycling-Service-App?tracking_source=search_projects_recommended%7CRecycle%20App
+- https://www.behance.net/gallery/131821583/Recycle-APP-Design-Concept?tracking_source=search_projects_recommended%7CRecycle%20App
+- https://www.behance.net/gallery/122286283/Reuse-Reduce-Recycle?tracking_source=search_projects_recommended%7CRecycle%20App
+- https://www.behance.net/gallery/123778225/Reciket-Diseno-UXUI?tracking_source=search_projects_recommended%7CRecycle%20App
+- https://www.behance.net/gallery/81303579/Branding-Mobile-App-Rupilah-Waste-Management?tracking_source=search_projects_recommended%7CRecycle%20App
+- https://www.behance.net/gallery/149769377/Recycling-app-UXUI-Case-Study?tracking_source=search_projects_recommended%7CRecycle%20App
+- https://www.behance.net/gallery/143875329/Rewaste?tracking_source=search_projects_recommended%7CRecycle%20App
+- https://www.behance.net/gallery/152082775/App-Recircular-Diseno-UX-UI?tracking_source=search_projects_recommended%7CRecycle%20App
+- https://www.behance.net/gallery/125047731/GoGreen-UXUI-Design?tracking_source=search_projects_recommended%7CRecycle%20App
+- https://www.behance.net/gallery/131532877/reGREEN-Waste-recycling-app-Case-study?tracking_source=search_projects_recommended%7CRecycle%20App
+- https://www.behance.net/gallery/152314477/Compostapp-design-uxui?tracking_source=search_projects_recommended%7CRecycle%20App
+- https://www.behance.net/gallery/112211385/Waste-Recycling-App?tracking_source=search_projects_recommended%7CRecycle%20App
+- https://www.behance.net/gallery/91350037/Recyclearn-UXUI-Design-app?tracking_source=search_projects_recommended%7CRecycle%20App
+- https://www.behance.net/gallery/147265357/UIUX-Case-Study-Recycling-App?tracking_source=search_projects_recommended%7CRecycle%20App
+- https://www.behance.net/gallery/128518403/App-Descarte-Aqui-Desafio-de-21-Dias-de-UXUI?tracking_source=search_projects_recommended%7CRecycle%20App
+- https://www.behance.net/gallery/153328891/Recycle-App?tracking_source=search_projects_recommended%7CRecycle%20App
+- https://www.behance.net/gallery/104374583/RETURE?tracking_source=search_projects_recommended%7CRecycle%20App
