@@ -1,3 +1,7 @@
+import mockRNDeviceInfo from 'react-native-device-info/jest/react-native-device-info-mock';
+
+jest.mock('react-native-device-info', () => mockRNDeviceInfo);
+
 jest.mock(
   'react-native/Libraries/Components/Touchable/TouchableOpacity',
   () => {
@@ -39,3 +43,5 @@ jest.mock(
     return MockTouchableOpacity;
   },
 );
+
+jest.mock('react-native/Libraries/EventEmitter/NativeEventEmitter');

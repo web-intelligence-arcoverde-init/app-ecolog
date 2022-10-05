@@ -3,8 +3,12 @@ import React from 'react';
 import {DotSwiper} from './DotSwiper';
 import {render} from '@testing-library/react-native';
 
-it('renders correctly Typography', () => {
-  const {getByText, debug} = render(<DotSwiper active={false} />);
-  debug;
-  expect(getByText(/child element/i)).toBeInTheDocument();
+describe('render DotSwiper', () => {
+  it('renders correctly DotSwiper disable', () => {
+    render(<DotSwiper active={false} />);
+  });
+
+  it('renders correctly DotSwiper active', () => {
+    render(<DotSwiper active={true} />);
+  });
 });
