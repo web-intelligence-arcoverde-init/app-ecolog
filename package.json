@@ -15,6 +15,9 @@
     "build:ios:prod:release": "cd ./ios && /usr/bin/xcodebuild -sdk iphoneos -configuration Prod -workspace smiles_app.xcworkspace -scheme smiles_app_prod build && /usr/bin/xcodebuild -exportArchive -archivePath output/iphoneos/Prod/archive/smiles_app.xcarchive -exportPath output/iphoneos/Prod/export -exportOptionsPlist ios/ExportOptions.plist",
     "build:ios:hml:release": "cd ./ios && /usr/bin/xcodebuild -sdk iphoneos -configuration Hml -workspace smiles_app.xcworkspace -scheme smiles_app_hml build && /usr/bin/xcodebuild -exportArchive -archivePath output/iphoneos/Hml/archive/smiles_app.xcarchive -exportPath output/iphoneos/Hml/export -exportOptionsPlist ios/ExportOptionsHom.plist"
   },
+  "resolutions": {
+    "styled-components": "^5"
+  },
   "dependencies": {
     "@react-native-community/geolocation": "^3.0.1",
     "@react-navigation/native": "^6.0.13",
@@ -36,7 +39,8 @@
     "react-native-svg-transformer": "^1.0.0",
     "react-native-swiper": "^1.6.0",
     "react-native-vector-icons": "^9.2.0",
-    "react-redux": "^8.0.4"
+    "react-redux": "^8.0.4",
+    "styled-components": "^5.3.1"
   },
   "devDependencies": {
     "@babel/core": "^7.12.9",
@@ -48,6 +52,7 @@
     "@types/latinize": "^0.2.15",
     "@types/react-native": "^0.70.0",
     "@types/react-test-renderer": "^18.0.0",
+    "@types/styled-components-react-native": "^5.1.3",
     "@typescript-eslint/eslint-plugin": "^5.37.0",
     "@typescript-eslint/parser": "^5.37.0",
     "babel-jest": "^26.6.3",

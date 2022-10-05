@@ -7,6 +7,10 @@
 
 - Quando for criar screen seguir o padrao da Intro
 
+##
+
+- https://www.youtube.com/watch?v=lg0K1UpZKlI&list=PLn1L40VzKSVJgia8TV7G_Ly22gbHvTASt&ab_channel=Coffstack
+
 ## Auxiliares
 
 - https://makeappicon.com/download/c916fd004c39448a934cf7732cbd811e
@@ -38,6 +42,14 @@ https://farhan-fadilahtomi.medium.com/case-study-product-recycle-plastic-ui-ux-1
 https://www.figma.com/community/file/1132052918591928695
 https://www.behance.net/gallery/149769377/Recycling-app-UXUI-Case-Study?tracking_source=search_projects%7Crecycle%20website
 
+## Tags
+
+gestão de resíduos
+
+## IntroStepsScrenn
+
+https://www.behance.net/gallery/54097863/Design-mobile-app-for-the-network-of-gas-stations?tracking_source=search_projects_recommended%7CRecycle%20App
+
 ## ConfirmationScrens
 
 https://dribbble.com/shots/14177139-Ecoloop-Recycling-App
@@ -48,19 +60,6 @@ https://www.behance.net/gallery/112211385/Waste-Recycling-App?tracking_source=se
 https://www.behance.net/gallery/82245975/I-Recycle-App-Design
 https://www.behance.net/gallery/114956995/Econvivo-UXUI
 https://dribbble.com/shots/15258169-Lebacre-Mobile-App
-
-## IntroStepsScrenn
-
-https://dribbble.com/shots/11369320-Recycling-app-onboarding
-https://dribbble.com/shots/15961513-Recycle
-https://dribbble.com/shots/13942499-Onboarding-screens
-https://dribbble.com/shots/6597252-Recycle-app
-https://dribbble.com/shots/14031309-RecyclePoint-App
-https://www.behance.net/gallery/151236785/RecyclePal-Waste-Management-App-%28Case-Study%29?tracking_source=search_projects%7Cwaste%20collector
-https://www.behance.net/gallery/150931989/A-brief-Case-study-about-E-waste%28Reduce-Reuse-Donate%29?tracking_source=search_projects%7Cwaste%20collector
-https://dribbble.com/shots/13942499-Onboarding-screens
-https://www.behance.net/gallery/54097863/Design-mobile-app-for-the-network-of-gas-stations?tracking_source=search_projects_recommended%7CRecycle%20App
-https://www.behance.net/gallery/117650901/Irpiniambiente-APP?tracking_source=search_projects_recommended%7CRecycle%20App
 
 ## ScreenVerificationCode
 

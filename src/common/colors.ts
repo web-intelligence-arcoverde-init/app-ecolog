@@ -4,7 +4,15 @@ const {width, height} = Dimensions.get('window');
 
 import {scale} from '../utils';
 
-export const COLORS = {
+export const COLORS: {
+  black: string;
+  white: string;
+  gray: string;
+  green: string;
+  silver: string;
+  secondaryGray: string;
+  error: string;
+} = {
   black: '#1e1f20',
   white: '#ffffff',
   gray: '#6a6a6a',

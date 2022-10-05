@@ -1,5 +1,4 @@
-import React from 'react';
-import {Label} from 'components/atoms/Label';
+import {Label} from '../../Label';
 import styled from 'styled-components/native';
 
 const Container = styled.TouchableOpacity`
@@ -8,7 +7,24 @@ const Container = styled.TouchableOpacity`
   align-items: center;
 `;
 
-const Index = ({children, onPress, color, weight, size, props}) => {
+interface TextButtonProps {
+  children: JSX.Element | JSX.Element[];
+  onPress: any;
+  color: any;
+  weight: any;
+  size: any;
+  props: any;
+  text: string;
+}
+
+export const TextButton = ({
+  children,
+  onPress = () => {},
+  color,
+  weight,
+  size,
+  props,
+}: TextButtonProps) => {
   return (
     <Container onPress={() => onPress()} {...props}>
       <Label color={color} weight={weight} size={size}>
@@ -17,5 +33,3 @@ const Index = ({children, onPress, color, weight, size, props}) => {
     </Container>
   );
 };
-
-export default Index;

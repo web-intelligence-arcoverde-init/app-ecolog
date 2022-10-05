@@ -1,5 +1,21 @@
 import styled from 'styled-components/native';
-import {COLORS} from '../../../constants/theme';
+import {COLORS} from '../../../common/colors';
+
+interface ColorsProps {
+  black?: string;
+  white?: string;
+  gray?: string;
+  green?: string;
+  silver?: string;
+  secondaryGray?: string;
+  error?: string;
+}
+
+interface LabelProps {
+  size?: string;
+  color?: ColorsProps;
+  weight?: string;
+}
 
 export const Title = styled.Text`
   font-size: ${({size}) => (size ? size : '22')}px;
@@ -13,8 +29,9 @@ export const Description = styled.Text`
   color: ${COLORS.silver};
 `;
 
-export const Label = styled.Text`
+export const Label = styled.Text<LabelProps>`
   font-size: ${({size}) => (size ? size : '14')}px;
   color: ${({color}) => (color ? `${COLORS[color]}` : `${COLORS.black}`)};
   font-weight: ${({weight}) => (weight ? `${weight}` : 'normal')};
+  font-family: 'Roboto';
 `;
