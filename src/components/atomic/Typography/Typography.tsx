@@ -1,7 +1,8 @@
-import styled from 'styled-components/native';
 import {COLORS} from '../../../common/colors';
 import React from 'react';
 import {scale} from '../../../utils';
+
+import {CustomText as Text} from './style';
 
 interface TypographyThemeProps {
   fontSize: number;
@@ -18,18 +19,25 @@ const typographyTheme = (
   };
 };
 
-export const CustomText = styled.Text`
-  font-size: ${({fontSize}) => (fontSize ? fontSize : '14')}px;
-  color: ${({color}) => (color ? `${COLORS[color]}` : `${COLORS.black}`)};
-  font-weight: ${({weight}) => (weight ? `${weight}` : 'normal')};
-  font-family: 'Roboto';
-`;
+interface ColorProps {
+  black: string;
+  white: string;
+  gray: string;
+  green: string;
+  silver: string;
+  secondaryGray: string;
+  error: string;
+}
 
 interface TypographyProps {
   children: React.ReactNode;
+  color?: ColorProps;
+  fontSize?: number;
+  lineHeight?: number;
+  weight?: string | number;
 }
 
 export const Typography = ({children}: TypographyProps) => {
-  const typography = typographyTheme(14);
-  return <CustomText {...typography}>{children}</CustomText>;
+  const typographyStyle = typographyTheme(14);
+  return <Text {...typographyStyle}>{children}</Text>;
 };

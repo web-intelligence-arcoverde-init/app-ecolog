@@ -23,30 +23,30 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">100% </span>
+                <span class="strong">0% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>7/7</span>
+                <span class='fraction'>0/7</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">50% </span>
+                <span class="strong">0% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>1/2</span>
+                <span class='fraction'>0/2</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">100% </span>
+                <span class="strong">0% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>1/1</span>
+                <span class='fraction'>0/1</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">100% </span>
+                <span class="strong">0% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>7/7</span>
+                <span class='fraction'>0/7</span>
             </div>
         
             
@@ -61,7 +61,7 @@
             </div>
         </template>
     </div>
-    <div class='status-line high'></div>
+    <div class='status-line low'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -96,24 +96,24 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">5x</span>
-<span class="cline-any cline-yes">5x</span>
-<span class="cline-any cline-yes">5x</span>
-<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -125,24 +125,24 @@
 import {COLORS} from '../../../../common/colors';
 import {scale} from '../../../../utils';
 &nbsp;
-export const HEIGHT_BUTTON = scale(48);
-export const BORDER_RADIUS_BUTTON = scale(14);
-export const FONT_SIZE_TEXT_BUTTON = scale(14);
-export const LINE_HEIGHT_TEXT_BUTTON = scale(14);
+export const HEIGHT_BUTTON = <span class="cstat-no" title="statement not covered" >scale(48);</span>
+export const BORDER_RADIUS_BUTTON = <span class="cstat-no" title="statement not covered" >scale(14);</span>
+export const FONT_SIZE_TEXT_BUTTON = <span class="cstat-no" title="statement not covered" >scale(14);</span>
+export const LINE_HEIGHT_TEXT_BUTTON = <span class="cstat-no" title="statement not covered" >scale(14);</span>
 &nbsp;
 interface ButtonProps {}
 &nbsp;
-export const Button = styled.TouchableOpacity`
+export const Button = <span class="cstat-no" title="statement not covered" >styled.TouchableOpacity`</span>
   width: 100%;
   height: ${HEIGHT_BUTTON}px;
-  background-color: ${({background}) =&gt;
-    background ? <span class="branch-0 cbranch-no" title="branch not covered" >`${COLORS[background]}` </span>: `${COLORS.green}`};
+  background-color: ${<span class="fstat-no" title="function not covered" >({</span>background}) =&gt;
+<span class="cstat-no" title="statement not covered" >    background ? `${COLORS[background]}` : `${COLORS.green}`}</span>;
   border-radius: ${BORDER_RADIUS_BUTTON}px;
   justify-content: center;
   align-items: center;
 `;
 &nbsp;
-export const ButtonText = styled.Text`
+export const ButtonText = <span class="cstat-no" title="statement not covered" >styled.Text`</span>
   font-family: 'Roboto';
   font-style: normal;
   font-weight: bold;
@@ -157,7 +157,7 @@ export const ButtonText = styled.Text`
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2022-10-05T20:19:10.125Z
+                at 2022-10-05T21:15:15.048Z
             </div>
         <script src="../../../../../prettify.js"></script>
         <script>
