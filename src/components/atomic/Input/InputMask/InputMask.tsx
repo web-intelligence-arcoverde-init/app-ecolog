@@ -3,7 +3,7 @@ import {TextInputMask} from 'react-native-masked-text';
 import {TextError} from '../Default/style';
 
 import styled from 'styled-components/native';
-import {COLORS} from '../../../../constants';
+import {COLORS} from '../../../../common/colors';
 
 export const Container = styled.View`
   width: 100%;
@@ -25,18 +25,17 @@ export const InputMask = ({
   secureTextEntry,
   error,
   ...inputProps
-}) => {
+}: any) => {
   return (
     <Container>
       <TextInputMask
         style={{
           width: '100%',
           height: '100%',
-          placeholderTextColor: `${COLORS.silver}`,
           color: `#6C6C80`,
         }}
         placeholder={text}
-        type={type}
+        type={'cel-phone'}
         secureTextEntry={secureTextEntry}
         {...inputProps}
       />

@@ -1,6 +1,6 @@
 import React from 'react';
 import {Input, Container, TextError} from './style';
-import {COLORS} from '../../../../constants';
+import {COLORS} from '../../../../common/colors';
 
 export const DefaultInput = ({text, secureTextEntry, error, ...inputProps}) => {
   return (

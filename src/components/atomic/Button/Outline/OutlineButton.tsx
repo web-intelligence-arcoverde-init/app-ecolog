@@ -7,7 +7,7 @@ import {
   BORDER_RADIUS_BUTTON,
   FONT_SIZE_TEXT_BUTTON,
   LINE_HEIGHT_TEXT_BUTTON,
-} from '../Contained/style';
+} from '../Container/style';
 
 const Container = styled.TouchableOpacity`
   width: 100%;

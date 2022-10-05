@@ -1,8 +1,8 @@
 import React from 'react';
 
 import {StyledContainer} from '../../atomic/Container';
-import ButtonContained from '../../atomic/Button/Contained/ContainerButton';
-import ButtonOutlined from '../../atomic/Button/Outline/OutlineButton';
+import {ButtonContainer} from '../../atomic/Button/Container/ContainerButton';
+import {OutlineButton} from '../../atomic/Button/Outline/OutlineButton';
 
 export const FooterIntroScreen = () => {
   return (
@@ -12,10 +12,10 @@ export const FooterIntroScreen = () => {
       justify="space-around"
       height="20">
       <StyledContainer width="40">
-        <ButtonOutlined weight="bold">Pular</ButtonOutlined>
+        <OutlineButton weight="bold">Pular</OutlineButton>
       </StyledContainer>
       <StyledContainer width="40">
-        <ButtonContained>Proximo</ButtonContained>
+        <ButtonContainer>Proximo</ButtonContainer>
       </StyledContainer>
     </StyledContainer>
   );

@@ -23,30 +23,30 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>0/9</span>
+                <span class='fraction'>9/9</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">50% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>0/8</span>
+                <span class='fraction'>4/8</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>0/5</span>
+                <span class='fraction'>5/5</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>0/9</span>
+                <span class='fraction'>9/9</span>
             </div>
         
             
@@ -61,7 +61,7 @@
             </div>
         </template>
     </div>
-    <div class='status-line low'></div>
+    <div class='status-line high'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -108,30 +108,30 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">5x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import styled from 'styled-components/native';
 import {COLORS} from '../../../common/colors';
@@ -143,20 +143,20 @@ interface TypographyThemeProps {
   fontColor?: string;
 }
 &nbsp;
-const typographyTheme = <span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >(</span></span>
+const typographyTheme = (
   fontSize: number,
   fontColor?: string,
 ): TypographyThemeProps =&gt; {
-<span class="cstat-no" title="statement not covered" >  return {</span>
+  return {
     fontSize: scale(fontSize),
-    fontColor: fontColor ? COLORS[fontColor] : COLORS.black,
+    fontColor: fontColor ? <span class="branch-0 cbranch-no" title="branch not covered" >COLORS[fontColor] </span>: COLORS.black,
   };
 };
 &nbsp;
-export const CustomText = <span class="cstat-no" title="statement not covered" >styled.Text`</span>
-  font-size: ${<span class="fstat-no" title="function not covered" >({</span>fontSize}) =&gt; (<span class="cstat-no" title="statement not covered" >fontSize ? fontSize : '14')</span>}px;
-  color: ${<span class="fstat-no" title="function not covered" >({</span>color}) =&gt; (<span class="cstat-no" title="statement not covered" >color ? `${COLORS[color]}` : `${COLORS.black}`)</span>};
-  font-weight: ${<span class="fstat-no" title="function not covered" >({</span>weight}) =&gt; (<span class="cstat-no" title="statement not covered" >weight ? `${weight}` : 'normal')</span>};
+export const CustomText = styled.Text`
+  font-size: ${({fontSize}) =&gt; (fontSize ? fontSize : <span class="branch-1 cbranch-no" title="branch not covered" >'14')</span>}px;
+  color: ${({color}) =&gt; (color ? <span class="branch-0 cbranch-no" title="branch not covered" >`${COLORS[color]}` </span>: `${COLORS.black}`)};
+  font-weight: ${({weight}) =&gt; (weight ? <span class="branch-0 cbranch-no" title="branch not covered" >`${weight}` </span>: 'normal')};
   font-family: 'Roboto';
 `;
 &nbsp;
@@ -164,9 +164,9 @@ interface TypographyProps {
   children: React.ReactNode;
 }
 &nbsp;
-export const Typography = <span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >({</span>children}: TypographyProps) =&gt; {</span>
-  const typography = <span class="cstat-no" title="statement not covered" >typographyTheme(14);</span>
-<span class="cstat-no" title="statement not covered" >  return &lt;CustomText {...typography}&gt;{children}&lt;/CustomText&gt;;</span>
+export const Typography = ({children}: TypographyProps) =&gt; {
+  const typography = typographyTheme(14);
+  return &lt;CustomText {...typography}&gt;{children}&lt;/CustomText&gt;;
 };
 &nbsp;</pre></td></tr></table></pre>
 
@@ -175,7 +175,7 @@ export const Typography = <span class="cstat-no" title="statement not covered" >
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2022-10-05T19:59:23.473Z
+                at 2022-10-05T20:19:10.125Z
             </div>
         <script src="../../../../prettify.js"></script>
         <script>

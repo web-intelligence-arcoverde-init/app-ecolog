@@ -1,7 +1,7 @@
 import React from 'react';
 import {Button, ButtonText} from './style';
 
-const Index = ({children, onPress, background, disabled}) => {
+export const ButtonContainer = ({children, onPress, background, disabled}) => {
   return (
     <Button
       onPress={() => onPress()}
@@ -11,5 +11,3 @@ const Index = ({children, onPress, background, disabled}) => {
     </Button>
   );
 };
-
-export default Index;
