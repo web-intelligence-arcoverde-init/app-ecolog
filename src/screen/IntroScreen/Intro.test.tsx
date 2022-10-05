@@ -2,8 +2,10 @@ import 'react-native';
 import React from 'react';
 import {IntroScreen} from './Intro';
 
-import {renderWithProviders} from '../../store/configureStore';
+import {render} from '@testing-library/react-native';
 
 it('renders correctly', () => {
-  renderWithProviders(<IntroScreen />);
+  const {debug} = render(<IntroScreen />);
+
+  debug;
 });

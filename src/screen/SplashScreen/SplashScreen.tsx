@@ -2,7 +2,6 @@ import {StyleSheet, View} from 'react-native';
 import Lottie from 'lottie-react-native';
 
 import RecycleAnimation from '../../assets/animations/recycle.json';
-import {useEffect, useRef, useState} from 'react';
 
 export const SplashScreen = ({navigation}) => {
   const redirect = () => {

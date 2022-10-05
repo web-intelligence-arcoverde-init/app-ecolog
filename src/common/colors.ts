@@ -4,15 +4,7 @@ const {width, height} = Dimensions.get('window');
 
 import {scale} from '../utils';
 
-export const COLORS: {
-  black: string;
-  white: string;
-  gray: string;
-  green: string;
-  silver: string;
-  secondaryGray: string;
-  error: string;
-} = {
+export const COLORS = {
   black: '#1e1f20',
   white: '#ffffff',
   gray: '#6a6a6a',
@@ -43,10 +35,10 @@ export const SIZES = {
 };
 
 export const FONTS = {
-  h1: {fontFamily: 'Roboto-Black', fontSize: SIZES.h1, lineHeight: 36},
-  h2: {fontFamily: 'Roboto-Bold', fontSize: SIZES.h2, lineHeight: 30},
-  h3: {fontFamily: 'Roboto-Bold', fontSize: SIZES.h3, lineHeight: 22},
-  h4: {fontFamily: 'Roboto-Bold', fontSize: SIZES.h4, lineHeight: 22},
+  h1: {fontFamily: 'Roboto-Black', fontSize: SIZES.h1, lineHeight: scale(36)},
+  h2: {fontFamily: 'Roboto-Bold', fontSize: SIZES.h2, lineHeight: scale(30)},
+  h3: {fontFamily: 'Roboto-Bold', fontSize: SIZES.h3, lineHeight: scale(22)},
+  h4: {fontFamily: 'Roboto-Bold', fontSize: SIZES.h4, lineHeight: scale(22)},
 
   body1: {fontFamily: 'Roboto-Regular', fontSize: SIZES.body1, lineHeight: 22},
   body2: {fontFamily: 'Roboto-Bold', fontSize: SIZES.body2, lineHeight: 22},

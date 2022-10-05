@@ -26,7 +26,7 @@ export const CustomText = styled.Text`
 `;
 
 interface TypographyProps {
-  children?: React.ReactNode;
+  children: React.ReactNode;
 }
 
 export const Typography = ({children}: TypographyProps) => {

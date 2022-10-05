@@ -1,8 +1,8 @@
 import React from 'react';
 
 import {StyledContainer} from '../../atomic/Container';
-import ButtonContained from '../../atomic/Button/Contained';
-import ButtonOutlined from '../../atomic/Button/Outline';
+import ButtonContained from '../../atomic/Button/Contained/ContainerButton';
+import ButtonOutlined from '../../atomic/Button/Outline/OutlineButton';
 
 export const FooterIntroScreen = () => {
   return (
