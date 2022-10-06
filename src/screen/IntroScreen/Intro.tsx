@@ -18,7 +18,9 @@ export const IntroScreen = () => {
         dot={<DotSwiper />}
         activeDot={<DotSwiper active />}>
         <Container align="center" justify="center">
-          <Typography>Beautiful</Typography>
+          <Typography color="green" variant="button">
+            Ecolog
+          </Typography>
           <Typography>Beautiful</Typography>
         </Container>
         <Container align="center" justify="center">

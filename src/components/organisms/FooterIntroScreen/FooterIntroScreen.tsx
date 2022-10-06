@@ -11,10 +11,10 @@ export const FooterIntroScreen = () => {
       align="center"
       justify="space-around"
       height="20">
-      <StyledContainer width="40">
-        <OutlineButton weight="bold">Pular</OutlineButton>
+      <StyledContainer width="45">
+        <OutlineButton>Pular</OutlineButton>
       </StyledContainer>
-      <StyledContainer width="40">
+      <StyledContainer width="45">
         <ButtonContainer>Proximo</ButtonContainer>
       </StyledContainer>
     </StyledContainer>
