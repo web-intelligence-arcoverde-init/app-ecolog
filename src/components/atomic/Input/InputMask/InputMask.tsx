@@ -1,6 +1,5 @@
 import React from 'react';
 import {TextInputMask} from 'react-native-masked-text';
-import {TextError} from '../Default/style';
 
 import styled from 'styled-components/native';
 import {COLORS} from '../../../../common/colors';
@@ -39,7 +38,6 @@ export const InputMask = ({
         secureTextEntry={secureTextEntry}
         {...inputProps}
       />
-      {!!error && <TextError>{error.message}</TextError>}
     </Container>
   );
 };
