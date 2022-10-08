@@ -2,8 +2,11 @@ export const COLORS: any = {
   black: '#1e1f20',
   white: '#ffffff',
   gray: '#6a6a6a',
-  green: '#34cb79',
+  green: '#2EB66C',
   silver: '#aaaeb3',
-  secondaryGray: '#f0f0f5',
+  secondaryGray: '#d8d8dc',
+
+  'gray-500': '#c2c2c6',
+
   error: '#e15848',
 };

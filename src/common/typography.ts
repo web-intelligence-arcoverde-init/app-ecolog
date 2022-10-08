@@ -10,8 +10,9 @@ export const TypographyStyle = {
     fontSize: scale(32),
     fontWight: 700,
     lineHeight: scale(40),
-    fontFamily: FONTS.regular,
+    fontFamily: FONTS.bold,
   },
+
   h2: {
     fontSize: scale(24),
     fontWight: scale(700),
@@ -41,7 +42,7 @@ export const TypographyStyle = {
     fontSize: scale(16),
     fontWight: scale(500),
     lineHeight: scale(16),
-    fontFamily: FONTS.medium,
+    fontFamily: FONTS.regular,
   },
 
   button: {

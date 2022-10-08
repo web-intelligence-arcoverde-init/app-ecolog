@@ -9,6 +9,7 @@ interface StyleTypographyProps {
   weight?: string | number;
   fontFamily?: string;
   lineHeight?: number;
+  textAlign?: string;
 }
 
 export const CustomText = styled.Text<StyleTypographyProps>`
@@ -18,4 +19,6 @@ export const CustomText = styled.Text<StyleTypographyProps>`
   letter-spacing: 1px;
   font-family: ${({fontFamily}) =>
     fontFamily ? `${fontFamily}` : 'Roboto-Regular'};
+
+  text-align: ${({textAlign}) => (textAlign ? `${textAlign}` : 'auto')};
 `;

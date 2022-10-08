@@ -17,8 +17,8 @@
 [] - viagem recife
 [] - viagem maceio
 [] - Sheyna
-[] - nubank
 [] - c6
 [] - Pai
 [] - Tia Rosangela
 [] - Tia Roseneide
+[] - nubank
