@@ -8,10 +8,12 @@ export const LayoutFormContainer = ({children}: any) => {
       style={{
         flex: 1,
         backgroundColor: '#fff',
+        flexDirection: 'column',
+        display: 'flex',
       }}
       keyboardVerticalOffset={scale(-210)}
       behavior={'padding'}>
-      <ScrollView style={{padding: scale(10)}}>{children}</ScrollView>
+      <ScrollView style={{padding: scale(16)}}>{children}</ScrollView>
     </KeyboardAvoidingView>
   );
 };

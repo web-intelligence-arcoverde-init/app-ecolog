@@ -9,7 +9,7 @@ export const Container = styled.View`
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 56px;
+  height: 48px;
   background: ${COLORS.secondaryGray};
   color: ${COLORS.silver};
   border-radius: 8px;

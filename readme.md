@@ -47,10 +47,6 @@ https://www.behance.net/gallery/149769377/Recycling-app-UXUI-Case-Study?tracking
 
 gestão de resíduos
 
-## IntroStepsScrenn
-
-https://www.behance.net/gallery/54097863/Design-mobile-app-for-the-network-of-gas-stations?tracking_source=search_projects_recommended%7CRecycle%20App
-
 ## ConfirmationScrens
 
 https://dribbble.com/shots/14177139-Ecoloop-Recycling-App
@@ -141,10 +137,7 @@ https://redux.js.org/usage/structuring-reducers/refactoring-reducer-example
 [x] - criar hook para a permissão do usuario
 [x] - configurar constants [uikit,testeId, colors, fonts]
 [x] - 1.0 fazer analise para refatorar pagina de intro anterior (app changer)
-[] - 1.1 criar paginas de intro
-[] - gerar coverage dos testes
-[] - gerar apk
-[] - subir na playstore
+[x] - 1.1 criar paginas de intro
 
 ## Realease 0.3
 
@@ -227,3 +220,5 @@ https://redux.js.org/usage/structuring-reducers/refactoring-reducer-example
 - https://www.behance.net/gallery/128518403/App-Descarte-Aqui-Desafio-de-21-Dias-de-UXUI?tracking_source=search_projects_recommended%7CRecycle%20App
 - https://www.behance.net/gallery/153328891/Recycle-App?tracking_source=search_projects_recommended%7CRecycle%20App
 - https://www.behance.net/gallery/104374583/RETURE?tracking_source=search_projects_recommended%7CRecycle%20App
+- https://www.behance.net/gallery/152235373/Nature-App-Design?tracking_source=search_projects%7Cgreen+app
+- https://www.behance.net/gallery/151867379/Pillset-Pill-reminder-app?tracking_source=search_projects%7Cgreen+app

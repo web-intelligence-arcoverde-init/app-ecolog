@@ -3,16 +3,16 @@ import {COLORS} from '../../../../common/colors';
 
 export const Container = styled.View`
   width: 100%;
+  height: 58px;
   display: flex;
-  flex-direction: column;
-  align-items: flex-end;
+  flex-direction: row;
 `;
 
 export const Input = styled.TextInput`
   width: 100%;
-  height: 56px;
+  height: 58px;
   background: ${COLORS.secondaryGray};
   color: #6c6c80;
-  border-radius: 8px;
-  padding-left: 16px;
+  border-radius: 6px;
+  padding-left: 20px;
 `;
