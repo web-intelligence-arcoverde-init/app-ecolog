@@ -222,3 +222,45 @@ https://redux.js.org/usage/structuring-reducers/refactoring-reducer-example
 - https://www.behance.net/gallery/104374583/RETURE?tracking_source=search_projects_recommended%7CRecycle%20App
 - https://www.behance.net/gallery/152235373/Nature-App-Design?tracking_source=search_projects%7Cgreen+app
 - https://www.behance.net/gallery/151867379/Pillset-Pill-reminder-app?tracking_source=search_projects%7Cgreen+app
+
+## UI
+
+- https://www.instagram.com/p/Ch8CbMHOWgC/
+- https://www.instagram.com/p/B-ertdughmE/
+- https://www.instagram.com/p/B-zSgjogwEs/
+- https://www.instagram.com/p/B_DfLb-AAvM/
+
+## Dicas para ui kit
+
+- Typography(https://www.instagram.com/p/CjkopeyvxMY/)
+- Imagens(https://www.instagram.com/p/CBa2OtLAAEZ/)
+- Telas(https://www.instagram.com/p/CB0j_h9gZ6z/)
+- Cores (https://www.instagram.com/p/CCV3FVbgFxi/)
+- Cores(https://www.instagram.com/p/CEjaG_4gU0J/)
+- Ajustes(https://www.instagram.com/p/CCtPSGwgWhG/)
+- Form (https://www.instagram.com/p/CDWPy2EAfdY/)
+
+## MVP
+
+- https://www.instagram.com/p/B9ha_tCBywl/
+- https://www.instagram.com/p/CAgFjZ0BVxI/
+- https://www.instagram.com/p/CA2m1SThCz1/
+- https://www.instagram.com/p/CB6MtPOnSm3/
+- https://www.instagram.com/p/CCBRq1Gg3Hz/
+- https://www.instagram.com/p/CB_hDatjf3o/
+- https://www.instagram.com/p/CDJmYNngns5/
+- https://www.instagram.com/p/CDOq4gLge35/
+- https://www.instagram.com/p/CDOq4gLge35/
+- https://www.instagram.com/p/CDUtSjOAot_/
+- https://www.instagram.com/p/CD1JsQYgi67/
+- https://www.instagram.com/p/CEKHPi0guo0/
+- https://www.instagram.com/p/CEPC-EZApWv/
+
+## Ajuda
+
+https://www.instagram.com/p/CD0jecopuXS/
+https://www.instagram.com/p/CFFSma2gdFw/
+https://www.instagram.com/p/CFHo1q1ASdx/
+https://www.instagram.com/p/CFSLXZpA42A/
+https://www.instagram.com/p/CFuYU01Fmip/
+https://www.instagram.com/p/CGsOyYUg7yU/

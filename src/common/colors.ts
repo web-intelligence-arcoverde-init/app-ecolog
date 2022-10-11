@@ -2,7 +2,7 @@ export const COLORS: any = {
   black: '#1e1f20',
   white: '#ffffff',
   gray: '#6a6a6a',
-  green: '#2EB66C',
+  green: '#2aa964',
   silver: '#aaaeb3',
   secondaryGray: '#d8d8dc',
 

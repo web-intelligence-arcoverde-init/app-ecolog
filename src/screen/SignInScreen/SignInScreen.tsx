@@ -6,7 +6,7 @@ import {
   StyledContainer,
 } from '../../components';
 
-import {ImageBackground} from 'react-native';
+import {ImageBackground, TouchableOpacity} from 'react-native';
 
 import {messages, scale} from '../../utils';
 
@@ -57,7 +57,32 @@ export const SignInScreen = () => {
         }}
       />
       <StyledContainer color="transparent">
-        <Typography>Ecolog</Typography>
+        <StyledContainer
+          color="transparent"
+          height={90}
+          align="center"
+          justify="center">
+          <Typography color="white">Ecolog</Typography>
+        </StyledContainer>
+        <View style={{marginTop: 20}} />
+        <StyledContainer height={80}>
+          <Typography variant="h2">Entrar</Typography>
+          <View style={{marginTop: 20}} />
+          <Input />
+          <View style={{marginTop: 20}} />
+          <Input />
+          <View style={{marginTop: 20}} />
+          <Button color="white">Entrar</Button>
+        </StyledContainer>
+        <StyledContainer height={20} align="center" justify="center">
+          <TouchableOpacity>
+            <GoogleIcon style={{height: 48}} />
+          </TouchableOpacity>
+          <View style={{marginTop: 10}} />
+          <TouchableOpacity>
+            <FacebookIcon />
+          </TouchableOpacity>
+        </StyledContainer>
       </StyledContainer>
     </LayoutFormContainer>
   );
