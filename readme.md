@@ -21,6 +21,7 @@
 - https://stackoverflow.com/questions/44717164/unable-to-import-svg-files-in-typescript
 - https://stackoverflow.com/questions/69291196/unrecognized-font-family-anticon
 - https://github.com/facebook/react-native/issues/21767
+- https://stackoverflow.com/questions/57303535/react-native-swiper-next-previous-button-event
 
 ## Desenvolver na web RN
 

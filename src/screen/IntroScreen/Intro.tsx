@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useRef} from 'react';
 import Swiper from 'react-native-swiper';
 
 import {DotSwiper} from '../../components/atomic/DotSwiper/DotSwiper';
@@ -11,43 +11,41 @@ import Step0 from '../../assets/images/step0.png';
 import Step1 from '../../assets/images/step1.png';
 import Step2 from '../../assets/images/step2.png';
 
-import {Intro} from './Step03';
+export const IntroScreen = ({navigation}: any) => {
+  const onChangeRoute = () => {
+    navigation.navigate('IntroOptionScreen');
+  };
 
-import {Dimensions} from 'react-native';
-
-const {width} = Dimensions.get('window');
-
-export const IntroScreen = () => {
   return (
     <>
       <Swiper
         showsButtons={VISIBLE_ARROWS}
         dot={<DotSwiper />}
         activeDot={<DotSwiper active />}>
-        <Container align="center" justify="center">
+        <Container align="center" justify="center" padding={10}>
           <LayoutSwiperContainer
             src={Step0}
-            title="Ecolog"
-            description="Sustentabilidade"
+            title="Ajude o meio ambiente"
+            description="Incentive seus amigos e vizinhos a descartar o lixo corretamente."
           />
         </Container>
-        <Container align="center" justify="center">
+        <Container align="center" justify="center" padding={10}>
           <LayoutSwiperContainer
             src={Step1}
-            title="Ecolog"
-            description="Sustentabilidade"
+            title="É fácil"
+            description="Encontre coletores de recicláveis ​​ou pontos de coleta mais
+      próximos de sua casa"
           />
         </Container>
-        <Container align="center" justify="center">
+        <Container align="center" justify="center" padding={10}>
           <LayoutSwiperContainer
             src={Step2}
-            title="Ecolog"
-            description="Sustentabilidade"
+            title="Seja consciente"
+            description="Ajudar o meio ambiente, catadores e cooperativas cadastradas."
           />
         </Container>
-        <Intro />
       </Swiper>
-      <FooterIntroScreen />
+      <FooterIntroScreen onPress={() => onChangeRoute()} />
     </>
   );
 };

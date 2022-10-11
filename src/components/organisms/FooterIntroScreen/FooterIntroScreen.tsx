@@ -3,18 +3,21 @@ import React from 'react';
 import {StyledContainer} from '../../atomic/Container';
 import {Button} from '../../atomic/Button/Button';
 
-export const FooterIntroScreen = () => {
+interface FooterIntroScreenProps {
+  onPress?: () => void;
+}
+
+export const FooterIntroScreen = ({onPress}: FooterIntroScreenProps) => {
   return (
-    <StyledContainer
-      direction="row"
-      align="center"
-      justify="space-around"
-      height="20">
-      <StyledContainer width="45">
-        <Button outlined>Pular</Button>
-      </StyledContainer>
-      <StyledContainer width="45">
-        <Button color={'white'}>Proximo</Button>
+    <StyledContainer align="center" height="20" padding={16}>
+      <StyledContainer width={20}>
+        <Button
+          outlined
+          rightIcon
+          icon="arrowright"
+          iconColor="#000"
+          onPress={onPress}
+        />
       </StyledContainer>
     </StyledContainer>
   );
