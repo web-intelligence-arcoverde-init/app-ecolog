@@ -33,10 +33,14 @@ const schema = yup
   })
   .required();
 
-export const SignInScreen = () => {
+export const SignInScreen = ({navigation}) => {
   const {setValue, handleSubmit, errors, register} = useForm({
     resolver: yupResolver(schema),
   });
+
+  const onChangeRoute = (goTo: string) => {
+    navigation.navigate(goTo);
+  };
 
   useEffect(() => {
     register('email');
@@ -72,7 +76,9 @@ export const SignInScreen = () => {
           <View style={{marginTop: 20}} />
           <Input />
           <View style={{marginTop: 20}} />
-          <Button color="white">Entrar</Button>
+          <Button color="white" onPress={() => onChangeRoute('MapScreen')}>
+            Entrar
+          </Button>
         </StyledContainer>
         <StyledContainer height={20} align="center" justify="center">
           <TouchableOpacity>
