@@ -25,6 +25,8 @@
 - https://www.youtube.com/watch?v=jvIQQ4ID2JY
 - https://stackoverflow.com/questions/48018988/clean-react-native-project
 
+- https://github.com/gorhom/react-native-bottom-sheet/blob/cb58a8aaf90fcd0f7b497b6d1d05db60c7088fde/example/app/src/screens/advanced/FooterExample.tsx
+
 ## Desenvolver na web RN
 
 - https://codesandbox.io/s/winter-surf-ehlzbg

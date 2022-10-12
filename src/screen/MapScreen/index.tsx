@@ -1,4 +1,4 @@
-import BottomSheet from '@gorhom/bottom-sheet';
+import BottomSheet, {useBottomSheetSpringConfigs} from '@gorhom/bottom-sheet';
 import React, {useCallback, useEffect, useMemo, useRef, useState} from 'react';
 import {Platform, Image, Dimensions, View, Text} from 'react-native';
 import MapView, {
@@ -59,6 +59,24 @@ const MapViewComponent = () => {
     }
   };
 
+  const bottomSheetRef = useRef<BottomSheet>(null);
+
+  const animationConfigs = useBottomSheetSpringConfigs({
+    damping: 80,
+    overshootClamping: true,
+    restDisplacementThreshold: 0.1,
+    restSpeedThreshold: 0.1,
+    stiffness: 500,
+  });
+
+  const handleClosePress = useCallback(() => {
+    bottomSheetRef.current?.close();
+  }, []);
+
+  const handleSnapPress = useCallback(index => {
+    bottomSheetRef.current?.snapToIndex(index);
+  }, []);
+
   return (
     <>
       <MapView
@@ -87,6 +105,18 @@ const MapViewComponent = () => {
         ))}
       </MapView>
 
+      <BottomSheet
+        index={0}
+        snapPoints={['25%']}
+        ref={bottomSheetRef}
+        animateOnMount={true}
+        animationConfigs={animationConfigs}
+        enablePanDownToClose>
+        <>
+          <Text>Example</Text>
+        </>
+      </BottomSheet>
+
       {!showButtonAddPointCollect && (
         <View style={{position: 'absolute', bottom: 80, right: 18, width: 60}}>
           <Button
@@ -94,6 +124,7 @@ const MapViewComponent = () => {
             iconColor="#fff"
             rightIcon
             onPress={() => {
+              handleSnapPress(0);
               onChangeVisibilityButtonAddPointCollect();
             }}
           />
@@ -103,6 +134,4 @@ const MapViewComponent = () => {
   );
 };
 
-import {FlatListExampleScreen} from './BottomSheet';
-//MapViewComponent
 export default MapViewComponent;
