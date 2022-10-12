@@ -1,6 +1,5 @@
-import BottomSheet from '@gorhom/bottom-sheet';
-import React, {useCallback, useEffect, useMemo, useRef, useState} from 'react';
-import {Platform, Image, Dimensions, View, Text} from 'react-native';
+import React, {useState} from 'react';
+import {Platform, Image, Dimensions, View} from 'react-native';
 import MapView, {
   PROVIDER_GOOGLE,
   PROVIDER_DEFAULT,
@@ -10,7 +9,6 @@ import MapView, {
 import {MakerIcons} from '../../assets/icons/index';
 
 import {Button} from '../../components';
-
 const {width, height} = Dimensions.get('window');
 
 const ASPECT_RATIO = width / height;
@@ -103,6 +101,4 @@ const MapViewComponent = () => {
   );
 };
 
-import {FlatListExampleScreen} from './BottomSheet';
-//MapViewComponent
 export default MapViewComponent;
