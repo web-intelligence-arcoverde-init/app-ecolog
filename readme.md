@@ -22,6 +22,8 @@
 - https://stackoverflow.com/questions/69291196/unrecognized-font-family-anticon
 - https://github.com/facebook/react-native/issues/21767
 - https://stackoverflow.com/questions/57303535/react-native-swiper-next-previous-button-event
+- https://www.youtube.com/watch?v=jvIQQ4ID2JY
+- https://stackoverflow.com/questions/48018988/clean-react-native-project
 
 ## Desenvolver na web RN
 
