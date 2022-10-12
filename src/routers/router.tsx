@@ -9,6 +9,7 @@ import {SignInScreen} from '../screen/SignInScreen/SignInScreen';
 import {SignUpScreen} from '../screen/SignUpScreen/SignUpScreen';
 import {RecoveryAccountScreen} from '../screen/RecoveryAccountScreen/RecoveryAccountScreen';
 
+import MapScreen from '../screen/MapScreen';
 const Stack = createNativeStackNavigator();
 
 function App() {
@@ -26,6 +27,8 @@ function App() {
         name="RecoveryAccountScreen"
         component={RecoveryAccountScreen}
       />
+
+      <Stack.Screen name="MapScreen" component={MapScreen} />
     </Stack.Navigator>
   );
 }
