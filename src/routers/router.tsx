@@ -10,12 +10,15 @@ import {SignUpScreen} from '../screen/SignUpScreen/SignUpScreen';
 import {RecoveryAccountScreen} from '../screen/RecoveryAccountScreen/RecoveryAccountScreen';
 
 import MapScreen from '../screen/MapScreen';
+
+import CreatePointCollectScreen from '../screen/CreatePointColletScreen/ExampleStepScreen';
+
 const Stack = createNativeStackNavigator();
 
 function App() {
   return (
     <Stack.Navigator
-      initialRouteName={'MapScreen'}
+      initialRouteName={'CreatePointCollectScreen'}
       screenOptions={{headerShown: false}}>
       <Stack.Screen name="SplashScreen" component={SplashScreen} />
       <Stack.Screen name="IntroScreen" component={IntroScreen} />
@@ -29,6 +32,11 @@ function App() {
       />
 
       <Stack.Screen name="MapScreen" component={MapScreen} />
+
+      <Stack.Screen
+        name="CreatePointCollectScreen"
+        component={CreatePointCollectScreen}
+      />
     </Stack.Navigator>
   );
 }
