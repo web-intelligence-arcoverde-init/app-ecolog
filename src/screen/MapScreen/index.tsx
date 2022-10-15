@@ -17,7 +17,7 @@ const LONGITUDE = -37.033997;
 const LATITUDE_DELTA = 0.0322;
 const LONGITUDE_DELTA = LATITUDE_DELTA * ASPECT_RATIO;
 
-const MapViewComponent = () => {
+const MapViewComponent = ({navigation}) => {
   const defaultProvider =
     Platform.OS === 'ios' ? PROVIDER_DEFAULT : PROVIDER_GOOGLE;
 
