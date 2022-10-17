@@ -9,6 +9,8 @@ import {DetailRecycle} from '../../components/organisms/DetailRecycle/DetailRecy
 import {DetailTrash} from '../../components/organisms/DetailTrash/DetailTrash';
 import {DetailExampleCreatePointRecycle} from '../../components/organisms/DetailExampleCreatePointRecycle/DetailExampleCreatePointRecycle';
 
+import {changeVisibilityButtonAddNewPointCollect} from '../../store/reducer/pointCollectRecycling';
+
 const thirdIndicatorStyles = {
   stepIndicatorSize: 25,
   currentStepIndicatorSize: 30,
@@ -32,21 +34,29 @@ const thirdIndicatorStyles = {
   currentStepLabelColor: '#6E6E6E',
 };
 
+import {useAppDispatch} from '../../hooks/useReduxHooks';
+
 export const CreatePointColletScreen = ({navigation}) => {
   const [currentPage, setCurrentPage] = React.useState<number>(0);
 
   const maxNextStep = currentPage < 2;
   const minBackStep = currentPage > 0;
 
+  const dispatch = useAppDispatch();
+
   const onStepPress = () => {
     maxNextStep && setCurrentPage(currentPage + 1);
-    if (navigation) {
+    if (!maxNextStep) {
       navigation.navigate('MapScreen');
     }
   };
 
   const backStepPress = () => {
     minBackStep && setCurrentPage(currentPage - 1);
+    if (!minBackStep) {
+      dispatch(changeVisibilityButtonAddNewPointCollect());
+      navigation.navigate('MapScreen');
+    }
   };
 
   return (
@@ -78,7 +88,7 @@ export const CreatePointColletScreen = ({navigation}) => {
         <DetailExampleCreatePointRecycle />
       </Swiper>
 
-      <View style={{height: '24%'}}>
+      <View style={{height: '24%', padding: 24}}>
         <Button color="white" onPress={() => onStepPress()}>
           {maxNextStep ? 'Proximo' : 'Concluir'}
         </Button>
@@ -97,9 +107,8 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#FAFAFA',
-    padding: 24,
   },
   stepIndicator: {
-    marginTop: 40,
+    marginTop: 58,
   },
 });

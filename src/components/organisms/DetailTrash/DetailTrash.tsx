@@ -9,8 +9,8 @@ import {TrashContainerType} from '../TrashContainerType/TrashContainerType';
 
 export const DetailTrash = () => {
   return (
-    <View style={{alignContent: 'center'}}>
-      <View style={{marginTop: 58}} />
+    <View style={{alignContent: 'center', padding: 24}}>
+      <View style={{marginTop: 38}} />
 
       <Typography variant="h2">Escolha um item</Typography>
 

@@ -6,7 +6,7 @@ import MapLocation from '../../../assets/icons/mapa.png';
 
 export const DetailExampleCreatePointRecycle = () => {
   return (
-    <View style={{marginTop: 58}}>
+    <View style={{marginTop: 38, padding: 24}}>
       <Typography variant="h2">Nós informe a locazação no mapa</Typography>
       <Typography variant="button">
         Para finalizar você será redicionado para o mapa toque no lugar onde

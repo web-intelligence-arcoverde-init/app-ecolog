@@ -5,6 +5,13 @@ import MapView, {
   PROVIDER_DEFAULT,
   Marker,
 } from 'react-native-maps';
+import {useAppSelector, useAppDispatch} from '../../hooks/useReduxHooks';
+
+import {
+  createNewPointRequest,
+  changeVisibilityButtonAddNewPointCollect,
+  PointCollectRecycle,
+} from '../../store/reducer/pointCollectRecycling';
 
 import {MakerIcons} from '../../assets/icons/index';
 
@@ -21,17 +28,19 @@ const MapViewComponent = ({navigation}) => {
   const defaultProvider =
     Platform.OS === 'ios' ? PROVIDER_DEFAULT : PROVIDER_GOOGLE;
 
-  const [points, setPoints] = useState<any>([]);
+  const {points, visibleButtonAddNewPointCollect} = useAppSelector(
+    state => state.pointCollectRecycling,
+  );
 
-  const [showButtonAddPointCollect, setShowButtonAddPointCollect] =
-    useState(false);
+  const dispatch = useAppDispatch();
 
   const onChangeVisibilityButtonAddPointCollect = () => {
-    setShowButtonAddPointCollect(true);
+    dispatch(changeVisibilityButtonAddNewPointCollect());
+    navigation.navigate('CreatePointColletScreen');
   };
 
   const addNewMarker = (location: any) => {
-    if (!showButtonAddPointCollect) {
+    if (visibleButtonAddNewPointCollect) {
       return;
     } else {
       const items = [
@@ -46,14 +55,22 @@ const MapViewComponent = ({navigation}) => {
 
       let type = items[Math.floor(Math.random() * items.length)];
 
-      const newPoint = {
-        coordinate: location,
-        type,
-      };
+      const user = {name: 'Lucas'};
 
-      setPoints((oldPoins: any) => [...oldPoins, newPoint]);
+      dispatch(
+        createNewPointRequest({
+          id: points.length,
+          name: '',
+          type,
+          telphoneNumber: '87998093765',
+          datails: 'details',
+          location,
+          status: 'Aguardando',
+          user,
+        }),
+      );
 
-      setShowButtonAddPointCollect(false);
+      dispatch(changeVisibilityButtonAddNewPointCollect());
     }
   };
 
@@ -63,7 +80,8 @@ const MapViewComponent = ({navigation}) => {
         provider={defaultProvider}
         style={{flex: 1}}
         onPress={e => {
-          showButtonAddPointCollect && addNewMarker(e.nativeEvent.coordinate);
+          !visibleButtonAddNewPointCollect &&
+            addNewMarker(e.nativeEvent.coordinate);
         }}
         initialRegion={{
           latitude: LATITUDE,
@@ -72,7 +90,7 @@ const MapViewComponent = ({navigation}) => {
           longitudeDelta: LONGITUDE_DELTA,
         }}>
         {points.map((marker: any) => (
-          <Marker key={marker.key} coordinate={marker.coordinate}>
+          <Marker key={marker.key} coordinate={marker.location}>
             <Image
               source={MakerIcons[marker.type]}
               style={{
@@ -85,7 +103,7 @@ const MapViewComponent = ({navigation}) => {
         ))}
       </MapView>
 
-      {!showButtonAddPointCollect && (
+      {visibleButtonAddNewPointCollect && (
         <View style={{position: 'absolute', bottom: 80, right: 18, width: 60}}>
           <Button
             icon="plus"
