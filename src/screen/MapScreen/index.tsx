@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useCallback, useMemo, useRef, useState} from 'react';
 import {Platform, Image, Dimensions, View} from 'react-native';
 import MapView, {
   PROVIDER_GOOGLE,
@@ -10,13 +10,14 @@ import {useAppSelector, useAppDispatch} from '../../hooks/useReduxHooks';
 import {
   createNewPointRequest,
   changeVisibilityButtonAddNewPointCollect,
-  PointCollectRecycle,
 } from '../../store/reducer/pointCollectRecycling';
 
 import {MakerIcons} from '../../assets/icons/index';
 
 import {Button} from '../../components';
 const {width, height} = Dimensions.get('window');
+
+import BottomSheet, {useBottomSheetSpringConfigs} from '@gorhom/bottom-sheet';
 
 const ASPECT_RATIO = width / height;
 const LATITUDE = -8.417485;
@@ -74,6 +75,53 @@ const MapViewComponent = ({navigation}) => {
     }
   };
 
+  const bottomSheetRef = useRef<BottomSheet>(null);
+  const snapPoints = useMemo(() => ['25%', '50%', '90%'], []);
+  const animationConfigs = useBottomSheetSpringConfigs({
+    damping: 80,
+    overshootClamping: true,
+    restDisplacementThreshold: 0.1,
+    restSpeedThreshold: 0.1,
+    stiffness: 500,
+  });
+
+  const [enableContentPanningGesture, setEnableContentPanningGesture] =
+    useState(true);
+
+  const [enableHandlePanningGesture, setEnableHandlePanningGesture] =
+    useState(true);
+
+  const handleSheetChange = useCallback(index => {
+    // eslint-disable-next-line no-console
+    console.log('handleSheetChange', index);
+  }, []);
+  const handleSheetAnimate = useCallback(
+    (fromIndex: number, toIndex: number) => {
+      // eslint-disable-next-line no-console
+      console.log('handleSheetAnimate', `from ${fromIndex} to ${toIndex}`);
+    },
+    [],
+  );
+
+  const handleSnapPress = useCallback(index => {
+    bottomSheetRef.current?.snapToIndex(index);
+  }, []);
+  const handleExpandPress = useCallback(() => {
+    bottomSheetRef.current?.expand();
+  }, []);
+  const handleCollapsePress = useCallback(() => {
+    bottomSheetRef.current?.collapse();
+  }, []);
+  const handleClosePress = useCallback(() => {
+    bottomSheetRef.current?.close();
+  }, []);
+  const handleEnableContentPanningGesturePress = useCallback(() => {
+    setEnableContentPanningGesture(state => !state);
+  }, []);
+  const handleEnableHandlePanningGesturePress = useCallback(() => {
+    setEnableHandlePanningGesture(state => !state);
+  }, []);
+
   return (
     <>
       <MapView
@@ -90,7 +138,10 @@ const MapViewComponent = ({navigation}) => {
           longitudeDelta: LONGITUDE_DELTA,
         }}>
         {points.map((marker: any) => (
-          <Marker key={marker.key} coordinate={marker.location}>
+          <Marker
+            key={marker.key}
+            coordinate={marker.location}
+            onPress={() => console.log(marker)}>
             <Image
               source={MakerIcons[marker.type]}
               style={{
@@ -115,6 +166,25 @@ const MapViewComponent = ({navigation}) => {
           />
         </View>
       )}
+
+      <BottomSheet
+        ref={bottomSheetRef}
+        index={1}
+        snapPoints={snapPoints}
+        animationConfigs={animationConfigs}
+        animateOnMount={true}
+        enablePanDownToClose
+        enableContentPanningGesture={enableContentPanningGesture}
+        enableHandlePanningGesture={enableHandlePanningGesture}
+        onChange={handleSheetChange}
+        onAnimate={handleSheetAnimate}>
+        <Button
+          icon="plus"
+          iconColor="#fff"
+          rightIcon
+          onPress={() => handleClosePress()}
+        />
+      </BottomSheet>
     </>
   );
 };
