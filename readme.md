@@ -31,8 +31,14 @@
 
 ## Referencias
 
+- https://www.instagram.com/p/CfG_w-bOa4D/
+- https://www.instagram.com/p/CiAimRgvGvv/
+- https://www.instagram.com/p/Ch7Y74xO62U/
+
 ## UIKIt
 
+https://www.behance.net/gallery/135628055/PlantaGo-App-Design-Study-Case?tracking_source=search_projects%7Cwaste%20collector
+https://www.figma.com/file/fdS9Ek9HsP11YLeCUssi9K/ECO-BICI-APP-(Community)?node-id=0%3A1
 https://www.behance.net/gallery/128557045/Arbostar?tracking_source=search_projects%7Crecycle%20website
 https://www.behance.net/gallery/76685945/Urban-Solid-Waste-Management-Waste-Collector-App?tracking_source=search_projects%7Cwaste%20collector
 https://www.behance.net/gallery/149769377/Recycling-app-UXUI-Case-Study?tracking_source=search_projects%7Crecycle%20website
@@ -44,10 +50,6 @@ https://www.behance.net/gallery/91435697/Recyclio-The-recycle-app
 https://farhan-fadilahtomi.medium.com/case-study-product-recycle-plastic-ui-ux-11687043cde1
 https://www.figma.com/community/file/1132052918591928695
 https://www.behance.net/gallery/149769377/Recycling-app-UXUI-Case-Study?tracking_source=search_projects%7Crecycle%20website
-
-## Tags
-
-gestão de resíduos
 
 ## ConfirmationScrens
 

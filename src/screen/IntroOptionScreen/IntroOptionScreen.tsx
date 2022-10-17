@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import {Container, Button, StyledContainer} from '../../components';
 
 import Step3 from '../../assets/images/background-top-step-03.svg';
@@ -8,10 +8,20 @@ import Ecolog from '../../assets/images/ecolog.svg';
 import {scale} from '../../utils';
 import {View} from 'react-native';
 
+import {getUserLocation} from '../../hooks/useLocationUser';
+
 export const IntroOptionScreen = ({navigation}) => {
+  const {getCurrentPosition, position} = getUserLocation();
+
+  useEffect(() => {
+    getCurrentPosition();
+  }, []);
+
   const onChangeRoute = (goTo: string) => {
     navigation.navigate(goTo);
   };
+
+  console.log(position);
 
   return (
     <Container padding={16}>

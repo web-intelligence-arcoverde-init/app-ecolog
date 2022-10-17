@@ -3,7 +3,7 @@ import React, {useEffect, useState} from 'react';
 import Geolocation from '@react-native-community/geolocation';
 import {Alert} from 'react-native';
 
-export const useLocationUser = () => {
+export const getUserLocation = () => {
   const getCurrentPosition = () => {
     Geolocation.getCurrentPosition(
       pos => {

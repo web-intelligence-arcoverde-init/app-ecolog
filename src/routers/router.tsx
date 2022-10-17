@@ -18,7 +18,7 @@ const Stack = createNativeStackNavigator();
 function App() {
   return (
     <Stack.Navigator
-      initialRouteName={'MapScreen'}
+      initialRouteName={'SplashScreen'}
       screenOptions={{headerShown: false}}>
       <Stack.Screen name="SplashScreen" component={SplashScreen} />
       <Stack.Screen name="IntroScreen" component={IntroScreen} />

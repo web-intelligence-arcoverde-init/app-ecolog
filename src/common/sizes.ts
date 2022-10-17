@@ -15,4 +15,8 @@ export const SIZES = {
   body2: scale(22),
   body3: scale(16),
   body4: scale(14),
+
+  small: scale(16),
+  normal: scale(24),
+  large: scale(40),
 };

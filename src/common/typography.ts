@@ -7,41 +7,43 @@ export const LINE_HEIGHT_TEXT_BUTTON = scale(16);
 
 export const TypographyStyle = {
   h1: {
-    fontSize: scale(32),
+    fontSize: scale(24),
     fontWight: 700,
     lineHeight: scale(40),
     fontFamily: FONTS.bold,
   },
 
   h2: {
-    fontSize: scale(24),
+    fontSize: scale(18),
     fontWight: scale(700),
     lineHeight: scale(25),
     fontFamily: FONTS.bold,
   },
   h3: {
-    fontSize: scale(18),
+    fontSize: scale(14),
     fontWight: scale(500),
     lineHeight: scale(18),
-    fontFamily: FONTS.regular,
+    fontFamily: FONTS.bold,
   },
-  body1: {
+
+  h4: {
+    fontSize: scale(14),
+    fontWight: scale(500),
+    lineHeight: scale(18),
+    fontFamily: FONTS.bold,
+  },
+
+  body: {
     fontSize: scale(14),
     fontWight: scale(400),
     lineHeight: scale(22),
     fontFamily: FONTS.regular,
   },
-  body2: {
+
+  legend: {
     fontSize: scale(12),
     fontWight: scale(400),
-    lineHeight: scale(19),
-    fontFamily: FONTS.regular,
-  },
-
-  body3: {
-    fontSize: scale(16),
-    fontWight: scale(500),
-    lineHeight: scale(16),
+    lineHeight: scale(22),
     fontFamily: FONTS.regular,
   },
 
