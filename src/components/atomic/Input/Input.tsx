@@ -13,6 +13,7 @@ interface InputProps {
   label?: string;
   multiline?: boolean;
   numberOfLines?: number;
+  placeholder?: string;
 }
 
 export const Input = ({
@@ -22,19 +23,24 @@ export const Input = ({
   label,
   multiline,
   numberOfLines,
+  placeholder,
 }: InputProps) => {
   return (
     <>
       {label && (
-        <Typography variant="body" color="gray-900">
+        <Typography variant="body" color="black-300">
           {label}
         </Typography>
       )}
-      <Separator height={8} />
+      <Separator height={4} />
       {mask ? (
         <InputMask mask={maskType} />
       ) : (
-        <DefaultInput multiline={multiline} numberOfLines={numberOfLines} />
+        <DefaultInput
+          multiline={multiline}
+          numberOfLines={numberOfLines}
+          placeholder={placeholder}
+        />
       )}
       {!!error && <Typography variant="button">Error message</Typography>}
     </>

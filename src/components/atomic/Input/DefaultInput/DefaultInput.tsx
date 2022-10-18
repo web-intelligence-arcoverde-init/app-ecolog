@@ -23,8 +23,8 @@ export const DefaultInput = ({
         secureTextEntry={secureTextEntry}
         style={{
           backgroundColor: 'white',
-          borderRadius: 12,
-          borderWidth: onFocus && 1,
+          borderRadius: 8,
+          borderWidth: onFocus && 2,
           borderColor: onFocus ? '#a9dcc1' : '#000',
           shadowColor: onFocus ? '#a9dcc1' : '#000',
           shadowOffset: {
@@ -32,7 +32,7 @@ export const DefaultInput = ({
             height: -0,
           },
           shadowOpacity: 0.20000000149011612,
-          shadowRadius: 1,
+          shadowRadius: 2,
           justifyContent: 'center',
           alignItems: 'center',
         }}

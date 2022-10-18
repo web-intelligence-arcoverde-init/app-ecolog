@@ -30,9 +30,7 @@ export const Button = ({
   rightIcon,
 }: ButtonProps) => {
   const renderIcon = iconColor && icon;
-
   const renderLeft = renderIcon && leftIcon;
-
   const renderRight = renderIcon && rightIcon;
 
   return (

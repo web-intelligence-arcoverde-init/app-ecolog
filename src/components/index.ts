@@ -7,3 +7,4 @@ export * from './atomic/ProviderRedux/ProviderRedux';
 export * from './atomic/Typography/Typography';
 export * from './organisms/LayoutSwiperContainer/LayoutSwiperContainer';
 export * from './atomic/LayoutFormContainer/LayoutFormContainer';
+export * from './atomic/Separator/Separator';

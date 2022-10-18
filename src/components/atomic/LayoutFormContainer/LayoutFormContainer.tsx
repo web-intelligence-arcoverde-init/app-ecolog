@@ -2,19 +2,18 @@ import {KeyboardAvoidingView, ScrollView} from 'react-native';
 
 import {scale} from '../../../utils';
 
+import {COLORS} from '../../../common/';
+
 export const LayoutFormContainer = ({children}: any) => {
   return (
     <KeyboardAvoidingView
       style={{
         flex: 1,
-        backgroundColor: '#FAFAFA',
-        flexDirection: 'column',
-        display: 'flex',
-        justifyContent: 'center',
+        backgroundColor: COLORS['white-100'],
       }}
       keyboardVerticalOffset={scale(-210)}
       behavior={'padding'}>
-      <ScrollView style={{padding: scale(24)}}>{children}</ScrollView>
+      <ScrollView>{children}</ScrollView>
     </KeyboardAvoidingView>
   );
 };
