@@ -1,6 +1,6 @@
 import React from 'react';
 
-import {Typography} from '../Typography/Typography';
+import {Typography} from '../../';
 import Icon from 'react-native-vector-icons/AntDesign';
 import {Container} from './style';
 

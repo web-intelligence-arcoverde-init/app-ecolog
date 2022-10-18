@@ -18,12 +18,12 @@ export const DefaultInput = ({
         numberOfLines={numberOfLines}
         onFocus={() => setOnFocus(true)}
         onBlur={() => setOnFocus(false)}
-        placeholderTextColor={COLORS.silver}
+        placeholderTextColor={COLORS['gray-300']}
         placeholder={text}
         secureTextEntry={secureTextEntry}
         style={{
           backgroundColor: 'white',
-          borderRadius: 6,
+          borderRadius: 12,
           borderWidth: onFocus && 1,
           borderColor: onFocus ? '#a9dcc1' : '#000',
           shadowColor: onFocus ? '#a9dcc1' : '#000',

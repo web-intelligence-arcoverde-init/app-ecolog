@@ -1,7 +1,8 @@
 import React from 'react';
 import {ImageContainer, Typography, Container} from '../../';
 
-import {View} from 'react-native';
+import {Separator} from '../../atomic/Separator/Separator';
+import {FooterIntroScreen} from '../../organisms/FooterIntroScreen/FooterIntroScreen';
 
 interface LayoutSwiperContainerProps {
   src?: string;
@@ -17,14 +18,14 @@ export const LayoutSwiperContainer = ({
   return (
     <Container align="center" justify="center">
       <ImageContainer src={src} />
-      <View style={{marginTop: 32}} />
-      <Typography color="green" variant="h2">
-        {title}
-      </Typography>
-      <View style={{marginTop: 8}} />
-      <Typography variant="body3" color="gray-500" textAlign="center">
+      <Separator height={24} />
+      <Typography>{title}</Typography>
+      <Separator height={4} />
+      <Typography textAlign="center" variant="body">
         {description}
       </Typography>
+      <Separator height={74} />
+      <FooterIntroScreen />
     </Container>
   );
 };

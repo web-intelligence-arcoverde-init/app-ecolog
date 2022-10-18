@@ -9,19 +9,22 @@ import {scale} from '../../utils';
 import {View} from 'react-native';
 
 import {getUserLocation} from '../../hooks/useLocationUser';
+import {useAppSelector} from '../../hooks/useReduxHooks';
 
 export const IntroOptionScreen = ({navigation}) => {
-  const {getCurrentPosition, position} = getUserLocation();
+  const {getCurrentPosition} = getUserLocation();
 
   useEffect(() => {
     getCurrentPosition();
   }, []);
 
+  const {coordinate} = useAppSelector(state => state.user);
+
+  console.log(coordinate);
+
   const onChangeRoute = (goTo: string) => {
     navigation.navigate(goTo);
   };
-
-  console.log(position);
 
   return (
     <Container padding={16}>
@@ -41,7 +44,7 @@ export const IntroOptionScreen = ({navigation}) => {
         style={{
           width: '100%',
           position: 'absolute',
-          bottom: scale(110),
+          bottom: scale(100),
           left: scale(12),
         }}>
         <StyledContainer>

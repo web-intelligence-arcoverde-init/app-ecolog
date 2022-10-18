@@ -16,7 +16,7 @@ export const Container = styled.TouchableOpacity<ContainerTouchableProps>`
   justify-content: center;
   align-items: center;
   border: ${({outlined}) =>
-    outlined ? `1px solid ${COLORS.secondaryGray}` : 'none'};
+    outlined ? `1px solid ${COLORS['gray-300']};` : 'none'};
   border-radius: ${BORDER_RADIUS_BUTTON}px;
   background-color: ${({outlined, background}) =>
     colorBackground(outlined, background)};
@@ -24,7 +24,7 @@ export const Container = styled.TouchableOpacity<ContainerTouchableProps>`
 
 const colorBackground = (outlined: any, background: any) => {
   if (!outlined) {
-    return background ? COLORS[background] : COLORS.green;
+    return background ? COLORS[background] : COLORS['green-400'];
   }
 
   return 'transparent';

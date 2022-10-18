@@ -2,23 +2,20 @@ import React from 'react';
 
 import {StyledContainer} from '../../atomic/Container';
 import {Button} from '../../atomic/Button/Button';
+import {useNavigation} from '@react-navigation/native';
 
-interface FooterIntroScreenProps {
-  onPress?: () => void;
-}
+export const FooterIntroScreen = () => {
+  const navigation = useNavigation();
 
-export const FooterIntroScreen = ({onPress}: FooterIntroScreenProps) => {
   return (
-    <StyledContainer align="center" height="20" padding={16}>
-      <StyledContainer width={20}>
-        <Button
-          outlined
-          rightIcon
-          icon="arrowright"
-          iconColor="#000"
-          onPress={onPress}
-        />
-      </StyledContainer>
+    <StyledContainer align="center" height={10} padding={16} width={30}>
+      <Button
+        color="gree"
+        rightIcon
+        icon="arrowright"
+        iconColor="#fff"
+        onPress={() => navigation.navigate('IntroOptionScreen')}
+      />
     </StyledContainer>
   );
 };

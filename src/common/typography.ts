@@ -1,4 +1,4 @@
-import {FONTS} from './';
+import {FONTS} from './fonts';
 
 import {scale} from '../utils';
 
@@ -9,7 +9,7 @@ export const TypographyStyle = {
   h1: {
     fontSize: scale(24),
     fontWight: 700,
-    lineHeight: scale(40),
+    lineHeight: scale(24),
     fontFamily: FONTS.bold,
   },
 
@@ -36,7 +36,7 @@ export const TypographyStyle = {
   body: {
     fontSize: scale(14),
     fontWight: scale(400),
-    lineHeight: scale(22),
+    lineHeight: scale(18),
     fontFamily: FONTS.regular,
   },
 

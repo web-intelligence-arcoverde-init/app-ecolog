@@ -4,6 +4,7 @@ import {InputMask} from './InputMask/InputMask';
 import {DefaultInput} from './DefaultInput/DefaultInput';
 import {Typography} from '../Typography/Typography';
 import {View} from 'react-native';
+import {Separator} from '../Separator/Separator';
 
 interface InputProps {
   mask?: boolean;
@@ -24,8 +25,12 @@ export const Input = ({
 }: InputProps) => {
   return (
     <>
-      {label && <Typography variant="body3">{label}</Typography>}
-      <View style={{marginTop: 12}} />
+      {label && (
+        <Typography variant="body" color="gray-900">
+          {label}
+        </Typography>
+      )}
+      <Separator height={8} />
       {mask ? (
         <InputMask mask={maskType} />
       ) : (

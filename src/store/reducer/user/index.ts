@@ -1,21 +1,36 @@
 import {createSlice, PayloadAction} from '@reduxjs/toolkit';
 import type {RootState} from '../../store';
 
-// Define a type for the slice state
-interface UserState {}
+interface CoordinateState {
+  latitude: number;
+  longitude: number;
+}
 
-// Define the initial state using that type
-const initialState: UserState = {};
+interface UserState {
+  coordinate: CoordinateState;
+  loading?: boolean;
+}
 
-export const counterSlice = createSlice({
-  name: 'counter',
-  // `createSlice` will infer the state type from the `initialState` argument
+const initialState: UserState = {
+  coordinate: {
+    latitude: 0,
+    longitude: 0,
+  },
+  loading: false,
+};
+
+export const userSlice = createSlice({
+  name: 'user',
   initialState,
-  reducers: {},
+  reducers: {
+    setCoordinateUser: (state, action: PayloadAction<CoordinateState>) => {
+      state.coordinate = action.payload;
+    },
+  },
 });
 
-export const {} = counterSlice.actions;
+export const {setCoordinateUser} = userSlice.actions;
 
-export const selectCount = (state: RootState) => state.counter.value;
+export const userCoordinate = (state: RootState) => state.user.coordinate;
 
-export default counterSlice.reducer;
+export default userSlice.reducer;

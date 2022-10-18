@@ -10,10 +10,10 @@ export const Container = styled.View`
   flex-direction: column;
   width: 100%;
   height: 48px;
-  background: ${COLORS.secondaryGray};
-  color: ${COLORS.silver};
+  background: ${COLORS['gray-300']};
+  color: ${COLORS['gray-300']};
   border-radius: 8px;
-  padding-left: 16px;
+  padding: 16px;
   align-items: center;
   align-items: flex-end;
 `;

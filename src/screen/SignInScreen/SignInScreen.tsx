@@ -6,21 +6,12 @@ import {
   StyledContainer,
 } from '../../components';
 
-import {ImageBackground, TouchableOpacity} from 'react-native';
-
-import {messages, scale} from '../../utils';
+import {messages} from '../../utils';
 
 import {useForm} from 'react-hook-form';
 import {yupResolver} from '@hookform/resolvers/yup';
 import * as yup from 'yup';
 import React, {useEffect} from 'react';
-import Step3 from '../../assets/images/background-image.png';
-import Ecolog from '../../assets/images/ecolog.svg';
-
-import FacebookIcon from '../../assets/images/facebook.svg';
-
-import GoogleIcon from '../../assets/images/google.svg';
-import {View} from 'react-native';
 
 const schema = yup
   .object({
@@ -38,64 +29,49 @@ export const SignInScreen = ({navigation}) => {
     resolver: yupResolver(schema),
   });
 
-  const onChangeRoute = (goTo: string) => {
-    navigation.navigate(goTo);
-  };
-
   useEffect(() => {
     register('email');
     register('password');
   }, [register]);
 
+  const changeRoute = (router: string) => {
+    navigation.navigate(router);
+  };
+
   return (
     <LayoutFormContainer>
-      <ImageBackground
-        source={Step3}
-        resizeMode="cover"
-        style={{
-          position: 'absolute',
-          height: 600,
-          width: 600,
-          top: -300,
-          left: -100,
-        }}
-      />
-      <StyledContainer color="transparent">
-        <StyledContainer
-          color="transparent"
-          height={90}
-          align="center"
-          justify="center">
-          <Typography color="white">Ecolog</Typography>
-        </StyledContainer>
-        <View style={{marginTop: 20}} />
-        <StyledContainer height={80}>
-          <Typography variant="h2">Entrar</Typography>
-          <View style={{marginTop: 20}} />
-          <Input />
-          <View style={{marginTop: 20}} />
-          <Input />
-          <View style={{marginTop: 20}} />
-          <Button color="white" onPress={() => onChangeRoute('MapScreen')}>
-            Entrar
-          </Button>
-        </StyledContainer>
-        <StyledContainer height={20} align="center" justify="center">
-          <TouchableOpacity>
-            <GoogleIcon style={{height: 48}} />
-          </TouchableOpacity>
-          <View style={{marginTop: 10}} />
-          <TouchableOpacity>
-            <FacebookIcon />
-          </TouchableOpacity>
-        </StyledContainer>
-      </StyledContainer>
+      <Input label="Email" />
+      <Input label="Password" />
+      <Button color="white" onPress={() => changeRoute('MapScreen')}>
+        Entrar
+      </Button>
     </LayoutFormContainer>
   );
 };
 
 /*
 
+
+
+<Typography>Ecolog</Typography>
+
+      <Typography variant="h2">Entrar</Typography>
+      <View style={{marginTop: 20}} />
+      <Input />
+      <View style={{marginTop: 20}} />
+      <Input />
+      <View style={{marginTop: 20}} />
+      <Button color="white" onPress={() => onChangeRoute('MapScreen')}>
+        Entrar
+      </Button>
+
+      <TouchableOpacity>
+        <GoogleIcon style={{height: 48}} />
+      </TouchableOpacity>
+
+      <TouchableOpacity>
+        <FacebookIcon />
+      </TouchableOpacity>
 
 
   <Button color="white">Entrar</Button>

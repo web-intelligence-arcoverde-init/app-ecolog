@@ -29,11 +29,15 @@
 
 - https://codesandbox.io/s/winter-surf-ehlzbg
 
-## Referencias
+## Referencias [Melhorias]
 
 - https://www.instagram.com/p/CfG_w-bOa4D/
 - https://www.instagram.com/p/CiAimRgvGvv/
 - https://www.instagram.com/p/Ch7Y74xO62U/
+- https://www.linkedin.com/posts/muhammadomarkhan_dailyui-designchallenge-learning-activity-6985564902576799745-7Q9W?utm_source=share&utm_medium=member_desktop
+- https://www.linkedin.com/posts/fifilodesigns_uxui-tips-activity-6986910988553916416-RUUx?utm_source=share&utm_medium=member_desktop
+- https://www.linkedin.com/posts/adenike-opeyemi-iyiola-b2799a15a_dailyui-ticket-event-activity-6984175643013861376-zwN1?utm_source=share&utm_medium=member_desktop
+  https://www.linkedin.com/posts/anh-ds_ui-uidesign-dailyui-activity-6985809136533852161-oeVW?utm_source=share&utm_medium=member_desktop
 
 ## UIKIt
 

@@ -6,14 +6,15 @@ export const Container = styled.View`
   height: ${({multiline}) => (multiline ? '116px' : '58px')};
   display: flex;
   flex-direction: row;
+  border-radius: 12px;
 `;
 
 export const Input = styled.TextInput`
   width: 100%;
   height: ${({multiline}) => (multiline ? '116px' : '58px')};
-  background: ${COLORS.secondaryGray};
-  color: #6c6c80;
-  border-radius: 6px;
+  background: ${COLORS['gray-300']};
+  background-color: #fff;
+  border-radius: 12px;
   padding: 20px;
   font-size: 16px;
 `;

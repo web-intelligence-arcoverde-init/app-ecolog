@@ -1,8 +1,7 @@
-import React, {useRef} from 'react';
+import React from 'react';
 import Swiper from 'react-native-swiper';
 
 import {DotSwiper} from '../../components/atomic/DotSwiper/DotSwiper';
-import {FooterIntroScreen} from '../../components/organisms/FooterIntroScreen/FooterIntroScreen';
 
 const VISIBLE_ARROWS = false;
 
@@ -11,11 +10,7 @@ import Step0 from '../../assets/images/step0.png';
 import Step1 from '../../assets/images/step1.png';
 import Step2 from '../../assets/images/step2.png';
 
-export const IntroScreen = ({navigation}: any) => {
-  const onChangeRoute = () => {
-    navigation.navigate('IntroOptionScreen');
-  };
-
+export const IntroScreen = () => {
   return (
     <>
       <Swiper
@@ -26,7 +21,7 @@ export const IntroScreen = ({navigation}: any) => {
           <LayoutSwiperContainer
             src={Step0}
             title="Ajude o meio ambiente"
-            description="Incentive seus amigos e vizinhos a descartar o lixo corretamente."
+            description="Incentive seus amigos e vizinhos a descartar o lixo corretamente"
           />
         </Container>
         <Container align="center" justify="center" padding={10}>
@@ -41,11 +36,10 @@ export const IntroScreen = ({navigation}: any) => {
           <LayoutSwiperContainer
             src={Step2}
             title="Seja consciente"
-            description="Ajudar o meio ambiente, catadores e cooperativas cadastradas."
+            description="Ajudar o meio ambiente, catadores e cooperativas cadastradas"
           />
         </Container>
       </Swiper>
-      <FooterIntroScreen onPress={() => onChangeRoute()} />
     </>
   );
 };
