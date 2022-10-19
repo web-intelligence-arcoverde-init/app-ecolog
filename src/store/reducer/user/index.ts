@@ -4,6 +4,8 @@ import type {RootState} from '../../store';
 interface CoordinateState {
   latitude: number;
   longitude: number;
+  latitudeDelta: number;
+  longitudeDelta: number;
 }
 
 interface UserState {
@@ -15,6 +17,8 @@ const initialState: UserState = {
   coordinate: {
     latitude: 0,
     longitude: 0,
+    latitudeDelta: 0,
+    longitudeDelta: 0,
   },
   loading: false,
 };

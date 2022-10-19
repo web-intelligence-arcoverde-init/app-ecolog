@@ -95,6 +95,8 @@ const MapViewComponent = ({navigation}) => {
     bottomSheetRef.current?.snapToIndex(index);
   }, []);
 
+  const {coordinate} = useAppSelector(state => state.user);
+
   return (
     <>
       <MapView
@@ -105,12 +107,7 @@ const MapViewComponent = ({navigation}) => {
           !visibleButtonAddNewPointCollect &&
             addNewMarker(e.nativeEvent.coordinate);
         }}
-        initialRegion={{
-          latitude: LATITUDE,
-          longitude: LONGITUDE,
-          latitudeDelta: LATITUDE_DELTA,
-          longitudeDelta: LONGITUDE_DELTA,
-        }}>
+        initialRegion={coordinate}>
         {points.map((marker: any) => (
           <Marker
             key={marker.key}

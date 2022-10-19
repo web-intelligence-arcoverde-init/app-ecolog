@@ -7,17 +7,19 @@ import {
   StyledContainer,
 } from '../../components';
 
-import {messages} from '../../utils';
+import {messages, scale} from '../../utils';
 
 import {useForm} from 'react-hook-form';
 import {yupResolver} from '@hookform/resolvers/yup';
 import * as yup from 'yup';
 import React, {useEffect} from 'react';
 
-import {View, ImageBackground} from 'react-native';
+import {View, ImageBackground, TouchableOpacity} from 'react-native';
 import Step3 from '../../assets/images/background-image.png';
-import Ecolog from '../../assets/images/ecolog.svg';
 import Background from '../../assets/images/people.png';
+
+import FacebookIcon from '../../assets/images/facebook.svg';
+import GoogleIcon from '../../assets/images/google.svg';
 
 const schema = yup
   .object({
@@ -46,7 +48,7 @@ export const SignInScreen = ({navigation}) => {
 
   return (
     <LayoutFormContainer>
-      <Separator height={56} />
+      <Separator height={48} />
 
       <StyledContainer justify="center" padding={24}>
         <ImageBackground
@@ -54,10 +56,10 @@ export const SignInScreen = ({navigation}) => {
           resizeMode="cover"
           style={{
             position: 'absolute',
-            height: 600,
-            width: 600,
-            top: -210,
-            left: -100,
+            height: scale(600),
+            width: scale(600),
+            top: scale(-308),
+            left: scale(-100),
           }}
         />
 
@@ -66,15 +68,15 @@ export const SignInScreen = ({navigation}) => {
           resizeMode="cover"
           style={{
             position: 'absolute',
-            height: 180,
-            width: 300,
-            top: -10,
-            left: 40,
+            height: scale(170),
+            width: scale(260),
+            top: scale(-10),
+            left: scale(28),
             opacity: 0.6,
           }}
         />
 
-        <Separator height={114} />
+        <Separator height={90} />
         <Input label="Email" placeholder="example@gmail.com" />
         <Separator height={16} />
         <Input label="Senha" placeholder="******" />
@@ -86,35 +88,107 @@ export const SignInScreen = ({navigation}) => {
             justifyContent: 'flex-end',
             width: '100%',
           }}>
-          <Typography variant="legend" color="gray-600">
-            Recuperar senha
-          </Typography>
+          <TouchableOpacity onPress={() => {}}>
+            <Typography variant="legend" color="gray-600">
+              Recuperar senha
+            </Typography>
+          </TouchableOpacity>
         </View>
         <Separator height={16} />
         <Button color="white" onPress={() => changeRoute('MapScreen')}>
           Entrar
         </Button>
+
+        <Separator height={16} />
+
+        <View
+          style={{
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center',
+            width: '100%',
+          }}>
+          <Typography variant="legend" color="gray-700">
+            Ou
+          </Typography>
+        </View>
+
+        <Separator height={16} />
+
+        <TouchableOpacity
+          onPress={() => {}}
+          style={{
+            flexDirection: 'row',
+            backgroundColor: 'white',
+            borderRadius: 6,
+            borderWidth: 1,
+            borderColor: '#d8d8dc',
+            shadowColor: '#d8d8dc',
+            height: scale(48),
+            width: '100%',
+            shadowOffset: {
+              width: 0,
+              height: -0,
+            },
+            shadowOpacity: 0.30000000149011612,
+            shadowRadius: 1,
+            justifyContent: 'center',
+            alignItems: 'center',
+          }}>
+          <GoogleIcon />
+          <Separator width={12} />
+          <Typography variant="legend" color="gray-600">
+            Entre com Google
+          </Typography>
+        </TouchableOpacity>
+
+        <Separator height={16} />
+
+        <TouchableOpacity
+          onPress={() => {}}
+          style={{
+            flexDirection: 'row',
+            backgroundColor: 'white',
+            borderRadius: 6,
+            borderWidth: 1,
+            borderColor: '#d8d8dc',
+            shadowColor: '#d8d8dc',
+            height: scale(48),
+            width: '100%',
+            shadowOffset: {
+              width: 0,
+              height: -0,
+            },
+            shadowOpacity: 0.30000000149011612,
+            shadowRadius: 1,
+            justifyContent: 'center',
+            alignItems: 'center',
+          }}>
+          <FacebookIcon />
+          <Separator width={12} />
+          <Typography variant="legend" color="gray-600">
+            Entre com Facebook
+          </Typography>
+        </TouchableOpacity>
+        <Separator height={16} />
+
+        <View
+          style={{
+            display: 'flex',
+            flexDirection: 'row',
+            justifyContent: 'center',
+            width: '100%',
+          }}>
+          <Typography variant="legend" color="gray-600">
+            Não tem uma conta?
+          </Typography>
+          <TouchableOpacity onPress={() => {}} style={{marginLeft: 6}}>
+            <Typography variant="legend" color="green-300">
+              Inscrever-se
+            </Typography>
+          </TouchableOpacity>
+        </View>
       </StyledContainer>
     </LayoutFormContainer>
   );
 };
-
-/*
-
-
-<ImageBackground
-          source={Logo}
-          resizeMode="cover"
-          style={{
-            position: 'absolute',
-            height: 180,
-            width: 300,
-            top: -12,
-            left: 60,
-          }}
-        />
-
-        
-
-
-*/

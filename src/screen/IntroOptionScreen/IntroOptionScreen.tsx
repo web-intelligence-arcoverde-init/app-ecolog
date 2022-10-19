@@ -18,10 +18,6 @@ export const IntroOptionScreen = ({navigation}) => {
     getCurrentPosition();
   }, []);
 
-  const {coordinate} = useAppSelector(state => state.user);
-
-  console.log(coordinate);
-
   const onChangeRoute = (goTo: string) => {
     navigation.navigate(goTo);
   };
