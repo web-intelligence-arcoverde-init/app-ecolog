@@ -8,7 +8,7 @@ export const FooterIntroScreen = () => {
   const navigation = useNavigation();
 
   return (
-    <StyledContainer align="center" height={10} padding={16} width={30}>
+    <StyledContainer align="center" height={1} padding={16} width={26}>
       <Button
         color="gree"
         rightIcon
