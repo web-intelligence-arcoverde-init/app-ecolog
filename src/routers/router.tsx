@@ -9,7 +9,7 @@ import {SignInScreen} from '../screen/SignInScreen/SignInScreen';
 import {SignUpScreen} from '../screen/SignUpScreen/SignUpScreen';
 import {RecoveryAccountScreen} from '../screen/RecoveryAccountScreen/RecoveryAccountScreen';
 
-import MapScreen from '../screen/MapScreen';
+import {MapScreen} from '../screen/MapScreen/MapScreen';
 
 import {CreatePointColletScreen} from '../screen/CreatePointColletScreen/CreatePointColletScreen';
 
