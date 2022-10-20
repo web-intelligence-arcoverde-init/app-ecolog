@@ -1,15 +1,17 @@
 import React, {useEffect} from 'react';
-import {Container, Button, StyledContainer} from '../../components';
+import {Container, Button} from '../../components';
 
-import Step3 from '../../assets/images/background-top-step-03.svg';
 import StepUsers3 from '../../assets/images/users.svg';
-import StepOrnaments3 from '../../assets/images/ornaments-step03.svg';
+import OrnamentsImage from '../../assets/images/ornaments-step03.svg';
 import Ecolog from '../../assets/images/ecolog.svg';
 import {scale} from '../../utils';
-import {View} from 'react-native';
+import {ImageBackground} from 'react-native';
+
+import waveImageBackground from '../../assets/images/background-image.png';
+
+import {Separator} from '../../components/atomic/Separator/Separator';
 
 import {getUserLocation} from '../../hooks/useLocationUser';
-import {useAppSelector} from '../../hooks/useReduxHooks';
 
 export const IntroOptionScreen = ({navigation}) => {
   const {getCurrentPosition} = getUserLocation();
@@ -23,39 +25,50 @@ export const IntroOptionScreen = ({navigation}) => {
   };
 
   return (
-    <Container padding={16}>
-      <Step3
-        style={{position: 'relative', top: scale(-160), left: scale(-100)}}
+    <Container padding={24} align="center" justify="flex-end">
+      <HeaderIntroScreen />
+      <Separator height={80} />
+      <Button color="white" onPress={() => onChangeRoute('SignInScreen')}>
+        Entrar
+      </Button>
+      <Separator height={16} />
+      <Button
+        outlined
+        color="gray-700"
+        onPress={() => onChangeRoute('SignUpScreen')}>
+        Criar conta
+      </Button>
+      <Separator height={30} />
+    </Container>
+  );
+};
+
+const HeaderIntroScreen = () => {
+  return (
+    <ImageBackground
+      source={waveImageBackground}
+      style={{
+        position: 'absolute',
+        height: scale(600),
+        width: scale(600),
+        top: scale(-208),
+        left: scale(-100),
+      }}>
+      <OrnamentsImage
+        style={{position: 'absolute', top: scale(250), left: scale(66)}}
       />
-      <StepOrnaments3
-        style={{position: 'absolute', top: scale(52), left: scale(-34)}}
-      />
+
       <StepUsers3
-        style={{position: 'absolute', top: scale(176), left: scale(24)}}
+        style={{position: 'absolute', top: scale(346), left: scale(130)}}
         width={340}
       />
-      <Ecolog style={{position: 'absolute', top: scale(90), left: scale(24)}} />
-
-      <View
+      <Ecolog
         style={{
-          width: '100%',
           position: 'absolute',
-          bottom: scale(100),
-          left: scale(12),
-        }}>
-        <StyledContainer>
-          <Button color="white" onPress={() => onChangeRoute('SignInScreen')}>
-            Entrar
-          </Button>
-          <View style={{marginTop: 20}} />
-          <Button
-            outlined
-            color="green"
-            onPress={() => onChangeRoute('SignUpScreen')}>
-            Criar conta
-          </Button>
-        </StyledContainer>
-      </View>
-    </Container>
+          top: scale(280),
+          left: scale(110),
+        }}
+      />
+    </ImageBackground>
   );
 };

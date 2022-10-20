@@ -9,29 +9,25 @@ export const DefaultInput = ({
   numberOfLines,
   ...inputProps
 }: any) => {
-  const [onFocus, setOnFocus] = useState(false);
-
   return (
     <Container multiline={multiline}>
       <Input
         multiline={multiline}
         numberOfLines={numberOfLines}
-        onFocus={() => setOnFocus(true)}
-        onBlur={() => setOnFocus(false)}
         placeholderTextColor={COLORS['gray-300']}
         placeholder={text}
         secureTextEntry={secureTextEntry}
         style={{
           backgroundColor: 'white',
           borderRadius: 8,
-          borderWidth: onFocus && 2,
-          borderColor: onFocus ? '#a9dcc1' : '#000',
-          shadowColor: onFocus ? '#a9dcc1' : '#000',
+          borderWidth: 1,
+          borderColor: '#a9dcc1',
+          shadowColor: '#a9dcc1',
           shadowOffset: {
             width: 0,
             height: -0,
           },
-          shadowOpacity: 0.20000000149011612,
+          shadowOpacity: 0.2,
           shadowRadius: 2,
           justifyContent: 'center',
           alignItems: 'center',

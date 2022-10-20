@@ -12,8 +12,8 @@ export const Container = styled.View`
 export const Input = styled.TextInput`
   width: 100%;
   height: ${({multiline}) => (multiline ? '116px' : '58px')};
-  background: ${COLORS['gray-300']};
-  background-color: #fff;
+  background: ${COLORS['gray-600']};
+  color: ${COLORS['gray-600']};
   border-radius: 22px;
   padding: 20px;
   font-size: 16px;
