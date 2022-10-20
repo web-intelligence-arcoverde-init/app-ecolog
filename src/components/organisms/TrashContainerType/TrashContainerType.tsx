@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
-import {TouchableOpacity, Image, Text} from 'react-native';
+import {TouchableOpacity, Image} from 'react-native';
+import {Typography} from '../../';
 
 export const TrashContainerType = ({source, label}: any) => {
   const [selectTypeTrash, setSelectTypeTrash] = useState(false);
@@ -22,12 +23,13 @@ export const TrashContainerType = ({source, label}: any) => {
         shadowOpacity: 0.20000000149011612,
         shadowRadius: 1,
         marginBottom: 20,
-        marginRight: 14,
         justifyContent: 'center',
         alignItems: 'center',
       }}>
       <Image source={source} style={{width: 48, height: 48, marginBottom: 6}} />
-      <Text>{label}</Text>
+      <Typography variant="legend" color="black-300">
+        {label}
+      </Typography>
     </TouchableOpacity>
   );
 };

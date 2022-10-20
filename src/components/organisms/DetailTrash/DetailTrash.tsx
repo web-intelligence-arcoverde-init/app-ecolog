@@ -27,6 +27,7 @@ export const DetailTrash = () => {
           display: 'flex',
           flexDirection: 'row',
           flexWrap: 'wrap',
+          justifyContent: 'space-between',
         }}>
         <TrashContainerType source={TrashType.plastic} label="Plastico" />
         <TrashContainerType source={TrashType.cloth} label="Tecido" />

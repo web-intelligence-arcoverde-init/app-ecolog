@@ -24,7 +24,7 @@ const thirdIndicatorStyles = {
   separatorFinishedColor: '#2aa964',
   separatorUnFinishedColor: '#dedede',
   stepIndicatorFinishedColor: '#2aa964',
-  stepIndicatorUnFinishedColor: '#6E6E6E',
+  stepIndicatorUnFinishedColor: '#d4ede0',
   stepIndicatorCurrentColor: '#2aa964',
   stepIndicatorLabelFontSize: 12,
   currentStepIndicatorLabelFontSize: 0,
