@@ -1,5 +1,5 @@
 import React, {useCallback, useMemo, useRef, useState} from 'react';
-import {Platform, Image, Dimensions, View} from 'react-native';
+import {Platform, Image, View, Text} from 'react-native';
 import MapView, {
   PROVIDER_GOOGLE,
   PROVIDER_DEFAULT,
@@ -15,15 +15,12 @@ import {
 import {MakerIcons} from '../../assets/icons/index';
 
 import {Button} from '../../components';
-const {width, height} = Dimensions.get('window');
 
-import BottomSheet, {useBottomSheetSpringConfigs} from '@gorhom/bottom-sheet';
-
-const ASPECT_RATIO = width / height;
-const LATITUDE = -8.417485;
-const LONGITUDE = -37.033997;
-const LATITUDE_DELTA = 0.0122;
-const LONGITUDE_DELTA = LATITUDE_DELTA * ASPECT_RATIO;
+import BottomSheet, {
+  BottomSheetModalProvider,
+  useBottomSheetSpringConfigs,
+} from '@gorhom/bottom-sheet';
+import {GestureHandlerRootView} from 'react-native-gesture-handler';
 
 const MapViewComponent = ({navigation}) => {
   const defaultProvider =
@@ -96,6 +93,7 @@ const MapViewComponent = ({navigation}) => {
   }, []);
 
   const {coordinate} = useAppSelector(state => state.user);
+  const [isVisible, setIsVisible] = useState(false);
 
   return (
     <>
@@ -146,7 +144,11 @@ const MapViewComponent = ({navigation}) => {
         animateOnMount={true}
         enablePanDownToClose
         enableContentPanningGesture={enableContentPanningGesture}
-        enableHandlePanningGesture={enableHandlePanningGesture}></BottomSheet>
+        enableHandlePanningGesture={enableHandlePanningGesture}>
+        <View>
+          <Text>Aqui</Text>
+        </View>
+      </BottomSheet>
     </>
   );
 };

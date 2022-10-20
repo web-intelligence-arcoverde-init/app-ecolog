@@ -1,21 +1,38 @@
 import React from 'react';
 
-import {View} from 'react-native';
-import {Typography, Input} from '../../';
+import {KeyboardAvoidingView, ScrollView, View} from 'react-native';
+import {Typography, Input, Separator} from '../../';
+import {scale, getPlatform} from '../../../utils';
 
 export const DetailRecycle = () => {
   return (
-    <View style={{marginTop: 38, padding: 24}}>
-      <Typography variant="h2">Precisamos de mais informações</Typography>
-      <Typography variant="button">Precisamos de informações</Typography>
+    <KeyboardAvoidingView
+      style={{height: '100%'}}
+      keyboardVerticalOffset={scale(-210)}
+      behavior={'padding'}>
+      <ScrollView>
+        <View
+          style={{
+            marginTop: getPlatform() === 'ios' ? scale(54) : scale(24),
+            padding: scale(18),
+          }}>
+          <Typography color="black-200">
+            Precisamos de mais informações
+          </Typography>
+          <Separator height={8} />
+          <Typography color="black-200" variant="body">
+            Precisamos de informações
+          </Typography>
 
-      <View style={{marginTop: 38}} />
+          <Separator height={16} />
 
-      <Input label="Contato" multiline={false} />
+          <Input label="Contato" multiline={false} />
 
-      <View style={{marginTop: 22}} />
+          <Separator height={16} />
 
-      <Input label="Detalhes sobre" multiline={true} />
-    </View>
+          <Input label="Detalhes sobre" multiline={true} />
+        </View>
+      </ScrollView>
+    </KeyboardAvoidingView>
   );
 };

@@ -11,6 +11,8 @@ import {DetailExampleCreatePointRecycle} from '../../components/organisms/Detail
 
 import {changeVisibilityButtonAddNewPointCollect} from '../../store/reducer/pointCollectRecycling';
 
+import {scale, getPlatform} from '../../utils';
+
 const thirdIndicatorStyles = {
   stepIndicatorSize: 25,
   currentStepIndicatorSize: 30,
@@ -74,6 +76,7 @@ export const CreatePointColletScreen = ({navigation}) => {
           ]}
         />
       </View>
+
       <Swiper
         loop={false}
         index={currentPage}
@@ -109,6 +112,6 @@ const styles = StyleSheet.create({
     backgroundColor: '#FAFAFA',
   },
   stepIndicator: {
-    marginTop: 58,
+    marginTop: getPlatform() === 'ios' ? scale(54) : scale(28),
   },
 });

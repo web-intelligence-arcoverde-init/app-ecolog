@@ -1,29 +1,32 @@
 import React from 'react';
 
 import {View} from 'react-native';
-import {Typography} from '../../';
+import {Typography, Separator} from '../../';
 
 import {TrashType} from '../../../assets/icons';
 
 import {TrashContainerType} from '../TrashContainerType/TrashContainerType';
+import {scale} from '../../../utils';
 
 export const DetailTrash = () => {
   return (
-    <View style={{alignContent: 'center', padding: 24}}>
-      <View style={{marginTop: 38}} />
+    <View style={{alignContent: 'center', padding: scale(18)}}>
+      <Separator height={16} />
 
-      <Typography variant="h2">Escolha um item</Typography>
+      <Typography color="black-200">Escolha um item</Typography>
+      <Separator height={8} />
 
-      <Typography variant="button">
+      <Typography color="black-200" variant="body">
         Selecione um dos items para reciclagem
       </Typography>
+
+      <Separator height={16} />
 
       <View
         style={{
           display: 'flex',
           flexDirection: 'row',
           flexWrap: 'wrap',
-          marginTop: 48,
         }}>
         <TrashContainerType source={TrashType.plastic} label="Plastico" />
         <TrashContainerType source={TrashType.cloth} label="Tecido" />

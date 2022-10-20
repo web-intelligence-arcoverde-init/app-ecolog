@@ -10,7 +10,7 @@ export const TrashContainerType = ({source, label}: any) => {
       style={{
         backgroundColor: 'white',
         borderRadius: 6,
-        borderWidth: selectTypeTrash && 1,
+        borderWidth: selectTypeTrash ? 1 : 0,
         borderColor: selectTypeTrash ? '#a9dcc1' : '#000',
         shadowColor: selectTypeTrash ? '#a9dcc1' : '#000',
         height: 100,
