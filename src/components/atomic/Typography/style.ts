@@ -14,7 +14,8 @@ interface StyleTypographyProps {
 
 export const CustomText = styled.Text<StyleTypographyProps>`
   font-size: ${({fontSize}) => (fontSize ? fontSize : '14')}px;
-  color: ${({color}) => (color ? `${COLORS[color]}` : `${COLORS.black}`)};
+  color: ${({color}) =>
+    color ? `${COLORS[color]}` : `${COLORS['black-100']}`};
   line-height: ${({lineHeight}) => (lineHeight ? `${lineHeight}` : '14')}px;
   letter-spacing: 1px;
   font-family: ${({fontFamily}) =>
