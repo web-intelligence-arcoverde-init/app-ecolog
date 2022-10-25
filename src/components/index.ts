@@ -8,6 +8,7 @@ export * from './atomic/Typography/Typography';
 export * from './organisms/LayoutSwiperContainer/LayoutSwiperContainer';
 export * from './atomic/LayoutFormContainer/LayoutFormContainer';
 export * from './atomic/Separator/Separator';
+export * from './atomic/CustomButton/CustomButton';
 
 export * from './organisms/BottomSheetPointCollectInformation/BottomSheetPointCollectInformation';
 export * from './organisms/ContainerAddNewPointCollect/ContainerAddNewPointCollect';

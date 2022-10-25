@@ -4,7 +4,7 @@ import {
   Input,
   Button,
   Separator,
-  StyledContainer,
+  CustomButton,
 } from '../../components';
 
 import {messages, scale, getPlatform} from '../../utils';
@@ -85,12 +85,9 @@ export const SignInScreen = ({navigation}) => {
         </View>
 
         <Separator height={8} />
-        <CustomInputIcon
-          icon={<FacebookIcon />}
-          message="Entre com o Facebook"
-        />
+        <CustomButton icon={<FacebookIcon />} message="Entre com o Facebook" />
         <Separator height={16} />
-        <CustomInputIcon icon={<GoogleIcon />} message="Entre com o Google" />
+        <CustomButton icon={<GoogleIcon />} message="Entre com o Google" />
 
         <SignUpContainer />
       </View>
@@ -135,37 +132,6 @@ const RecoveryAccountContainer = () => {
         </Typography>
       </TouchableOpacity>
     </View>
-  );
-};
-
-const CustomInputIcon = ({icon, message}: any) => {
-  return (
-    <TouchableOpacity
-      onPress={() => {}}
-      style={{
-        flexDirection: 'row',
-        backgroundColor: 'white',
-        borderRadius: 6,
-        borderWidth: 1,
-        borderColor: '#d8d8dc',
-        shadowColor: '#d8d8dc',
-        height: scale(48),
-        width: '100%',
-        shadowOffset: {
-          width: 0,
-          height: -0,
-        },
-        shadowOpacity: 0.30000000149011612,
-        shadowRadius: 1,
-        justifyContent: 'center',
-        alignItems: 'center',
-      }}>
-      {icon}
-      <Separator width={12} />
-      <Typography variant="legend" color="gray-600">
-        {message}
-      </Typography>
-    </TouchableOpacity>
   );
 };
 
