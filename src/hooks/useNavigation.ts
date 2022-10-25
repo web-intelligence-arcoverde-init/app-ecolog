@@ -5,5 +5,7 @@ export const useCustomNavigation = () => {
 
   const goTo = (to: string) => navigation.navigate(to);
 
-  return {goTo};
+  const goBack = () => navigation.goBack();
+
+  return {goTo, goBack};
 };

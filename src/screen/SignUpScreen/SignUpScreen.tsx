@@ -1,32 +1,65 @@
-import {LayoutFormContainer} from '../../components';
+import React from 'react';
+import {View} from 'react-native';
 
-import {messages} from '../../utils';
+import {
+  LayoutFormContainer,
+  Typography,
+  CustomButton,
+  Separator,
+  Button,
+} from '../../components';
 
-import {useForm} from 'react-hook-form';
-import {yupResolver} from '@hookform/resolvers/yup';
-import * as yup from 'yup';
-import {useEffect} from 'react';
+import FacebookIcon from '../../assets/images/facebook.svg';
+import GoogleIcon from '../../assets/images/google.svg';
 
-const schema = yup
-  .object({
-    email: yup.string().email(messages.email).required(messages.required),
-    password: yup
-      .string()
-      .min(6, messages.min6)
-      .max(20, messages.max20)
-      .required(messages.required),
-  })
-  .required();
+import {scale} from '../../utils';
+import {useCustomNavigation} from '../../hooks/useNavigation';
 
 export const SignUpScreen = () => {
-  const {setValue, handleSubmit, errors, register} = useForm({
-    resolver: yupResolver(schema),
-  });
+  const {goTo} = useCustomNavigation();
 
-  useEffect(() => {
-    register('email');
-    register('password');
-  }, [register]);
+  return (
+    <LayoutFormContainer>
+      <View style={{paddingHorizontal: scale(24)}}>
+        <Separator height={56} />
+        <Typography>Vamos começar</Typography>
+        <Separator height={8} />
+        <Typography variant="legend">faça login com</Typography>
 
-  return <LayoutFormContainer></LayoutFormContainer>;
+        <Separator height={24} />
+        <CustomButton icon={<FacebookIcon />} message="Entre com o Facebook" />
+        <Separator height={16} />
+        <CustomButton icon={<GoogleIcon />} message="Entre com o Google" />
+
+        <Separator height={16} />
+
+        <View
+          style={{
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center',
+            width: '100%',
+          }}>
+          <Typography variant="legend" color="gray-700">
+            ou
+          </Typography>
+        </View>
+
+        <Separator height={16} />
+
+        <Button color="white-100" onPress={() => goTo('SignUpScreenStep01')}>
+          Crie sua conta
+        </Button>
+
+        <Separator height={16} />
+
+        <Button
+          outlined
+          color="error-100"
+          onPress={() => goTo('IntroOptionScreen')}>
+          Voltar
+        </Button>
+      </View>
+    </LayoutFormContainer>
+  );
 };

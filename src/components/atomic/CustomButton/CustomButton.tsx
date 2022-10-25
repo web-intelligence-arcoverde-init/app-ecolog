@@ -1,6 +1,6 @@
 import React from 'react';
 
-import {Pressable} from 'react-native';
+import {TouchableOpacity} from 'react-native';
 
 import {Typography, Separator} from '../../';
 
@@ -8,7 +8,7 @@ import {scale} from '../../../utils';
 
 export const CustomButton = ({icon, message}: any) => {
   return (
-    <Pressable
+    <TouchableOpacity
       onPress={() => {}}
       style={{
         flexDirection: 'row',
@@ -33,6 +33,6 @@ export const CustomButton = ({icon, message}: any) => {
       <Typography variant="legend" color="gray-600">
         {message}
       </Typography>
-    </Pressable>
+    </TouchableOpacity>
   );
 };

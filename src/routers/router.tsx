@@ -6,12 +6,16 @@ import {IntroScreen} from '../screen/IntroScreen/Intro';
 import {IntroOptionScreen} from '../screen/IntroOptionScreen/IntroOptionScreen';
 
 import {SignInScreen} from '../screen/SignInScreen/SignInScreen';
-import {SignUpScreen} from '../screen/SignUpScreen/SignUpScreen';
+
 import {RecoveryAccountScreen} from '../screen/RecoveryAccountScreen/RecoveryAccountScreen';
 
 import {MapScreen} from '../screen/MapScreen/MapScreen';
 
 import {CreatePointColletScreen} from '../screen/CreatePointColletScreen/CreatePointColletScreen';
+
+import {SignUpScreen} from '../screen/SignUpScreen/SignUpScreen';
+import {SignUpScreenStep01} from '../screen/SignUpScreenStep01/SignUpScreenStep01';
+import {SignUpScreenStep02} from '../screen/SignUpScreenStep02/SignUpScreenStep02';
 
 const Stack = createNativeStackNavigator();
 
@@ -25,7 +29,11 @@ function App() {
       <Stack.Screen name="IntroOptionScreen" component={IntroOptionScreen} />
 
       <Stack.Screen name="SignInScreen" component={SignInScreen} />
+
       <Stack.Screen name="SignUpScreen" component={SignUpScreen} />
+      <Stack.Screen name="SignUpScreenStep01" component={SignUpScreenStep01} />
+      <Stack.Screen name="SignUpScreenStep02" component={SignUpScreenStep02} />
+
       <Stack.Screen
         name="RecoveryAccountScreen"
         component={RecoveryAccountScreen}
