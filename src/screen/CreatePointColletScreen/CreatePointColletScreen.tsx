@@ -37,19 +37,32 @@ const thirdIndicatorStyles = {
 };
 
 import {useAppDispatch} from '../../hooks/useReduxHooks';
+import {useCustomNavigation} from '../../hooks/useNavigation';
 
-export const CreatePointColletScreen = ({navigation}) => {
+const pointCollect = {
+  type: '',
+  contactUser: '',
+  details: '',
+  location: {
+    latitude: 1111,
+    longitude: 1111,
+  },
+};
+
+export const CreatePointColletScreen = () => {
   const [currentPage, setCurrentPage] = React.useState<number>(0);
 
   const maxNextStep = currentPage < 2;
   const minBackStep = currentPage > 0;
+
+  const {goTo} = useCustomNavigation();
 
   const dispatch = useAppDispatch();
 
   const onStepPress = () => {
     maxNextStep && setCurrentPage(currentPage + 1);
     if (!maxNextStep) {
-      navigation.navigate('MapScreen');
+      goTo('MapScreen');
     }
   };
 
@@ -57,7 +70,7 @@ export const CreatePointColletScreen = ({navigation}) => {
     minBackStep && setCurrentPage(currentPage - 1);
     if (!minBackStep) {
       dispatch(changeVisibilityButtonAddNewPointCollect());
-      navigation.navigate('MapScreen');
+      goTo('MapScreen');
     }
   };
 
@@ -83,6 +96,7 @@ export const CreatePointColletScreen = ({navigation}) => {
         autoplay={false}
         showsButtons={false}
         showsPagination={false}
+        scrollEnabled={false}
         onIndexChanged={index => {
           setCurrentPage(index);
         }}>

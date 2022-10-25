@@ -1,19 +1,21 @@
-import React, {useState} from 'react';
+import React from 'react';
 import {TouchableOpacity, Image} from 'react-native';
 import {Typography} from '../../';
 
-export const TrashContainerType = ({source, label}: any) => {
-  const [selectTypeTrash, setSelectTypeTrash] = useState(false);
-
+export const TrashContainerType = ({
+  item,
+  setItemSelected,
+  selectedItem,
+}: any) => {
   return (
     <TouchableOpacity
-      onPress={() => setSelectTypeTrash(!selectTypeTrash)}
+      onPress={() => setItemSelected(item)}
       style={{
         backgroundColor: 'white',
         borderRadius: 6,
-        borderWidth: selectTypeTrash ? 1 : 0,
-        borderColor: selectTypeTrash ? '#a9dcc1' : '#000',
-        shadowColor: selectTypeTrash ? '#a9dcc1' : '#000',
+        borderWidth: selectedItem ? 1 : 0,
+        borderColor: selectedItem ? '#a9dcc1' : '#000',
+        shadowColor: selectedItem ? '#a9dcc1' : '#000',
         height: 100,
         width: 100,
         shadowOffset: {
@@ -26,9 +28,12 @@ export const TrashContainerType = ({source, label}: any) => {
         justifyContent: 'center',
         alignItems: 'center',
       }}>
-      <Image source={source} style={{width: 48, height: 48, marginBottom: 6}} />
+      <Image
+        source={item.icon}
+        style={{width: 48, height: 48, marginBottom: 6}}
+      />
       <Typography variant="legend" color="black-300">
-        {label}
+        {item.name}
       </Typography>
     </TouchableOpacity>
   );

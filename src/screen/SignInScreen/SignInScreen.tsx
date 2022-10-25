@@ -20,6 +20,7 @@ import Background from '../../assets/images/people.png';
 
 import FacebookIcon from '../../assets/images/facebook.svg';
 import GoogleIcon from '../../assets/images/google.svg';
+import {useCustomNavigation} from '../../hooks/useNavigation';
 
 const schema = yup
   .object({
@@ -42,9 +43,7 @@ export const SignInScreen = ({navigation}) => {
     register('password');
   }, [register]);
 
-  const changeRoute = (router: string) => {
-    navigation.navigate(router);
-  };
+  const {goTo} = useCustomNavigation();
 
   return (
     <LayoutFormContainer>
@@ -54,7 +53,7 @@ export const SignInScreen = ({navigation}) => {
 
       <View
         style={{
-          marginTop: getPlatform() === 'ios' ? scale(140) : scale(140),
+          marginTop: getPlatform() === 'ios' && scale(140),
           flex: 1,
           paddingHorizontal: scale(24),
           justifyContent: 'center',
@@ -66,7 +65,7 @@ export const SignInScreen = ({navigation}) => {
         <RecoveryAccountContainer />
 
         <Separator height={16} />
-        <Button color="white" onPress={() => changeRoute('MapScreen')}>
+        <Button color="white" onPress={() => goTo('MapScreen')}>
           Entrar
         </Button>
 
@@ -96,6 +95,8 @@ export const SignInScreen = ({navigation}) => {
 };
 
 const SignUpContainer = () => {
+  const {goTo} = useCustomNavigation();
+
   return (
     <View
       style={{
@@ -108,7 +109,9 @@ const SignUpContainer = () => {
       <Typography variant="legend" color="gray-600">
         Não tem uma conta?
       </Typography>
-      <TouchableOpacity onPress={() => {}} style={{marginLeft: 6}}>
+      <TouchableOpacity
+        onPress={() => goTo('SignUpScreen')}
+        style={{marginLeft: 6}}>
         <Typography variant="legend" color="green-300">
           Inscrever-se
         </Typography>
@@ -118,6 +121,7 @@ const SignUpContainer = () => {
 };
 
 const RecoveryAccountContainer = () => {
+  const {goTo} = useCustomNavigation();
   return (
     <View
       style={{
@@ -126,7 +130,7 @@ const RecoveryAccountContainer = () => {
         justifyContent: 'flex-end',
         width: '100%',
       }}>
-      <TouchableOpacity onPress={() => {}}>
+      <TouchableOpacity onPress={() => goTo('RecoveryAccountScreen')}>
         <Typography variant="legend" color="gray-600">
           Recuperar senha
         </Typography>
