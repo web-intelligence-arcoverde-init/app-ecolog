@@ -5,6 +5,7 @@ import {useAppDispatch, useAppSelector} from '../../../hooks/useReduxHooks';
 import {
   changeVisibilityButtonAddNewPointCollect,
   createNewPointRequest,
+  addPointCollectLocation,
 } from '../../../store/reducer/pointCollectRecycling';
 import {PointCollectList} from '../PointCollectList/PointCollectList';
 
@@ -14,9 +15,11 @@ export const MapContainer = ({openBottomSheetInformationPointCollect}: any) => {
   const defaultProvider =
     Platform.OS === 'ios' ? PROVIDER_DEFAULT : PROVIDER_GOOGLE;
 
-  const {points, visibleButtonAddNewPointCollect} = useAppSelector(
+  const {visibleButtonAddNewPointCollect, point, points} = useAppSelector(
     state => state.pointCollectRecycling,
   );
+
+  console.log(points);
 
   const dispatch = useAppDispatch();
 
@@ -24,32 +27,12 @@ export const MapContainer = ({openBottomSheetInformationPointCollect}: any) => {
     if (visibleButtonAddNewPointCollect) {
       return;
     } else {
-      const items = [
-        'empresa',
-        'ferro',
-        'organico',
-        'papel',
-        'plastico',
-        'pontoColeta',
-        'vidro',
-      ];
+      const newPoint = {
+        ...point,
+        location,
+      };
 
-      let type = items[Math.floor(Math.random() * items.length)];
-
-      const user = {name: 'Lucas'};
-
-      dispatch(
-        createNewPointRequest({
-          id: points.length,
-          name: '',
-          type,
-          telphoneNumber: '87998093765',
-          datails: 'details',
-          location,
-          status: 'Aguardando',
-          user,
-        }),
-      );
+      dispatch(createNewPointRequest(newPoint));
 
       dispatch(changeVisibilityButtonAddNewPointCollect());
     }

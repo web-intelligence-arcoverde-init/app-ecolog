@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import {Input, Container} from './style';
 import {COLORS} from '../../../../common/colors';
 
@@ -7,11 +7,12 @@ export const DefaultInput = ({
   secureTextEntry,
   multiline,
   numberOfLines,
-  ...inputProps
+  onChangeText,
 }: any) => {
   return (
     <Container multiline={multiline}>
       <Input
+        onChangeText={text => onChangeText(text)}
         multiline={multiline}
         numberOfLines={numberOfLines}
         placeholderTextColor={COLORS['gray-300']}
@@ -32,7 +33,6 @@ export const DefaultInput = ({
           justifyContent: 'center',
           alignItems: 'center',
         }}
-        {...inputProps}
       />
     </Container>
   );

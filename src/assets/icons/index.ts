@@ -13,6 +13,8 @@ import eletronic from './laptop.png';
 import metals from './metals.png';
 import plastic from './plastic-bottle.png';
 
+import Geral from './geral.png';
+
 export const TrashType = {
   cloth,
   paper,
@@ -23,11 +25,12 @@ export const TrashType = {
 };
 
 export const MakerIcons = {
-  empresa: Empresa,
-  ferro: Ferro,
-  organico: Organico,
-  papel: Papel,
-  plastico: Plastico,
-  pontoColeta: PontoColeta,
-  vidro: Vidro,
+  Empresa: Empresa,
+  Metal: Ferro,
+  Organico: Organico,
+  Papel: Papel,
+  Plastico: Plastico,
+  Tecido: PontoColeta,
+  Vidro: Vidro,
+  Eletronico: Geral,
 };

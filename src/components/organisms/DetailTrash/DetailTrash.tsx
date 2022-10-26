@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 
 import {View} from 'react-native';
 import {Typography, Separator} from '../../';
@@ -18,8 +18,6 @@ const mockTypeRecyclePoint = [
 ];
 
 export const DetailTrash = () => {
-  const [itemSelected, setItemSelected] = useState({});
-
   return (
     <View style={{alignContent: 'center', padding: scale(24)}}>
       <Separator height={16} />
@@ -41,13 +39,7 @@ export const DetailTrash = () => {
           justifyContent: 'space-between',
         }}>
         {mockTypeRecyclePoint.map(item => {
-          return (
-            <TrashContainerType
-              item={item}
-              setItemSelected={setItemSelected}
-              selectedItem={itemSelected?.id === item.id}
-            />
-          );
+          return <TrashContainerType item={item} />;
         })}
       </View>
     </View>

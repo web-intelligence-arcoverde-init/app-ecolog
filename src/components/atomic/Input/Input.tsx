@@ -14,6 +14,7 @@ interface InputProps {
   multiline?: boolean;
   numberOfLines?: number;
   placeholder?: string;
+  onChangeText?: (text: string) => void;
 }
 
 export const Input = ({
@@ -24,6 +25,7 @@ export const Input = ({
   multiline,
   numberOfLines,
   placeholder,
+  onChangeText,
 }: InputProps) => {
   return (
     <>
@@ -37,6 +39,7 @@ export const Input = ({
         <InputMask mask={maskType} />
       ) : (
         <DefaultInput
+          onChangeText={onChangeText}
           multiline={multiline}
           numberOfLines={numberOfLines}
           placeholder={placeholder}

@@ -8,13 +8,14 @@ export const PointCollect = ({
   marker,
   openBottomSheetInformationPointCollect,
 }: any) => {
+  console.log(marker);
   return (
     <Marker
       key={marker.key}
       coordinate={marker.location}
       onPress={() => openBottomSheetInformationPointCollect(0)}>
       <Image
-        source={MakerIcons[marker.type]}
+        source={MakerIcons[marker.type.name]}
         style={{
           height: scale(38),
           width: scale(38),

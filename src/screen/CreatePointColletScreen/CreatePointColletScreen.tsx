@@ -39,15 +39,16 @@ const thirdIndicatorStyles = {
 import {useAppDispatch} from '../../hooks/useReduxHooks';
 import {useCustomNavigation} from '../../hooks/useNavigation';
 
-const pointCollect = {
-  type: '',
-  contactUser: '',
-  details: '',
+interface PointCollect {
+  type: string;
+  user: string;
+  contactUser: string;
+  details: string;
   location: {
-    latitude: 1111,
-    longitude: 1111,
-  },
-};
+    latitude: number;
+    longitude: number;
+  };
+}
 
 export const CreatePointColletScreen = () => {
   const [currentPage, setCurrentPage] = React.useState<number>(0);
