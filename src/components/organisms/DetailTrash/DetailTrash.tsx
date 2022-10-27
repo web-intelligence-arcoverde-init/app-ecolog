@@ -3,19 +3,10 @@ import React from 'react';
 import {View} from 'react-native';
 import {Typography, Separator} from '../../';
 
-import {TrashType} from '../../../assets/icons';
-
 import {TrashContainerType} from '../TrashContainerType/TrashContainerType';
 import {scale} from '../../../utils';
 
-const mockTypeRecyclePoint = [
-  {id: 1, name: 'Plastico', icon: TrashType.plastic},
-  {id: 2, name: 'Tecido', icon: TrashType.cloth},
-  {id: 3, name: 'Eletronico', icon: TrashType.eletronic},
-  {id: 4, name: 'Vidro', icon: TrashType.glass},
-  {id: 5, name: 'Metal', icon: TrashType.metals},
-  {id: 6, name: 'Papel', icon: TrashType.paper},
-];
+import {mockTypeRecyclePoint} from '../../../mock';
 
 export const DetailTrash = () => {
   return (
@@ -29,19 +20,25 @@ export const DetailTrash = () => {
         Selecione um dos items para reciclagem
       </Typography>
 
-      <Separator height={16} />
+      <Separator height={24} />
 
-      <View
-        style={{
-          display: 'flex',
-          flexDirection: 'row',
-          flexWrap: 'wrap',
-          justifyContent: 'space-between',
-        }}>
-        {mockTypeRecyclePoint.map(item => {
-          return <TrashContainerType item={item} />;
-        })}
-      </View>
+      <ListRecycleItemType />
+    </View>
+  );
+};
+
+const ListRecycleItemType = () => {
+  return (
+    <View
+      style={{
+        display: 'flex',
+        flexDirection: 'row',
+        flexWrap: 'wrap',
+        justifyContent: 'space-between',
+      }}>
+      {mockTypeRecyclePoint.map(item => (
+        <TrashContainerType item={item} />
+      ))}
     </View>
   );
 };

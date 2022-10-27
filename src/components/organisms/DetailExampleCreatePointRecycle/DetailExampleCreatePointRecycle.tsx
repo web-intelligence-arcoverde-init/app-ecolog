@@ -2,7 +2,7 @@ import React from 'react';
 
 import {View, Image} from 'react-native';
 import {Typography, Separator} from '../..';
-import MapLocation from '../../../assets/icons/mapa.png';
+import MapLocation from '../../../assets/images/mapa.png';
 
 import {scale, getPlatform} from '../../../utils';
 

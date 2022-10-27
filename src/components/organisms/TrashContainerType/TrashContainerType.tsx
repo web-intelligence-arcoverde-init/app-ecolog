@@ -12,15 +12,17 @@ export const TrashContainerType = ({item}: any) => {
     state => state.pointCollectRecycling.point?.type?.id,
   );
 
+  const selectedItem = pointCollectTypeId === item.id;
+
   return (
     <TouchableOpacity
       onPress={() => dispatch(addPointCollectType(item))}
       style={{
-        backgroundColor: pointCollectTypeId === item.id ? '#2aa964' : 'white',
+        backgroundColor: selectedItem ? '#2aa964' : 'white',
         borderRadius: 6,
-        borderWidth: pointCollectTypeId === item.id ? 1 : 0,
-        borderColor: pointCollectTypeId === item.id ? '#a9dcc1' : '#000',
-        shadowColor: pointCollectTypeId === item.id ? '#a9dcc1' : '#000',
+        borderWidth: selectedItem ? 1 : 0,
+        borderColor: selectedItem ? '#a9dcc1' : '#000',
+        shadowColor: selectedItem ? '#a9dcc1' : '#000',
         height: 100,
         width: 100,
         shadowOffset: {
