@@ -9,6 +9,8 @@ import {
 
 import {messages, scale, getPlatform} from '../../utils';
 
+import Ecolog from '../../assets/images/ecolog.png';
+
 import {useForm} from 'react-hook-form';
 import {yupResolver} from '@hookform/resolvers/yup';
 import * as yup from 'yup';
@@ -158,9 +160,21 @@ const HeaderSignIn = () => {
           position: 'absolute',
           height: scale(140),
           width: scale(190),
-          top: getPlatform() === 'ios' ? scale(380) : scale(340),
+          top: getPlatform() === 'ios' ? scale(360) : scale(340),
           left: scale(158),
           opacity: 0.6,
+        }}
+      />
+
+      <ImageBackground
+        source={Ecolog}
+        resizeMode="cover"
+        style={{
+          position: 'absolute',
+          height: scale(80),
+          width: scale(190),
+          top: getPlatform() === 'ios' ? scale(460) : scale(340),
+          left: scale(158),
         }}
       />
     </ImageBackground>
