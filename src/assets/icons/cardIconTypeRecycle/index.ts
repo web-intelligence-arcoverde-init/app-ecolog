@@ -6,6 +6,8 @@ import Metals from './metals.png';
 import Plastic from './plastic.png';
 import Company from './company.png';
 import Organic from './organic.png';
+import Battery from './battery.png';
+import Bulb from './bulb.png';
 
 export const TrashType = {
   Paper,
@@ -16,4 +18,6 @@ export const TrashType = {
   Company,
   Organic,
   Cloth,
+  Battery,
+  Bulb,
 };

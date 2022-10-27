@@ -6,7 +6,7 @@ import Swiper from 'react-native-swiper';
 import {Button} from '../../components';
 
 import {DetailRecycle} from '../../components/organisms/DetailRecycle/DetailRecycle';
-import {DetailTrash} from '../../components/organisms/DetailTrash/DetailTrash';
+import {GarbageDetail} from '../../components/organisms/GarbageDetail/GarbageDetail';
 import {DetailExampleCreatePointRecycle} from '../../components/organisms/DetailExampleCreatePointRecycle/DetailExampleCreatePointRecycle';
 
 import {changeVisibilityButtonAddNewPointCollect} from '../../store/reducer/pointCollectRecycling';
@@ -86,7 +86,7 @@ export const CreatePointColletScreen = () => {
           labels={[
             'Detalhes do lixo',
             'Detalhes da retirada',
-            'Escola o local da retirada',
+            'Escolha o local da retirada',
           ]}
         />
       </View>
@@ -101,7 +101,7 @@ export const CreatePointColletScreen = () => {
         onIndexChanged={index => {
           setCurrentPage(index);
         }}>
-        <DetailTrash />
+        <GarbageDetail />
         <DetailRecycle />
         <DetailExampleCreatePointRecycle />
       </Swiper>
