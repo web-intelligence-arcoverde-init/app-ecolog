@@ -1,6 +1,4 @@
 export const COLORS: any = {
-  white: '#ffffff',
-
   'white-100': '#fff',
 
   'green-100': '#d4ede0',
@@ -25,4 +23,14 @@ export const COLORS: any = {
   'black-400': '#1e1f20',
 
   'error-100': '#e15848',
+
+  metal: '#F9E913',
+  paper: '#00BFFF',
+  glass: '#04B45F',
+  plastic: '#F21B07',
+  organic: '#A64F01',
+  light: '#01DF74',
+  tissue: '#01A9DB',
+  batterie: '#A4A4A4',
+  eletronic: '#1A171A',
 };

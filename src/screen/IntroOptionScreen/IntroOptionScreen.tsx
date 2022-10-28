@@ -28,7 +28,7 @@ export const IntroOptionScreen = ({navigation}) => {
     <Container padding={24} align="center" justify="flex-end">
       <HeaderIntroScreen />
       <Separator height={80} />
-      <Button color="white" onPress={() => onChangeRoute('SignInScreen')}>
+      <Button color="white-100" onPress={() => onChangeRoute('SignInScreen')}>
         Entrar
       </Button>
       <Separator height={16} />

@@ -107,7 +107,7 @@ export const CreatePointColletScreen = () => {
       </Swiper>
 
       <View style={{height: '24%', padding: 24}}>
-        <Button color="white" onPress={() => onStepPress()}>
+        <Button color="white-100" onPress={() => onStepPress()}>
           {maxNextStep ? 'Proximo' : 'Concluir'}
         </Button>
 

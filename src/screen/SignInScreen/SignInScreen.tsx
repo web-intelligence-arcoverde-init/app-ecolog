@@ -67,7 +67,7 @@ export const SignInScreen = ({navigation}) => {
         <RecoveryAccountContainer />
 
         <Separator height={16} />
-        <Button color="white" onPress={() => goTo('MapScreen')}>
+        <Button color="white-100" onPress={() => goTo('MapScreen')}>
           Entrar
         </Button>
 

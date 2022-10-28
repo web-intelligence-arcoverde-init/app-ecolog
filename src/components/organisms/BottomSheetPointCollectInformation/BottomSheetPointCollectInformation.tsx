@@ -41,18 +41,7 @@ export const BottomSheetPointCollectInformation = ({bottomSheetRef}: any) => {
         }}>
         <ScrollView showsVerticalScrollIndicator={false}>
           <Separator height={16} />
-          <View
-            style={{
-              backgroundColor: '#d4ede0',
-              borderRadius: 10,
-              width: '26%',
-              padding: 4,
-              alignItems: 'center',
-            }}>
-            <Typography variant="legend" color="green-600">
-              Plástico
-            </Typography>
-          </View>
+          <ItemTypeTitle />
 
           <Separator height={8} />
 
@@ -65,18 +54,8 @@ export const BottomSheetPointCollectInformation = ({bottomSheetRef}: any) => {
               Usuario:
             </Typography>
             <Separator height={4} />
-            <View
-              style={{
-                display: 'flex',
-                flexDirection: 'row',
-                backgroundColor: '#FAFAFA',
-                borderRadius: 10,
-                width: '48%',
-                padding: 12,
-                alignItems: 'center',
-              }}>
-              <Typography variant="body">Lucas Henrique</Typography>
-            </View>
+
+            <Typography variant="body">Lucas Henrique</Typography>
           </View>
 
           <Separator height={8} />
@@ -130,10 +109,23 @@ export const BottomSheetPointCollectInformation = ({bottomSheetRef}: any) => {
   );
 };
 
-/*
+import {COLORS} from '../../../common';
 
+const ItemTypeTitle = () => {
+  const {organic} = COLORS;
 
-"contact": {"datails": "Erferferf", "phone": "Eerferf"}, "location": {"latitude": -8.417933104006934, "longitude": -37.03432334341869}, "type": {"icon": 20, "id": 4, "name": "Metal"}}
-
-
-*/
+  return (
+    <View
+      style={{
+        backgroundColor: organic,
+        borderRadius: 10,
+        width: '40%',
+        padding: 4,
+        alignItems: 'center',
+      }}>
+      <Typography variant="legend" color="black-400">
+        Vidro
+      </Typography>
+    </View>
+  );
+};
