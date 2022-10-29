@@ -13,7 +13,7 @@ import {BottomSheetContext} from '../../../context/BottomSheetCollectPointInform
 export const BottomSheetPointCollectInformation = () => {
   const {bottomSheetRef} = React.useContext(BottomSheetContext);
 
-  const snapPoints = useMemo(() => ['60%'], []);
+  const snapPoints = useMemo(() => ['86%'], []);
   const animationConfigs = useBottomSheetSpringConfigs({
     damping: 80,
     overshootClamping: false,
@@ -133,7 +133,7 @@ const ItemTypeTitle = ({point = {}}: any) => {
         alignItems: 'center',
       }}>
       <Typography variant="legend" color="black-400">
-        Vidro
+        Imagem
       </Typography>
     </View>
   );

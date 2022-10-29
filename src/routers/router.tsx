@@ -25,6 +25,7 @@ function App() {
       initialRouteName={'SplashScreen'}
       screenOptions={{headerShown: false}}>
       <Stack.Screen name="SplashScreen" component={SplashScreen} />
+
       <Stack.Screen name="IntroScreen" component={IntroScreen} />
       <Stack.Screen name="IntroOptionScreen" component={IntroOptionScreen} />
 
