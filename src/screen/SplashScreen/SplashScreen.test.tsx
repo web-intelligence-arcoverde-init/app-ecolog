@@ -2,8 +2,9 @@ import 'react-native';
 import React from 'react';
 import {SplashScreen} from './SplashScreen';
 
-import renderer from 'react-test-renderer';
+import {render} from '@testing-library/react-native';
 
 it('renders correctly', () => {
-  renderer.create(<SplashScreen />);
+  const {getByTestId} = render(<SplashScreen />);
+  expect(getByTestId('container-lottie-animation'));
 });
