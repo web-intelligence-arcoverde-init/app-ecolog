@@ -1,7 +1,6 @@
 import React, {useMemo, useState} from 'react';
 
 import BottomSheet, {useBottomSheetSpringConfigs} from '@gorhom/bottom-sheet';
-
 import {ScrollView, View} from 'react-native';
 
 import {Typography, Separator, Button} from '../../';
@@ -9,8 +8,11 @@ import {scale} from '../../../utils';
 
 import {COLORS} from '../../../common';
 import {useAppSelector} from '../../../hooks/useReduxHooks';
+import {BottomSheetContext} from '../../../context/BottomSheetCollectPointInformation';
 
-export const BottomSheetPointCollectInformation = ({bottomSheetRef}: any) => {
+export const BottomSheetPointCollectInformation = () => {
+  const {bottomSheetRef} = React.useContext(BottomSheetContext);
+
   const snapPoints = useMemo(() => ['60%'], []);
   const animationConfigs = useBottomSheetSpringConfigs({
     damping: 80,
@@ -28,6 +30,8 @@ export const BottomSheetPointCollectInformation = ({bottomSheetRef}: any) => {
 
   const {pointSelected} = useAppSelector(state => state.pointCollectRecycling);
 
+  const isSelectedPoint = Object.keys(pointSelected).length === 0;
+
   return (
     <BottomSheet
       ref={bottomSheetRef}
@@ -38,88 +42,92 @@ export const BottomSheetPointCollectInformation = ({bottomSheetRef}: any) => {
       enablePanDownToClose
       enableContentPanningGesture={enableContentPanningGesture}
       enableHandlePanningGesture={enableHandlePanningGesture}>
-      <View
-        style={{
-          flex: 1,
-          paddingHorizontal: scale(24),
-          justifyContent: 'flex-end',
-        }}>
-        <ScrollView showsVerticalScrollIndicator={false}>
-          <Separator height={16} />
+      {!isSelectedPoint && (
+        <View
+          style={{
+            flex: 1,
+            paddingHorizontal: scale(24),
+            justifyContent: 'flex-end',
+          }}>
+          <ScrollView showsVerticalScrollIndicator={false}>
+            <Separator height={16} />
 
-          <Typography>Ponto de reciclagem</Typography>
+            <Typography>Ponto de reciclagem</Typography>
 
-          <Separator height={8} />
+            <Separator height={8} />
 
-          <ItemTypeTitle point={pointSelected} />
+            <ItemTypeTitle point={pointSelected} />
 
-          <Separator height={16} />
+            <Separator height={16} />
 
-          <View>
-            <Typography variant="body" color="gray-500">
-              Nome:
-            </Typography>
-            <Separator height={4} />
-
-            <Typography variant="body">Lucas Henrique</Typography>
-          </View>
-
-          <Separator height={8} />
-
-          <View
-            style={{
-              display: 'flex',
-              flexDirection: 'row',
-              justifyContent: 'space-between',
-            }}>
             <View>
               <Typography variant="body" color="gray-500">
-                Data de criação:
+                Nome:
               </Typography>
               <Separator height={4} />
-              <Typography variant="body">21/06/2022</Typography>
+
+              <Typography variant="body">Lucas Henrique</Typography>
             </View>
+
+            <Separator height={8} />
+
+            <View
+              style={{
+                display: 'flex',
+                flexDirection: 'row',
+                justifyContent: 'space-between',
+              }}>
+              <View>
+                <Typography variant="body" color="gray-500">
+                  Data de criação:
+                </Typography>
+                <Separator height={4} />
+                <Typography variant="body">21/06/2022</Typography>
+              </View>
+              <View>
+                <Typography variant="body" color="gray-500">
+                  Contato:
+                </Typography>
+                <Separator height={4} />
+                <Typography variant="body">879998093765</Typography>
+              </View>
+            </View>
+            <Separator height={8} />
+
             <View>
               <Typography variant="body" color="gray-500">
-                Contato:
+                Descrição:
               </Typography>
               <Separator height={4} />
-              <Typography variant="body">879998093765</Typography>
+              <View>
+                <Typography variant="legend">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Laborum optio natus inventore, dolor et distinctio at?
+                  Consequuntur voluptatem nemo illo quis? Eius nesciunt ea
+                  repudiandae voluptatem quisquam nobis tempora molestias!
+                </Typography>
+              </View>
             </View>
-          </View>
-          <Separator height={8} />
 
-          <View>
-            <Typography variant="body" color="gray-500">
-              Descrição:
-            </Typography>
-            <Separator height={4} />
-            <View>
-              <Typography variant="legend">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum
-                optio natus inventore, dolor et distinctio at? Consequuntur
-                voluptatem nemo illo quis? Eius nesciunt ea repudiandae
-                voluptatem quisquam nobis tempora molestias!
-              </Typography>
-            </View>
-          </View>
-
-          <Separator height={24} />
-          <Button outlined color="error-100">
-            Remover
-          </Button>
-          <Separator height={40} />
-        </ScrollView>
-      </View>
+            <Separator height={24} />
+            <Button outlined color="error-100">
+              Remover
+            </Button>
+            <Separator height={40} />
+          </ScrollView>
+        </View>
+      )}
     </BottomSheet>
   );
 };
 
-const ItemTypeTitle = ({point}: any) => {
+const ItemTypeTitle = ({point = {}}: any) => {
+  const backgroundColor = point.type.value ? point.type.value : 'glass';
+
   return (
     <View
       style={{
-        backgroundColor: COLORS[point.type.value],
+        backgroundColor: COLORS[backgroundColor],
         borderRadius: 10,
         padding: 80,
         alignItems: 'center',

@@ -1,9 +1,8 @@
-import React, {useCallback, useRef} from 'react';
+import React from 'react';
+import {GestureHandlerRootView} from 'react-native-gesture-handler';
 
 import {useAppSelector} from '../../hooks/useReduxHooks';
-
-import BottomSheet from '@gorhom/bottom-sheet';
-import {GestureHandlerRootView} from 'react-native-gesture-handler';
+import {BottomSheetContextContainer} from '../../context/BottomSheetCollectPointInformation';
 
 import {
   MapContainer,
@@ -16,23 +15,15 @@ export const MapScreen = () => {
     state => state.pointCollectRecycling,
   );
 
-  const bottomSheetRef = useRef<BottomSheet>(null);
-
-  const openBottomSheetInformationPointCollect = useCallback(index => {
-    bottomSheetRef.current?.snapToIndex(index);
-  }, []);
-
   return (
-    <GestureHandlerRootView style={{flex: 1}}>
-      <MapContainer
-        openBottomSheetInformationPointCollect={
-          openBottomSheetInformationPointCollect
-        }
-      />
+    <BottomSheetContextContainer>
+      <GestureHandlerRootView style={{flex: 1}}>
+        <MapContainer />
 
-      {visibleButtonAddNewPointCollect && <ContainerAddNewPointCollect />}
+        {visibleButtonAddNewPointCollect && <ContainerAddNewPointCollect />}
 
-      <BottomSheetPointCollectInformation bottomSheetRef={bottomSheetRef} />
-    </GestureHandlerRootView>
+        <BottomSheetPointCollectInformation />
+      </GestureHandlerRootView>
+    </BottomSheetContextContainer>
   );
 };

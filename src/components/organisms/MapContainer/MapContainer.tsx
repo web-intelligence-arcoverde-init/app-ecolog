@@ -8,7 +8,7 @@ import {
 } from '../../../store/reducer/pointCollectRecycling';
 import {PointCollectList} from '../PointCollectList/PointCollectList';
 
-export const MapContainer = ({openBottomSheetInformationPointCollect}: any) => {
+export const MapContainer = () => {
   const {coordinate} = useAppSelector(state => state.user);
 
   const defaultProvider =
@@ -45,11 +45,7 @@ export const MapContainer = ({openBottomSheetInformationPointCollect}: any) => {
           addNewMarker(e.nativeEvent.coordinate);
       }}
       initialRegion={coordinate}>
-      <PointCollectList
-        openBottomSheetInformationPointCollect={
-          openBottomSheetInformationPointCollect
-        }
-      />
+      <PointCollectList />
     </MapView>
   );
 };
