@@ -1,22 +1,22 @@
 import React from 'react';
-import {ImageContainer, Typography, Container} from '../../';
+import {ImageContainer, Typography, Container} from '../..';
 
 import {Separator} from '../../atomic/Separator/Separator';
 import {FooterIntroScreen} from '../../organisms/FooterIntroScreen/FooterIntroScreen';
 
-interface LayoutSwiperContainerProps {
+interface SwiperContainerIntroProps {
   src?: string;
   title?: string;
   description?: string;
 }
 
-export const LayoutSwiperContainer = ({
+export const SwiperContainerIntro = ({
   src,
   title,
   description,
-}: LayoutSwiperContainerProps) => {
+}: SwiperContainerIntroProps) => {
   return (
-    <Container align="center" justify="center">
+    <Container align="center" justify="center" padding={24}>
       <ImageContainer src={src} />
       <Separator height={24} />
       <Typography color="black-200">{title}</Typography>

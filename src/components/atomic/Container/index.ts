@@ -15,7 +15,8 @@ interface ContainerProps {
 
 export const StyledContainer = styled.View<ContainerProps>`
   flex-direction: ${({direction}) => (direction ? 'row' : 'column')};
-  background-color: ${({color}) => (color ? `${COLORS[color]}` : '#fff')};
+  background-color: ${({color}) =>
+    color ? `${COLORS[color]}` : COLORS['white-100']};
   justify-content: ${({justify}) => (justify ? justify : 'flex-start')};
   align-items: ${({align}) => (align ? align : 'flex-start')};
   width: ${({width}) => scale(width ? width : 100)}%;
@@ -27,7 +28,8 @@ export const Container = styled.View<ContainerProps>`
   flex: 1;
   flex-direction: column;
   width: 100%;
-  background-color: ${({color}) => (color ? `${COLORS[color]}` : COLORS.white)};
+  background-color: ${({color}) =>
+    color ? `${COLORS[color]}` : COLORS['white-100']};
   justify-content: ${({justify}) => (justify ? justify : 'flex-start')};
   align-items: ${({align}) => (align ? align : 'flex-start')};
   padding: ${({padding}) => (padding ? padding : '0')}px;
