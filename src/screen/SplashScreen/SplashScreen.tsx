@@ -2,11 +2,22 @@ import {StyleSheet, View} from 'react-native';
 import Lottie from 'lottie-react-native';
 
 import {RecycleAnimation} from '../../assets/';
+import {useCustomNavigation} from '../../hooks/useNavigation';
 
 export const SplashScreen = () => {
+  const {goTo} = useCustomNavigation();
+
   return (
     <View style={styles.container}>
-      <Lottie source={RecycleAnimation} speed={0.09} autoPlay />
+      <Lottie
+        onAnimationFinish={() => {
+          goTo('IntroScreen');
+        }}
+        source={RecycleAnimation}
+        loop={false}
+        autoPlay
+        speed={0.09}
+      />
     </View>
   );
 };
