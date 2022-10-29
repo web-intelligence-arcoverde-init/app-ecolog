@@ -1,8 +1,11 @@
 import React from 'react';
-import {ImageContainer, Typography, Container} from '../..';
-
-import {Separator} from '../../atomic/Separator/Separator';
-import {FooterIntroScreen} from '../../';
+import {
+  ImageContainer,
+  Typography,
+  Container,
+  Separator,
+  FooterIntroScreen,
+} from '../..';
 
 interface SwiperContainerIntroProps {
   src?: string;

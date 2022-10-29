@@ -7,3 +7,15 @@ export const IntroScreenImages = {
   Step02,
   Step03,
 };
+
+import PeopleCollectWaste from './people-collect-waste.svg';
+import Ornaments from './ornaments.svg';
+import Ecolog from '../../assets/images/ecolog.svg';
+import BackgroundImageWave from '../../assets/images/background-image.png';
+
+export const HeaderOptionLoginScreenImages = {
+  PeopleCollectWaste,
+  Ornaments,
+  Ecolog,
+  BackgroundImageWave,
+};

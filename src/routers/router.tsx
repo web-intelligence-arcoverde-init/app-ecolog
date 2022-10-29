@@ -27,7 +27,7 @@ function App() {
       <Stack.Screen name="SplashScreen" component={SplashScreen} />
 
       <Stack.Screen name="IntroScreen" component={IntroScreen} />
-      <Stack.Screen name="IntroOptionScreen" component={OptionLoginScreen} />
+      <Stack.Screen name="OptionLoginScreen" component={OptionLoginScreen} />
 
       <Stack.Screen name="SignInScreen" component={SignInScreen} />
 

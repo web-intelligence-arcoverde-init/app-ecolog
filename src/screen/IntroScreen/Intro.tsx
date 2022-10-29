@@ -33,7 +33,7 @@ export const IntroScreen = () => {
         <SwiperContainerIntro
           src={Step03}
           title="Seja consciente"
-          description="Ajudar o meio ambiente, catadores e cooperativas cadastradas"
+          description="Ajude o meio ambiente a continuar preservado, separe o seu lixo de forma correta e adicione um ponto de coleta para as empresas entrem em contato "
         />
       </Container>
     </Swiper>
