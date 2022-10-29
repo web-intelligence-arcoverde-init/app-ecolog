@@ -13,3 +13,4 @@ export * from './organisms/ContainerAddNewPointCollect/ContainerAddNewPointColle
 export * from './organisms/MapContainer/MapContainer';
 
 export * from './layout';
+export * from './atomic';

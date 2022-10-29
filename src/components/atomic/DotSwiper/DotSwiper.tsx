@@ -14,7 +14,7 @@ const defaultStyle = {
 const styles = StyleSheet.create({
   activeDot: {
     backgroundColor: '#34cb79',
-    width: scale(32),
+    width: scale(28),
     ...defaultStyle,
   },
   disabledDot: {
