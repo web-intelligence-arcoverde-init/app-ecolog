@@ -7,6 +7,9 @@ import {ScrollView, View} from 'react-native';
 import {Typography, Separator, Button} from '../../';
 import {scale} from '../../../utils';
 
+import {COLORS} from '../../../common';
+import {useAppSelector} from '../../../hooks/useReduxHooks';
+
 export const BottomSheetPointCollectInformation = ({bottomSheetRef}: any) => {
   const snapPoints = useMemo(() => ['60%'], []);
   const animationConfigs = useBottomSheetSpringConfigs({
@@ -22,6 +25,8 @@ export const BottomSheetPointCollectInformation = ({bottomSheetRef}: any) => {
 
   const [enableHandlePanningGesture, setEnableHandlePanningGesture] =
     useState(true);
+
+  const {pointSelected} = useAppSelector(state => state.pointCollectRecycling);
 
   return (
     <BottomSheet
@@ -41,17 +46,18 @@ export const BottomSheetPointCollectInformation = ({bottomSheetRef}: any) => {
         }}>
         <ScrollView showsVerticalScrollIndicator={false}>
           <Separator height={16} />
-          <ItemTypeTitle />
-
-          <Separator height={8} />
 
           <Typography>Ponto de reciclagem</Typography>
 
           <Separator height={8} />
 
+          <ItemTypeTitle point={pointSelected} />
+
+          <Separator height={16} />
+
           <View>
             <Typography variant="body" color="gray-500">
-              Usuario:
+              Nome:
             </Typography>
             <Separator height={4} />
 
@@ -81,7 +87,7 @@ export const BottomSheetPointCollectInformation = ({bottomSheetRef}: any) => {
               <Typography variant="body">879998093765</Typography>
             </View>
           </View>
-          <Separator height={16} />
+          <Separator height={8} />
 
           <View>
             <Typography variant="body" color="gray-500">
@@ -98,7 +104,7 @@ export const BottomSheetPointCollectInformation = ({bottomSheetRef}: any) => {
             </View>
           </View>
 
-          <Separator height={40} />
+          <Separator height={24} />
           <Button outlined color="error-100">
             Remover
           </Button>
@@ -109,18 +115,13 @@ export const BottomSheetPointCollectInformation = ({bottomSheetRef}: any) => {
   );
 };
 
-import {COLORS} from '../../../common';
-
-const ItemTypeTitle = () => {
-  const {organic} = COLORS;
-
+const ItemTypeTitle = ({point}: any) => {
   return (
     <View
       style={{
-        backgroundColor: organic,
+        backgroundColor: COLORS[point.type.value],
         borderRadius: 10,
-        width: '40%',
-        padding: 4,
+        padding: 80,
         alignItems: 'center',
       }}>
       <Typography variant="legend" color="black-400">

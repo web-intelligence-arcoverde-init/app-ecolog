@@ -5,7 +5,6 @@ import {useAppDispatch, useAppSelector} from '../../../hooks/useReduxHooks';
 import {
   changeVisibilityButtonAddNewPointCollect,
   createNewPointRequest,
-  addPointCollectLocation,
 } from '../../../store/reducer/pointCollectRecycling';
 import {PointCollectList} from '../PointCollectList/PointCollectList';
 
@@ -15,11 +14,9 @@ export const MapContainer = ({openBottomSheetInformationPointCollect}: any) => {
   const defaultProvider =
     Platform.OS === 'ios' ? PROVIDER_DEFAULT : PROVIDER_GOOGLE;
 
-  const {visibleButtonAddNewPointCollect, point, points} = useAppSelector(
+  const {visibleButtonAddNewPointCollect, point} = useAppSelector(
     state => state.pointCollectRecycling,
   );
-
-  console.log(points);
 
   const dispatch = useAppDispatch();
 

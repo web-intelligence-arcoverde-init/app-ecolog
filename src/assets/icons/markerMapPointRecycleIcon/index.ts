@@ -9,10 +9,13 @@ import RecyclingCollectorPoint from './recycling-collector-point.png';
 import CompanyPoint from './company-point.png';
 
 export const MarkerPointCollect = {
-  Metal: IronPoint,
-  Organico: OrganicPoint,
-  Papel: PaperPoint,
-  Plastico: PlasticPoint,
-  Vidro: GlassPoint,
-  Eletronico: EletronicPoint,
+  metal: IronPoint,
+  paper: PaperPoint,
+  glass: GlassPoint,
+  plastic: PlasticPoint,
+  organic: OrganicPoint,
+  light: EletronicPoint,
+  tissue: EletronicPoint,
+  batterie: EletronicPoint,
+  eletronic: EletronicPoint,
 };

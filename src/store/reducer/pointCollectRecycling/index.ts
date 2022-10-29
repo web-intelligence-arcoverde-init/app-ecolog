@@ -33,6 +33,7 @@ export interface PointCollectRecycle {
 interface PointCollectRecyclingState {
   points: PointCollectRecycle[];
   point?: PointCollectRecycle;
+  pointSelected: PointCollectRecycle;
   loading: boolean;
   visibleButtonAddNewPointCollect: boolean;
 }
@@ -40,6 +41,7 @@ interface PointCollectRecyclingState {
 const initialState: PointCollectRecyclingState = {
   points: [],
   point: {},
+  pointSelected: {},
   loading: false,
   visibleButtonAddNewPointCollect: true,
 };
@@ -68,6 +70,13 @@ export const counterSlice = createSlice({
     addPointCollectLocation: (state, action: PayloadAction<Location>) => {
       state.point = {...state.point, location: action.payload};
     },
+
+    selectedPointCollect: (
+      state,
+      action: PayloadAction<PointCollectRecycle>,
+    ) => {
+      state.pointSelected = action.payload;
+    },
   },
 });
 
@@ -77,6 +86,7 @@ export const {
   addPointCollectContact,
   addPointCollectLocation,
   changeVisibilityButtonAddNewPointCollect,
+  selectedPointCollect,
 } = counterSlice.actions;
 
 export const selectCount = (state: RootState) => state.counter.value;
