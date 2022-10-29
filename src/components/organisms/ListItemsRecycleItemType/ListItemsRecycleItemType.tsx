@@ -3,7 +3,6 @@ import React from 'react';
 import {View} from 'react-native';
 
 import {mockTypeRecyclePoint} from '../../../mock';
-
 import {RecyclingItemType} from '../RecyclingItemType/RecyclingItemType';
 
 export const ListItemsRecycleItemType = () => {

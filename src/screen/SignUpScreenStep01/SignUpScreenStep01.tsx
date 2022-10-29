@@ -2,7 +2,7 @@ import React from 'react';
 import {View} from 'react-native';
 
 import {
-  LayoutFormContainer,
+  FormContainer,
   Typography,
   Separator,
   Button,
@@ -16,7 +16,7 @@ export const SignUpScreenStep01 = () => {
   const {goTo, goBack} = useCustomNavigation();
 
   return (
-    <LayoutFormContainer>
+    <FormContainer>
       <View style={{paddingHorizontal: scale(24)}}>
         <Separator height={56} />
         <Typography>Precisamos de algumas informações suas</Typography>
@@ -44,6 +44,6 @@ export const SignUpScreenStep01 = () => {
           Voltar
         </Button>
       </View>
-    </LayoutFormContainer>
+    </FormContainer>
   );
 };

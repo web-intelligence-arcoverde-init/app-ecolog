@@ -2,9 +2,9 @@ import {KeyboardAvoidingView, ScrollView} from 'react-native';
 
 import {scale} from '../../../utils';
 
-import {COLORS} from '../../../common/';
+import {COLORS} from '../../../common';
 
-export const LayoutFormContainer = ({children}: any) => {
+export const FormContainer = ({children}: any) => {
   return (
     <KeyboardAvoidingView
       style={{

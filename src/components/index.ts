@@ -6,7 +6,7 @@ export * from './atomic/Input/Input';
 export * from './atomic/ProviderRedux/ProviderRedux';
 export * from './atomic/Typography/Typography';
 export * from './organisms/LayoutSwiperContainer/LayoutSwiperContainer';
-export * from './atomic/LayoutFormContainer/LayoutFormContainer';
+export * from './layout/FormContainer/FormContainer';
 export * from './atomic/Separator/Separator';
 export * from './atomic/CustomButton/CustomButton';
 

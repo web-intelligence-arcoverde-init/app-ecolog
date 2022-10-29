@@ -1,5 +1,5 @@
 import {
-  LayoutFormContainer,
+  FormContainer,
   Typography,
   Input,
   Button,
@@ -48,7 +48,7 @@ export const SignInScreen = ({navigation}) => {
   const {goTo} = useCustomNavigation();
 
   return (
-    <LayoutFormContainer>
+    <FormContainer>
       <HeaderSignIn />
 
       {getPlatform() === 'ios' && <Separator height={54} />}
@@ -92,7 +92,7 @@ export const SignInScreen = ({navigation}) => {
 
         <SignUpContainer />
       </View>
-    </LayoutFormContainer>
+    </FormContainer>
   );
 };
 

@@ -1,4 +1,4 @@
-import {LayoutFormContainer} from '../../components';
+import {FormContainer} from '../../components';
 
 import {messages} from '../../utils';
 
@@ -28,5 +28,5 @@ export const RecoveryAccountScreen = () => {
     register('password');
   }, [register]);
 
-  return <LayoutFormContainer></LayoutFormContainer>;
+  return <FormContainer></FormContainer>;
 };
