@@ -11,31 +11,26 @@ import waveImageBackground from '../../assets/images/background-image.png';
 
 import {Separator} from '../../components/atomic/Separator/Separator';
 
-import {getUserLocation} from '../../hooks/useLocationUser';
+import {getUserLocation, useCustomNavigation} from '../../hooks/';
 
-export const IntroOptionScreen = ({navigation}) => {
+export const OptionLoginScreen = () => {
   const {getCurrentPosition} = getUserLocation();
+
+  const {goTo} = useCustomNavigation();
 
   useEffect(() => {
     getCurrentPosition();
   }, []);
 
-  const onChangeRoute = (goTo: string) => {
-    navigation.navigate(goTo);
-  };
-
   return (
     <Container padding={24} align="center" justify="flex-end">
-      <HeaderIntroScreen />
+      <HeaderOptionScreen />
       <Separator height={80} />
-      <Button color="white-100" onPress={() => onChangeRoute('SignInScreen')}>
+      <Button color="white-100" onPress={() => goTo('SignInScreen')}>
         Entrar
       </Button>
       <Separator height={16} />
-      <Button
-        outlined
-        color="gray-700"
-        onPress={() => onChangeRoute('SignUpScreen')}>
+      <Button outlined color="gray-700" onPress={() => goTo('SignUpScreen')}>
         Criar conta
       </Button>
       <Separator height={30} />
@@ -43,7 +38,7 @@ export const IntroOptionScreen = ({navigation}) => {
   );
 };
 
-const HeaderIntroScreen = () => {
+const HeaderOptionScreen = () => {
   return (
     <ImageBackground
       source={waveImageBackground}

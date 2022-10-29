@@ -2,7 +2,7 @@ import React from 'react';
 import {ImageContainer, Typography, Container} from '../..';
 
 import {Separator} from '../../atomic/Separator/Separator';
-import {FooterIntroScreen} from '../../organisms/FooterIntroScreen/FooterIntroScreen';
+import {FooterIntroScreen} from '../../';
 
 interface SwiperContainerIntroProps {
   src?: string;

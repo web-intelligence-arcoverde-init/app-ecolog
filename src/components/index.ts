@@ -14,3 +14,4 @@ export * from './organisms/MapContainer/MapContainer';
 
 export * from './layout';
 export * from './atomic';
+export * from './molecules';

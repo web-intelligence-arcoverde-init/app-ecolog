@@ -1,11 +1,10 @@
 import React from 'react';
 
-import {StyledContainer} from '../../atomic/Container';
-import {Button} from '../../atomic/Button/Button';
-import {useNavigation} from '@react-navigation/native';
+import {StyledContainer, Button} from '../..';
+import {useCustomNavigation} from '../../../hooks';
 
 export const FooterIntroScreen = () => {
-  const navigation = useNavigation();
+  const {goTo} = useCustomNavigation();
 
   return (
     <StyledContainer align="center" height={1} padding={16} width={26}>
@@ -14,7 +13,7 @@ export const FooterIntroScreen = () => {
         rightIcon
         icon="arrowright"
         iconColor="#fff"
-        onPress={() => navigation.navigate('IntroOptionScreen')}
+        onPress={() => goTo('OptionLoginScreen')}
       />
     </StyledContainer>
   );
