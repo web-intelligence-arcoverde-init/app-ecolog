@@ -9,10 +9,9 @@ export const FooterIntroScreen = () => {
   return (
     <StyledContainer align="center" height={1} padding={16} width={26}>
       <Button
-        color="gree"
-        rightIcon
-        icon="arrowright"
-        iconColor="#fff"
+        iconName="arrow-right"
+        colorIcon="white-100"
+        leftIcon
         onPress={() => goTo('OptionLoginScreen')}
       />
     </StyledContainer>

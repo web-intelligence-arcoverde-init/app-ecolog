@@ -1,64 +1,79 @@
 import React from 'react';
 
 import {Typography} from '../../';
-import Icon from 'react-native-vector-icons/AntDesign';
+import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 import {Container} from './style';
 
 import {testId} from './testId';
 
-interface ButtonProps {
+import {ButtonsType, COLORS} from '../../../common';
+
+interface IconProps {
+  icon?: any;
+  iconColor?: string;
+  leftIcon?: boolean;
+  rightIcon?: boolean;
+  iconName?: string;
+  colorIcon?: string;
+}
+
+interface ButtonProps extends IconProps {
   children?: React.ReactNode;
   onPress?: any;
   color?: string;
-  icon?: string;
-  iconColor?: string;
-  outlined?: boolean;
   background?: string;
-  leftIcon?: boolean;
-  rightIcon?: boolean;
+  variant?: string;
+  disabled?: boolean;
+  borderColor?: string;
 }
 
 export const Button = ({
-  children,
-  onPress,
-  color,
   icon,
-  iconColor,
-  outlined,
-  background,
+  iconName,
+  colorIcon,
+  children,
   leftIcon,
   rightIcon,
+  disabled,
+  variant = 'primary',
+  onPress,
 }: ButtonProps) => {
-  const renderIcon = iconColor && icon;
-  const renderLeft = renderIcon && leftIcon;
-  const renderRight = renderIcon && rightIcon;
+  const variantButton = disabled
+    ? ButtonsType['disabled']
+    : ButtonsType[variant];
+
+  const colorIconVariant = colorIcon || variant.iconColor;
 
   return (
     <Container
       onPress={() => onPress()}
       testID={testId.outlined_button}
-      outlined={outlined}
-      background={background}>
-      {renderLeft && (
-        <Icon
-          testID={testId.icon_outlined_button}
-          name={icon}
-          size={18}
-          color={iconColor}
+      {...variantButton}>
+      {leftIcon && (
+        <CustomIcon
+          iconName={iconName}
+          iconColor={colorIconVariant}
+          icon={icon}
         />
       )}
-      <Typography color={color} variant="button">
+      <Typography variant="button" color={variant.color}>
         {children}
       </Typography>
-
-      {renderRight && (
-        <Icon
-          testID={testId.icon_outlined_button}
-          name={icon}
-          size={18}
-          color={iconColor}
+      {rightIcon && (
+        <CustomIcon
+          iconName={iconName}
+          iconColor={colorIconVariant}
+          icon={icon}
         />
       )}
     </Container>
   );
+};
+
+const CustomIcon = ({icon, iconName, iconColor}: IconProps) => {
+  if (icon) {
+    return <>{icon}</>;
+  }
+
+  return <Icon name={iconName} size={24} color={COLORS[iconColor]} />;
 };

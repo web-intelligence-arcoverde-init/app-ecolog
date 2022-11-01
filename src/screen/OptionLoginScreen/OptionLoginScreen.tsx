@@ -20,11 +20,9 @@ export const OptionLoginScreen = () => {
   return (
     <Container padding={24} align="center" justify="flex-end">
       <HeaderOptionLoginScreen />
-      <Button color="white-100" onPress={() => goTo('SignInScreen')}>
-        Entrar
-      </Button>
+      <Button onPress={() => goTo('SignInScreen')}>Entrar</Button>
       <Separator height={16} />
-      <Button outlined color="green-400" onPress={() => goTo('SignUpScreen')}>
+      <Button variant="tertiary" onPress={() => goTo('SignUpScreen')}>
         Criar conta
       </Button>
       <Separator height={30} />
