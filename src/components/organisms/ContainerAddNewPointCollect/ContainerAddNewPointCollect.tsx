@@ -28,9 +28,7 @@ export const ContainerAddNewPointCollect = () => {
         width: scale(50),
       }}>
       <Button
-        icon="plus"
-        iconColor="#fff"
-        rightIcon
+        variant="primary"
         onPress={() => {
           onChangeVisibilityButtonAddPointCollect();
         }}

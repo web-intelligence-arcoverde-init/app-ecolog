@@ -113,7 +113,7 @@ export const CreatePointColletScreen = () => {
 
         <View style={{marginTop: 12}} />
 
-        <Button outlined color="error-100" onPress={() => backStepPress()}>
+        <Button color="error-100" onPress={() => backStepPress()}>
           {minBackStep ? 'Voltar' : 'Cancelar'}
         </Button>
       </View>

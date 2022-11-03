@@ -110,9 +110,7 @@ export const BottomSheetPointCollectInformation = () => {
             </View>
 
             <Separator height={24} />
-            <Button outlined color="error-100">
-              Remover
-            </Button>
+            <Button color="error-100">Remover</Button>
             <Separator height={40} />
           </ScrollView>
         </View>
