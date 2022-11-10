@@ -24,11 +24,11 @@ const Stack = createNativeStackNavigator();
 function App() {
   return (
     <Stack.Navigator
-      initialRouteName={'FakerScreen'}
+      initialRouteName={'SplashScreen'}
       screenOptions={{headerShown: false}}>
       <Stack.Screen name="FakerScreen" component={FakerScreen} />
 
-      {/*<Stack.Screen name="SplashScreen" component={SplashScreen} />*/}
+      <Stack.Screen name="SplashScreen" component={SplashScreen} />
 
       <Stack.Screen name="IntroScreen" component={IntroScreen} />
       <Stack.Screen name="OptionLoginScreen" component={OptionLoginScreen} />

@@ -3,7 +3,7 @@ import {COLORS} from './';
 export const ButtonsType = {
   primary: {
     backgroundColor: COLORS['green-400'],
-    color: 'green-400',
+    color: 'white-100',
     borderColor: 'none',
   },
 
