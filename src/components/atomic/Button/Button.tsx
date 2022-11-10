@@ -37,6 +37,7 @@ export const Button = ({
   disabled,
   variant = 'primary',
   onPress,
+  color,
 }: ButtonProps) => {
   const variantButton = disabled
     ? ButtonsType['disabled']
@@ -46,7 +47,7 @@ export const Button = ({
 
   const variantType = variant === 'disabled' ? true : false;
 
-  console.log(variantButton.color);
+  console.log(variantButton.color, 'aq');
 
   return (
     <Container
