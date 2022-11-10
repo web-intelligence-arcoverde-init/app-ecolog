@@ -6,8 +6,6 @@ import {useAppSelector} from '../../../hooks/useReduxHooks';
 export const PointCollectList = () => {
   const {points} = useAppSelector(state => state.pointCollectRecycling);
 
-  console.log(points);
-
   return (
     <>
       {points.map((marker: any) => (
