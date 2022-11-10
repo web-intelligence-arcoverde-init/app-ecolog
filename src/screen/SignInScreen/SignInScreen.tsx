@@ -47,15 +47,16 @@ export const SignInScreen = ({navigation}) => {
 
   const {goTo} = useCustomNavigation();
 
+  const heightTypePlataform = getPlatform() === 'ios' ? 190 : 190;
+
   return (
     <FormContainer>
       <HeaderSignIn />
 
-      {getPlatform() === 'ios' && <Separator height={54} />}
+      <Separator height={heightTypePlataform} />
 
       <View
         style={{
-          marginTop: getPlatform() === 'ios' && scale(140),
           flex: 1,
           paddingHorizontal: scale(24),
           justifyContent: 'center',
@@ -107,6 +108,7 @@ const SignUpContainer = () => {
         justifyContent: 'center',
         width: '100%',
         marginTop: scale(16),
+        marginBottom: scale(16),
       }}>
       <Typography variant="legend" color="gray-600">
         Não tem uma conta?
@@ -173,7 +175,7 @@ const HeaderSignIn = () => {
           position: 'absolute',
           height: scale(80),
           width: scale(190),
-          top: getPlatform() === 'ios' ? scale(460) : scale(340),
+          top: getPlatform() === 'ios' ? scale(460) : scale(460),
           left: scale(158),
         }}
       />

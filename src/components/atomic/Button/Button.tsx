@@ -44,8 +44,13 @@ export const Button = ({
 
   const colorIconVariant = colorIcon || variant.iconColor;
 
+  const variantType = variant === 'disabled' ? true : false;
+
+  console.log(variantButton.color);
+
   return (
     <Container
+      disabled={variantType}
       onPress={() => onPress()}
       testID={testId.outlined_button}
       {...variantButton}>
@@ -56,7 +61,7 @@ export const Button = ({
           icon={icon}
         />
       )}
-      <Typography variant="button" color={variant.color}>
+      <Typography variant="button" color={variantButton.color}>
         {children}
       </Typography>
       {rightIcon && (

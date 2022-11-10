@@ -26,6 +26,7 @@ export const Typography = ({
   textAlign,
 }: TypographyProps) => {
   const variantTypography = TypographyStyle[variant];
+  console.log(color);
   return (
     <Text {...variantTypography} color={color} textAlign={textAlign}>
       {children}

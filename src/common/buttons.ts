@@ -21,7 +21,7 @@ export const ButtonsType = {
 
   disabled: {
     backgroundColor: COLORS['gray-300'],
-    color: COLORS['gray-900'],
+    color: 'gray-300',
     iconColor: 'gray-500',
     borderColor: 'none',
   },

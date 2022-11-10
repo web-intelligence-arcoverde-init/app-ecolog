@@ -36,7 +36,7 @@ const thirdIndicatorStyles = {
   currentStepLabelColor: '#6E6E6E',
 };
 
-import {useAppDispatch} from '../../hooks/useReduxHooks';
+import {useAppDispatch, useAppSelector} from '../../hooks/useReduxHooks';
 import {useCustomNavigation} from '../../hooks/useNavigation';
 
 interface PointCollect {
@@ -58,6 +58,10 @@ export const CreatePointColletScreen = () => {
 
   const {goTo} = useCustomNavigation();
 
+  const pointCollectTypeId = useAppSelector(
+    state => state.pointCollectRecycling.point?.type?.id,
+  );
+
   const dispatch = useAppDispatch();
 
   const onStepPress = () => {
@@ -74,6 +78,8 @@ export const CreatePointColletScreen = () => {
       goTo('MapScreen');
     }
   };
+
+  const itemTypeCollectSelected = pointCollectTypeId ? 'primary' : 'disabled';
 
   return (
     <View style={styles.container}>
@@ -107,7 +113,10 @@ export const CreatePointColletScreen = () => {
       </Swiper>
 
       <View style={{height: '24%', padding: 24}}>
-        <Button color="white-100" onPress={() => onStepPress()}>
+        <Button
+          color="white-100"
+          variant={itemTypeCollectSelected}
+          onPress={() => onStepPress()}>
           {maxNextStep ? 'Proximo' : 'Concluir'}
         </Button>
 
