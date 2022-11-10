@@ -30,6 +30,7 @@ export const ContainerAddNewPointCollect = () => {
       <Button
         iconName="plus"
         variant="primary"
+        colorIcon="white-100"
         leftIcon
         onPress={() => {
           onChangeVisibilityButtonAddPointCollect();
