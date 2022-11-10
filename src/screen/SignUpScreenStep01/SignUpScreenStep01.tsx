@@ -27,11 +27,19 @@ export const SignUpScreenStep01 = () => {
 
         <Separator height={16} />
 
-        <Input label="Nome" placeholder="ex: José" />
+        <Input
+          label="Nome"
+          placeholder="ex: José"
+          onChangeText={() => console.log('text')}
+        />
 
         <Separator height={32} />
 
-        <Input label="Sobrenome" placeholder="ex: Paes" />
+        <Input
+          label="Sobrenome"
+          placeholder="ex: Paes"
+          onChangeText={() => console.log('text')}
+        />
 
         <Separator height={32} />
         <Button color="white-100" onPress={() => goTo('SignUpScreenStep02')}>
@@ -40,7 +48,7 @@ export const SignUpScreenStep01 = () => {
 
         <Separator height={16} />
 
-        <Button outlined color="error-100" onPress={() => goBack()}>
+        <Button color="error-100" onPress={() => goBack()}>
           Voltar
         </Button>
       </View>

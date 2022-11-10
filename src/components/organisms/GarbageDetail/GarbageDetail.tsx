@@ -13,7 +13,7 @@ export const GarbageDetail = () => {
     <View style={{alignContent: 'center', padding: scale(24)}}>
       <HeaderCreateCollectPoint
         title="Escolha um item"
-        description="Selecione um dos items para reciclagem"
+        description="Selecione o item que deseja reciclar"
       />
 
       <Separator height={16} />

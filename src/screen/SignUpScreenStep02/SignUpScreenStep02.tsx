@@ -26,13 +26,25 @@ export const SignUpScreenStep02 = () => {
         </Typography>
 
         <Separator height={16} />
-        <Input label="Email" placeholder="ex: nome@email.com" />
+        <Input
+          label="Email"
+          placeholder="ex: nome@email.com"
+          onChangeText={() => console.log('text')}
+        />
         <Separator height={32} />
 
-        <Input label="Senha" placeholder="ex: *****" />
+        <Input
+          label="Senha"
+          placeholder="ex: *****"
+          onChangeText={() => console.log('text')}
+        />
         <Separator height={32} />
 
-        <Input label="Confirmação de senha" placeholder="ex: *****" />
+        <Input
+          label="Confirmação de senha"
+          placeholder="ex: *****"
+          onChangeText={() => console.log('text')}
+        />
         <Separator height={32} />
 
         <Button color="white-100" onPress={() => goTo('MapScreen')}>
@@ -41,7 +53,7 @@ export const SignUpScreenStep02 = () => {
 
         <Separator height={16} />
 
-        <Button outlined color="error-100" onPress={() => goBack()}>
+        <Button color="error-100" onPress={() => goBack()}>
           Voltar
         </Button>
       </View>

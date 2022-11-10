@@ -13,7 +13,9 @@ export const DetailExampleCreatePointRecycle = () => {
         marginTop: getPlatform() === 'ios' ? scale(54) : scale(24),
         padding: scale(18),
       }}>
-      <Typography color="black-200">Nós informe a locazação no mapa</Typography>
+      <Typography color="black-200">
+        Informe a localização do item selecionado
+      </Typography>
       <Separator height={8} />
       <Typography variant="body" color="black-200">
         Para finalizar você será redicionado para o mapa toque no lugar onde

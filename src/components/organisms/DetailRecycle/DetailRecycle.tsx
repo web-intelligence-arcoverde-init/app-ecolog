@@ -1,23 +1,10 @@
-import React, {useEffect, useState} from 'react';
+import React from 'react';
 
 import {KeyboardAvoidingView, ScrollView, View} from 'react-native';
-import {useAppDispatch} from '../../../hooks/useReduxHooks';
 import {Typography, Input, Separator} from '../../';
 import {scale, getPlatform} from '../../../utils';
-import {addPointCollectContact} from '../../../store/reducer/pointCollectRecycling';
 
-export const DetailRecycle = () => {
-  const [contact, setContact] = useState('');
-  const [details, setDetails] = useState('');
-
-  const dispatch = useAppDispatch();
-
-  useEffect(() => {
-    if (contact && details) {
-      dispatch(addPointCollectContact({phone: contact, datails: details}));
-    }
-  }, [contact, details]);
-
+export const DetailRecycle = ({onChange}: any) => {
   return (
     <KeyboardAvoidingView
       style={{height: '100%'}}
@@ -42,7 +29,7 @@ export const DetailRecycle = () => {
           <Input
             label="Contato"
             multiline={false}
-            onChangeText={text => setContact(text)}
+            onChangeText={text => onChange('contato', text)}
           />
 
           <Separator height={16} />
@@ -50,7 +37,7 @@ export const DetailRecycle = () => {
           <Input
             label="Detalhes sobre"
             multiline={true}
-            onChangeText={text => setDetails(text)}
+            onChangeText={text => onChange('detalhes', text)}
           />
         </View>
       </ScrollView>

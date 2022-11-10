@@ -8,36 +8,17 @@ import {Button} from '../../components';
 import {DetailRecycle} from '../../components/organisms/DetailRecycle/DetailRecycle';
 import {GarbageDetail} from '../../components/organisms/GarbageDetail/GarbageDetail';
 import {DetailExampleCreatePointRecycle} from '../../components/organisms/DetailExampleCreatePointRecycle/DetailExampleCreatePointRecycle';
-
-import {changeVisibilityButtonAddNewPointCollect} from '../../store/reducer/pointCollectRecycling';
+import {
+  addPointCollectContact,
+  changeVisibilityButtonAddNewPointCollect,
+} from '../../store/reducer/pointCollectRecycling';
 
 import {scale, getPlatform} from '../../utils';
 
-const thirdIndicatorStyles = {
-  stepIndicatorSize: 25,
-  currentStepIndicatorSize: 30,
-  separatorStrokeWidth: 2,
-  currentStepStrokeWidth: 3,
-  stepStrokeCurrentColor: '#2aa964',
-  stepStrokeFinishedColor: '#2aa964',
-  stepStrokeUnFinishedColor: '#dedede',
-  separatorFinishedColor: '#2aa964',
-  separatorUnFinishedColor: '#dedede',
-  stepIndicatorFinishedColor: '#2aa964',
-  stepIndicatorUnFinishedColor: '#d4ede0',
-  stepIndicatorCurrentColor: '#2aa964',
-  stepIndicatorLabelFontSize: 12,
-  currentStepIndicatorLabelFontSize: 0,
-  stepIndicatorLabelCurrentColor: 'transparent',
-  stepIndicatorLabelFinishedColor: 'transparent',
-  stepIndicatorLabelUnFinishedColor: 'transparent',
-  labelColor: '#848484',
-  labelSize: 12,
-  currentStepLabelColor: '#6E6E6E',
-};
-
 import {useAppDispatch, useAppSelector} from '../../hooks/useReduxHooks';
 import {useCustomNavigation} from '../../hooks/useNavigation';
+
+import {customStyle} from './styleIndicator';
 
 interface PointCollect {
   type: string;
@@ -53,16 +34,28 @@ interface PointCollect {
 export const CreatePointColletScreen = () => {
   const [currentPage, setCurrentPage] = React.useState<number>(0);
 
+  const [contact, setContact] = React.useState('');
+  const [details, setDetails] = React.useState('');
+
+  const dispatch = useAppDispatch();
+
   const maxNextStep = currentPage < 2;
   const minBackStep = currentPage > 0;
 
   const {goTo} = useCustomNavigation();
 
+  //TODO: criar reducer
+  const onChangeValue = (name: string, value: string) => {
+    if (name === 'contato') {
+      setContact(value);
+    } else if (name === 'detalhes') {
+      setDetails(value);
+    }
+  };
+
   const pointCollectTypeId = useAppSelector(
     state => state.pointCollectRecycling.point?.type?.id,
   );
-
-  const dispatch = useAppDispatch();
 
   const onStepPress = () => {
     maxNextStep && setCurrentPage(currentPage + 1);
@@ -79,14 +72,24 @@ export const CreatePointColletScreen = () => {
     }
   };
 
-  const itemTypeCollectSelected = pointCollectTypeId ? 'primary' : 'disabled';
+  //Vericiar se os campos estão preenchidos e se está na segunda pagina de cadastro do ponto de coleta
+  const validationField = currentPage === 1 ? !!contact && !!details : true;
+
+  const itemTypeCollectSelected =
+    pointCollectTypeId && validationField ? 'primary' : 'disabled';
+
+  React.useEffect(() => {
+    if (contact && details) {
+      dispatch(addPointCollectContact({phone: contact, datails: details}));
+    }
+  }, [contact, details]);
 
   return (
     <View style={styles.container}>
       <View style={styles.stepIndicator}>
         <StepIndicator
           stepCount={3}
-          customStyles={thirdIndicatorStyles}
+          customStyles={customStyle}
           currentPosition={currentPage}
           onPress={onStepPress}
           labels={[
@@ -108,7 +111,7 @@ export const CreatePointColletScreen = () => {
           setCurrentPage(index);
         }}>
         <GarbageDetail />
-        <DetailRecycle />
+        <DetailRecycle onChange={onChangeValue} />
         <DetailExampleCreatePointRecycle />
       </Swiper>
 

@@ -47,7 +47,6 @@ export const Button = ({
 
   const variantType = variant === 'disabled' ? true : false;
 
-  console.log(variantButton.color, 'aq');
 
   return (
     <Container
