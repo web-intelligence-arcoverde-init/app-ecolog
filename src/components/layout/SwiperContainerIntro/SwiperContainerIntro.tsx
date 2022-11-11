@@ -1,22 +1,18 @@
 import React from 'react';
-import {
-  ImageContainer,
-  Typography,
-  Container,
-  Separator,
-  FooterIntroScreen,
-} from '../..';
+import {ImageContainer, Typography, Container, Separator} from '../..';
 
 interface SwiperContainerIntroProps {
   src?: string;
   title?: string;
   description?: string;
+  footer?: any;
 }
 
 export const SwiperContainerIntro = ({
   src,
   title,
   description,
+  footer,
 }: SwiperContainerIntroProps) => {
   return (
     <Container align="center" justify="center" padding={24}>
@@ -27,7 +23,7 @@ export const SwiperContainerIntro = ({
       <Typography textAlign="center" variant="body" color="black-200">
         {description}
       </Typography>
-      <FooterIntroScreen />
+      {footer && footer}
     </Container>
   );
 };
