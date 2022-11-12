@@ -42,6 +42,12 @@ export const ButtonsType = {
   icon: {
     backgroundColor: 'transparent',
     color: 'transparent',
+    borderColor: 'none',
+  },
+
+  iconTransparent: {
+    backgroundColor: 'transparent',
+    color: 'transparent',
     borderColor: COLORS['green-200'],
   },
 

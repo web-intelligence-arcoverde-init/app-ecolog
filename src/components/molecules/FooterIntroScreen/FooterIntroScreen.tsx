@@ -7,10 +7,11 @@ export const FooterIntroScreen = () => {
   const {goTo} = useCustomNavigation();
 
   return (
-    <StyledContainer align="center" height={1} padding={16} width={26}>
+    <StyledContainer align="center" height={1} width={50}>
       <Button
+        variant="iconTransparent"
+        background="green-200"
         iconName="arrow-right"
-        colorIcon="white-100"
         leftIcon
         onPress={() => goTo('OptionLoginScreen')}
       />

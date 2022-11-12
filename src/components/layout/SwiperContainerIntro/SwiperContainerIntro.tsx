@@ -1,8 +1,11 @@
 import React from 'react';
-import {ImageContainer, Typography, Container, Separator} from '../..';
+import {View} from 'react-native';
+import {Typography, Container} from '../..';
+
+import {scale} from '../../../utils';
 
 interface SwiperContainerIntroProps {
-  src?: string;
+  src?: any;
   title?: string;
   description?: string;
   footer?: any;
@@ -15,15 +18,20 @@ export const SwiperContainerIntro = ({
   footer,
 }: SwiperContainerIntroProps) => {
   return (
-    <Container align="center" justify="center" padding={24}>
-      <ImageContainer src={src} />
-      <Separator height={24} />
-      <Typography color="black-200">{title}</Typography>
-      <Separator height={4} />
-      <Typography textAlign="center" variant="body" color="black-200">
-        {description}
-      </Typography>
-      {footer && footer}
+    <Container align="center" justify="center" padding={24} color="green-200">
+      {src}
+      <View style={{position: 'absolute', top: scale(60)}}>
+        <Typography color="gray-700">{title}</Typography>
+        <Typography color="gray-700" variant="body">
+          {description}
+        </Typography>
+      </View>
+      {footer && (
+        <View
+          style={{position: 'absolute', bottom: scale(60), right: scale(98)}}>
+          {footer}
+        </View>
+      )}
     </Container>
   );
 };

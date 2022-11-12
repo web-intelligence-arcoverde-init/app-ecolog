@@ -8,15 +8,19 @@ import {
   FooterIntroScreen,
   ArrowSwiper,
 } from '../../components';
-import {IntroScreenImages} from '../../assets/';
+
+import Image from '../../assets/icons/intro/intro-step01.svg';
+import Image2 from '../../assets/icons/intro/intro-step02.svg';
+import Image3 from '../../assets/icons/intro/intro-step4.svg';
+
+import {Dimensions, Text} from 'react-native';
+
+const height = Dimensions.get('window').height;
+const width = Dimensions.get('window').width;
 
 const SHOW_ARROW_SWIPER = true;
 
-import {Text} from 'react-native';
-
 export const IntroScreen = () => {
-  const {Step01, Step02, Step03} = IntroScreenImages;
-
   return (
     <Swiper
       loop={false}
@@ -25,16 +29,16 @@ export const IntroScreen = () => {
       prevButton={<ArrowSwiper>‹</ArrowSwiper>}
       dot={<DotSwiper />}
       activeDot={<DotSwiper active />}>
-      <Container align="center" justify="center">
+      <Container>
         <SwiperContainerIntro
-          src={Step01}
+          src={<Image width={width} height={height} />}
           title="Ajude o meio ambiente"
           description="Incentive seus amigos e vizinhos a descartar o lixo corretamente"
         />
       </Container>
       <Container align="center" justify="center">
         <SwiperContainerIntro
-          src={Step02}
+          src={<Image2 width={width} height={height} />}
           title="É fácil"
           description="Encontre coletores de recicláveis ​​ou pontos de coleta mais
       próximos de sua casa"
@@ -42,7 +46,7 @@ export const IntroScreen = () => {
       </Container>
       <Container align="center" justify="center">
         <SwiperContainerIntro
-          src={Step03}
+          src={<Image3 width={width} height={height} />}
           title="Seja consciente"
           description="Ajude o meio ambiente a continuar preservado"
           footer={<FooterIntroScreen />}

@@ -2,8 +2,6 @@ import styled from 'styled-components/native';
 
 import {HEIGHT_BUTTON, BORDER_RADIUS_BUTTON} from './constants';
 
-import {COLORS} from '../../../common';
-
 interface ContainerTouchableProps {
   outlined?: boolean;
   background?: string;
