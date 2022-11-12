@@ -5,7 +5,6 @@ import {FakerScreen} from '../screen/FakerScreen/FakerScreen';
 
 import {SplashScreen} from '../screen/SplashScreen/SplashScreen';
 import {IntroScreen} from '../screen/IntroScreen/Intro';
-import {OptionLoginScreen} from '../screen/OptionLoginScreen/OptionLoginScreen';
 
 import {SignInScreen} from '../screen/SignInScreen/SignInScreen';
 
@@ -31,7 +30,6 @@ function App() {
       <Stack.Screen name="SplashScreen" component={SplashScreen} />
 
       <Stack.Screen name="IntroScreen" component={IntroScreen} />
-      <Stack.Screen name="OptionLoginScreen" component={OptionLoginScreen} />
 
       <Stack.Screen name="SignInScreen" component={SignInScreen} />
 

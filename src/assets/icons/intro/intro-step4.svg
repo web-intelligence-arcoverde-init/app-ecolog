@@ -395,22 +395,23 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
      showgrid="false"
-     inkscape:zoom="2.8685309"
-     inkscape:cx="76.694311"
-     inkscape:cy="230.95446"
+     inkscape:zoom="2.0283577"
+     inkscape:cx="112.40621"
+     inkscape:cy="121.03388"
      inkscape:window-width="1423"
      inkscape:window-height="1027"
      inkscape:window-x="0"
      inkscape:window-y="25"
      inkscape:window-maximized="0"
-     inkscape:current-layer="g2134" />
+     inkscape:current-layer="g86" />
   <g
      id="g86"
      inkscape:groupmode="layer"
      inkscape:label="Page 1"
      transform="matrix(1.3333333,0,0,-1.3333333,-737.5733,512.59158)">
     <g
-       id="g2132">
+       id="g2132"
+       transform="matrix(1.2405202,0,0,1.1569858,-151.22641,-55.744982)">
       <g
          id="g2134"
          clip-path="url(#clipPath2138)">
@@ -998,7 +999,8 @@
       </g>
     </g>
     <g
-       id="g2500">
+       id="g2500"
+       transform="matrix(1.2405202,0,0,1.1569858,-151.22641,-55.744982)">
       <g
          id="g2502"
          clip-path="url(#clipPath2506)">
@@ -1015,7 +1017,8 @@
       </g>
     </g>
     <g
-       id="g2522">
+       id="g2522"
+       transform="matrix(1.2405202,0,0,1.1569858,-151.22641,-55.744982)">
       <g
          id="g2524"
          clip-path="url(#clipPath2528)">
@@ -1032,7 +1035,8 @@
       </g>
     </g>
     <g
-       id="g2544">
+       id="g2544"
+       transform="matrix(1.2405202,0,0,1.1569858,-151.22641,-55.744982)">
       <g
          id="g2546"
          clip-path="url(#clipPath2550)">
@@ -1049,7 +1053,8 @@
       </g>
     </g>
     <g
-       id="g2566">
+       id="g2566"
+       transform="matrix(1.2405202,0,0,1.1569858,-151.22641,-55.744982)">
       <g
          id="g2568"
          clip-path="url(#clipPath2572)">
@@ -1066,7 +1071,8 @@
       </g>
     </g>
     <g
-       id="g2588">
+       id="g2588"
+       transform="matrix(1.2405202,0,0,1.1569858,-151.22641,-55.744982)">
       <g
          id="g2590"
          clip-path="url(#clipPath2594)">
@@ -1083,7 +1089,8 @@
       </g>
     </g>
     <g
-       id="g2610">
+       id="g2610"
+       transform="matrix(1.2405202,0,0,1.1569858,-151.22641,-55.744982)">
       <g
          id="g2612"
          clip-path="url(#clipPath2616)">
@@ -1100,7 +1107,8 @@
       </g>
     </g>
     <g
-       id="g2632">
+       id="g2632"
+       transform="matrix(1.2405202,0,0,1.1569858,-151.22641,-55.744982)">
       <g
          id="g2634"
          clip-path="url(#clipPath2638)">
@@ -1117,7 +1125,8 @@
       </g>
     </g>
     <g
-       id="g2654">
+       id="g2654"
+       transform="matrix(1.2405202,0,0,1.1569858,-151.22641,-55.744982)">
       <g
          id="g2656"
          clip-path="url(#clipPath2660)">
@@ -1134,7 +1143,8 @@
       </g>
     </g>
     <g
-       id="g2676">
+       id="g2676"
+       transform="matrix(1.2405202,0,0,1.1569858,-151.22641,-55.744982)">
       <g
          id="g2678"
          clip-path="url(#clipPath2682)">
@@ -1151,7 +1161,8 @@
       </g>
     </g>
     <g
-       id="g2698">
+       id="g2698"
+       transform="matrix(1.2405202,0,0,1.1569858,-151.22641,-55.744982)">
       <g
          id="g2700"
          clip-path="url(#clipPath2704)">
@@ -1168,7 +1179,8 @@
       </g>
     </g>
     <g
-       id="g2720">
+       id="g2720"
+       transform="matrix(1.2405202,0,0,1.1569858,-151.22641,-55.744982)">
       <g
          id="g2722"
          clip-path="url(#clipPath2726)">
@@ -1185,7 +1197,8 @@
       </g>
     </g>
     <g
-       id="g2742">
+       id="g2742"
+       transform="matrix(1.2405202,0,0,1.1569858,-151.22641,-55.744982)">
       <g
          id="g2744"
          clip-path="url(#clipPath2748)">
@@ -1202,7 +1215,8 @@
       </g>
     </g>
     <g
-       id="g2764">
+       id="g2764"
+       transform="matrix(1.2405202,0,0,1.1569858,-151.22641,-55.744982)">
       <g
          id="g2766"
          clip-path="url(#clipPath2770)">
@@ -1341,12 +1355,7 @@
            id="path2842" />
         <g
            id="g2844"
-           transform="translate(699,234.3333)">
-          <path
-             d="m 0,0 v -50.753 c -14.25,-0.247 -19.01,6.77 -20.21,9.74 -0.87,2.17 -0.76,4.71 -2.08,6.64 -2,2.94 -6.05,3.553 -8.84,5.76 -3.12,2.467 -9.765,9.866 -0.995,17.53 C -22.208,-2.417 -4.833,0 0,0"
-             style="fill:#e3fbfc;fill-opacity:1;fill-rule:nonzero;stroke:none"
-             id="path2846" />
-        </g>
+           transform="translate(699,234.3333)" />
         <g
            id="g2852"
            transform="translate(584.7731,352.206)">
