@@ -12,7 +12,7 @@ export const FooterIntroScreen = () => {
       background="green-200"
       iconName="arrow-right"
       leftIcon
-      onPress={() => goTo('SignInScreen')}
+      onPress={() => goTo('OptionLoginScreen')}
     />
   );
 };

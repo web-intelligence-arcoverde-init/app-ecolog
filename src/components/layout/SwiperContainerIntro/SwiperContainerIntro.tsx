@@ -18,7 +18,7 @@ export const SwiperContainerIntro = ({
   footer,
 }: SwiperContainerIntroProps) => {
   return (
-    <Container align="center" justify="center" padding={24}>
+    <Container align="center" justify="center" padding={24} color="gray-300">
       <Typography color="gray-700">{title}</Typography>
       <Separator height={8} />
       {children}

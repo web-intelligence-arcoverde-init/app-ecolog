@@ -1,40 +1,29 @@
 import React from 'react';
 
+import {TextInputProps, View} from 'react-native';
+
 import {InputMask} from './InputMask/InputMask';
 import {DefaultInput} from './DefaultInput/DefaultInput';
 import {Typography} from '../Typography/Typography';
-import {View} from 'react-native';
 import {Separator} from '../Separator/Separator';
 
-interface InputProps {
+interface Props extends TextInputProps {
   mask?: boolean;
   maskType?: string;
   error?: string;
-  label?: string;
-  multiline?: boolean;
-  numberOfLines?: number;
-  placeholder?: string;
-  onChangeText?: (text: string) => void;
 }
 
 export const Input = ({
   mask,
   maskType,
   error,
-  label,
   multiline,
   numberOfLines,
   placeholder,
   onChangeText,
-}: InputProps) => {
+}: Props) => {
   return (
-    <>
-      {label && (
-        <Typography variant="body" color="black-300">
-          {label}
-        </Typography>
-      )}
-      <Separator height={4} />
+    <View style={{display: 'flex', alignItems: 'center', marginBottom: 24}}>
       {mask ? (
         <InputMask mask={maskType} />
       ) : (
@@ -45,7 +34,7 @@ export const Input = ({
           placeholder={placeholder}
         />
       )}
-      {!!error && <Typography variant="button">Error message</Typography>}
-    </>
+      {!!error && <Typography variant="legend">Error message</Typography>}
+    </View>
   );
 };

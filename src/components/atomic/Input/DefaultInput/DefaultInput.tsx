@@ -19,17 +19,8 @@ export const DefaultInput = ({
         placeholder={text}
         secureTextEntry={secureTextEntry}
         style={{
-          backgroundColor: 'white',
-          borderRadius: 8,
-          borderWidth: 1,
-          borderColor: '#a9dcc1',
-          shadowColor: '#a9dcc1',
-          shadowOffset: {
-            width: 0,
-            height: -0,
-          },
-          shadowOpacity: 0.2,
-          shadowRadius: 2,
+          backgroundColor: '#fff',
+          borderRadius: 4,
           justifyContent: 'center',
           alignItems: 'center',
         }}

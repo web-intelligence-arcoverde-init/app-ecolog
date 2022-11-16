@@ -53,10 +53,7 @@ export const SignUpScreen = () => {
 
         <Separator height={16} />
 
-        <Button
-          outlined
-          color="error-100"
-          onPress={() => goTo('IntroOptionScreen')}>
+        <Button color="error-100" onPress={() => goTo('IntroOptionScreen')}>
           Voltar
         </Button>
       </View>

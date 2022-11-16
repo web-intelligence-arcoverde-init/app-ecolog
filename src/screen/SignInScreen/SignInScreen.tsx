@@ -47,52 +47,29 @@ export const SignInScreen = ({navigation}) => {
 
   const {goTo} = useCustomNavigation();
 
-  const heightTypePlataform = getPlatform() === 'ios' ? 190 : 190;
-
   return (
     <FormContainer>
-      <HeaderSignIn />
+      <Input placeholder="example@gmail.com" onChangeText={() => {}} />
+      <Input placeholder="******" onChangeText={() => {}} />
 
-      <Separator height={heightTypePlataform} />
+      <Button color="white-100" onPress={() => goTo('MapScreen')}>
+        Entrar
+      </Button>
 
       <View
         style={{
-          flex: 1,
-          paddingHorizontal: scale(24),
+          display: 'flex',
           justifyContent: 'center',
+          alignItems: 'center',
+          width: '100%',
         }}>
-        <Input label="Email" placeholder="example@gmail.com" />
-        <Separator height={22} />
-        <Input label="Senha" placeholder="******" />
-        <Separator height={8} />
-        <RecoveryAccountContainer />
-
-        <Separator height={16} />
-        <Button color="white-100" onPress={() => goTo('MapScreen')}>
-          Entrar
-        </Button>
-
-        <Separator height={8} />
-
-        <View
-          style={{
-            display: 'flex',
-            justifyContent: 'center',
-            alignItems: 'center',
-            width: '100%',
-          }}>
-          <Typography variant="legend" color="gray-700">
-            Ou
-          </Typography>
-        </View>
-
-        <Separator height={8} />
-        <CustomButton icon={<FacebookIcon />} message="Entre com o Facebook" />
-        <Separator height={16} />
-        <CustomButton icon={<GoogleIcon />} message="Entre com o Google" />
-
-        <SignUpContainer />
+        <Typography variant="legend" color="gray-700">
+          Ou
+        </Typography>
       </View>
+
+      <CustomButton icon={<FacebookIcon />} message="Entre com o Facebook" />
+      <CustomButton icon={<GoogleIcon />} message="Entre com o Google" />
     </FormContainer>
   );
 };

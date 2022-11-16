@@ -9,7 +9,7 @@ export const COLORS: any = {
   'green-600': '#19653c',
   'green-700': '#104328',
 
-  'gray-300': '#F2F2F2',
+  'gray-300': '#FAFAFA',
   'gray-400': '#D8D8D8',
   'gray-500': '#A4A4A4',
   'gray-600': '#6E6E6E',

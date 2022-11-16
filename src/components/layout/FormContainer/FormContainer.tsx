@@ -9,7 +9,8 @@ export const FormContainer = ({children}: any) => {
     <KeyboardAvoidingView
       style={{
         flex: 1,
-        backgroundColor: COLORS['white-100'],
+        backgroundColor: COLORS['gray-300'],
+        padding: scale(24),
       }}
       keyboardVerticalOffset={scale(-210)}
       behavior={'padding'}>
