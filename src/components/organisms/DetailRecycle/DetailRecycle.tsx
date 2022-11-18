@@ -27,7 +27,7 @@ export const DetailRecycle = ({onChange}: any) => {
           <Separator height={16} />
 
           <Input
-            label="Contato"
+            placeholder="(00) 0 0000-0000"
             multiline={false}
             onChangeText={text => onChange('contato', text)}
           />
@@ -35,7 +35,7 @@ export const DetailRecycle = ({onChange}: any) => {
           <Separator height={16} />
 
           <Input
-            label="Detalhes sobre"
+            placeholder="Informações adicionais"
             multiline={true}
             onChangeText={text => onChange('detalhes', text)}
           />
