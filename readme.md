@@ -31,6 +31,8 @@
 
 ## Referencias [Melhorias]
 
+- https://kedarjoyner.com/werecycle-mobile-app
+- https://www.figma.com/file/kw53efUOpyxfd5DQWMTlUA/RuntahPedia---UI-Design-for-Recycle-App-v2-(Community)-(Copy)?node-id=14%3A7&t=Aj4HlOgCoFcOiLbV-0
 - https://www.instagram.com/p/CfG_w-bOa4D/
 - https://www.instagram.com/p/CiAimRgvGvv/
 - https://www.instagram.com/p/Ch7Y74xO62U/
@@ -38,6 +40,7 @@
 - https://www.linkedin.com/posts/fifilodesigns_uxui-tips-activity-6986910988553916416-RUUx?utm_source=share&utm_medium=member_desktop
 - https://www.linkedin.com/posts/adenike-opeyemi-iyiola-b2799a15a_dailyui-ticket-event-activity-6984175643013861376-zwN1?utm_source=share&utm_medium=member_desktop
   https://www.linkedin.com/posts/anh-ds_ui-uidesign-dailyui-activity-6985809136533852161-oeVW?utm_source=share&utm_medium=member_desktop
+- https://www.behance.net/gallery/108705793/Recycle-App-Recycler-UIUX-Case-Study
 
 ## UIKIt
 
