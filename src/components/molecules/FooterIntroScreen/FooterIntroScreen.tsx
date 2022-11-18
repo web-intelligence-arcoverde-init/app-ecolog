@@ -9,7 +9,6 @@ export const FooterIntroScreen = () => {
   return (
     <Button
       variant="iconTransparent"
-      background="green-200"
       iconName="arrow-right"
       leftIcon
       onPress={() => goTo('OptionLoginScreen')}

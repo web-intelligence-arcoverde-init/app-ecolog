@@ -14,14 +14,9 @@ import Image3 from '../../assets/icons/intro/intro-step4.svg';
 
 import Image4 from '../../assets/icons/intro/intro.svg';
 
-import {Dimensions} from 'react-native';
-
 import {scale} from '../../utils';
 
 import {getUserLocation} from '../../hooks/';
-
-const height = Dimensions.get('window').height;
-const width = Dimensions.get('window').width;
 
 const SHOW_ARROW_SWIPER = true;
 
