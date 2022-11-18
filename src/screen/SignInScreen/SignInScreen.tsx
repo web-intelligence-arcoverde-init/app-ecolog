@@ -24,6 +24,8 @@ import FacebookIcon from '../../assets/images/facebook.svg';
 import GoogleIcon from '../../assets/images/google.svg';
 import {useCustomNavigation} from '../../hooks/useNavigation';
 
+const marginTop = getPlatform() === 'ios' ? 300 : 160;
+
 const schema = yup
   .object({
     email: yup.string().email(messages.email).required(messages.required),
@@ -49,27 +51,39 @@ export const SignInScreen = ({navigation}) => {
 
   return (
     <FormContainer>
-      <Input placeholder="example@gmail.com" onChangeText={() => {}} />
-      <Input placeholder="******" onChangeText={() => {}} />
+      <HeaderSignIn />
 
-      <Button color="white-100" onPress={() => goTo('MapScreen')}>
-        Entrar
-      </Button>
+      <View style={{padding: scale(24), marginTop}}>
+        <Input placeholder="example@gmail.com" onChangeText={() => {}} />
 
-      <View
-        style={{
-          display: 'flex',
-          justifyContent: 'center',
-          alignItems: 'center',
-          width: '100%',
-        }}>
-        <Typography variant="legend" color="gray-700">
-          Ou
-        </Typography>
+        <Separator height={12} />
+
+        <Input placeholder="******" onChangeText={() => {}} />
+
+        <Button color="white-100" onPress={() => goTo('MapScreen')}>
+          Entrar
+        </Button>
+
+        <Separator height={12} />
+
+        <View
+          style={{
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center',
+            width: '100%',
+          }}>
+          <Typography variant="legend" color="gray-700">
+            Ou
+          </Typography>
+        </View>
+
+        <Separator height={12} />
+
+        <CustomButton icon={<FacebookIcon />} message="Entre com o Facebook" />
+        <Separator height={12} />
+        <CustomButton icon={<GoogleIcon />} message="Entre com o Google" />
       </View>
-
-      <CustomButton icon={<FacebookIcon />} message="Entre com o Facebook" />
-      <CustomButton icon={<GoogleIcon />} message="Entre com o Google" />
     </FormContainer>
   );
 };
@@ -139,7 +153,7 @@ const HeaderSignIn = () => {
           position: 'absolute',
           height: scale(140),
           width: scale(190),
-          top: getPlatform() === 'ios' ? scale(360) : scale(340),
+          top: getPlatform() === 'ios' ? scale(380) : scale(340),
           left: scale(158),
           opacity: 0.6,
         }}
@@ -152,7 +166,7 @@ const HeaderSignIn = () => {
           position: 'absolute',
           height: scale(80),
           width: scale(190),
-          top: getPlatform() === 'ios' ? scale(460) : scale(460),
+          top: getPlatform() === 'ios' ? scale(490) : scale(380),
           left: scale(158),
         }}
       />

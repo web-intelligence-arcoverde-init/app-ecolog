@@ -3,7 +3,7 @@ import {Input, Container} from './style';
 import {COLORS} from '../../../../common/colors';
 
 export const DefaultInput = ({
-  text,
+  placeholder,
   secureTextEntry,
   multiline,
   numberOfLines,
@@ -15,8 +15,8 @@ export const DefaultInput = ({
         onChangeText={text => onChangeText(text)}
         multiline={multiline}
         numberOfLines={numberOfLines}
-        placeholderTextColor={COLORS['gray-300']}
-        placeholder={text}
+        placeholderTextColor={COLORS['gray-500']}
+        placeholder={placeholder}
         secureTextEntry={secureTextEntry}
         style={{
           backgroundColor: '#fff',
